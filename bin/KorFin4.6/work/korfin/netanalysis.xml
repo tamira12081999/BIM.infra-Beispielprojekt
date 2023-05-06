@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asdatafile>
+	<table name="Umwelt RWK">
+		<column name="RWK IVa" parametera="UU_4A_A" parameterb="UO_4A_A" format="float"/>
+		<column name="RWK IVb" parametera="UU_4B_A" parameterb="UO_4B_A" format="float"/>
+		<column name="RWK III" parametera="UU_3_A" parameterb="UO_3_A" format="float"/>
+		<column name="RWK II" parametera="UU_2_A" parameterb="UO_2_A" format="float"/>
+		<column name="RWK IVa U1" parametera="UU_4A_U1_A" parameterb="UO_4A_U1_A" format="float"/>
+		<column name="RWK IVa U2" parametera="UU_4A_U2_A" parameterb="UO_4A_U2_A" format="float"/>
+		<column name="RWK IVb U1" parametera="UU_4B_U1_A" parameterb="UO_4B_U1_A" format="float"/>
+		<column name="RWK IVb U2" parametera="UU_4B_U2_A" parameterb="UO_4B_U2_A" format="float"/>
+	</table>
+	<table name="Raumordnung RWK">
+		<column name="RWK IVa" parametera="RU_4A_A" parameterb="RO_4A_A" format="float"/>
+		<column name="RWK IVb" parametera="RU_4B_A" parameterb="RO_4B_A" format="float"/>
+		<column name="RWK III" parametera="RU_3_A" parameterb="RO_3_A" format="float"/>
+		<column name="RWK II" parametera="RU_2_A" parameterb="RO_2_A" format="float"/>
+	</table>
+	<table name="UC Critera">
+		<column name="BIM_PROPERTY_LENGTH" parametera="BIM_PROPERTY_LENGTH" format="float"/>
+		<column name="BIM_PROPERTY_UC_LN5" parametera="BIM_PROPERTY_UC_LN5" format="float"/>
+		<column name="BIM_PROPERTY_UC_LN20" parametera="BIM_PROPERTY_UC_LN20" format="float"/>
+		<column name="BIM_PROPERTY_UC_LN30" parametera="BIM_PROPERTY_UC_LN30" format="float"/>
+		<column name="BIM_PROPERTY_UC_LNOVER" parametera="BIM_PROPERTY_UC_LNOVER" format="float"/>
+		<column name="BIM_PROPERTY_UC_QN8" parametera="BIM_PROPERTY_UC_QN8" format="float"/>
+		<column name="BIM_PROPERTY_UC_QNOVER" parametera="BIM_PROPERTY_UC_QNOVER" format="float"/>
+		<column name="BIM_PROPERTY_UC_CURVATURE2DSUM" parametera="BIM_PROPERTY_UC_CURVATURE2DSUM" format="float"/>
+		<column name="BIM_PROPERTY_UC_CURVATURE3DSUM" parametera="BIM_PROPERTY_UC_CURVATURE3DSUM" format="float"/>
+	</table>
+	<blacksheep name="Ausschluss nach DRECKER">
+		<critera type="TrsNetAnalysisCriteraCombine">
+			<!-- Umwelt RWK 4a -->
+			<critera type="TrsNetAnalysisCriteraSum2">
+				<data parametera="UU_4A_A" parameterb="UO_4A_A"/>
+				<filter minlength="200.0" significance="100.0">Kriterium 1a: Umwelt RWK IVa unter-/oberirdisch Flächen zu groß</filter>
+			</critera>
+			<!-- Raumordnung RWK 4a -->
+			<critera type="TrsNetAnalysisCriteraSum2">
+				<data parametera="RU_4A_A" parameterb="RO_4A_A"/>
+				<filter minlength="200.0" significance="100.0">Kriterium 1b: Raumordnung RWK IVa unter-/oberirdisch Flächen zu groß</filter>
+			</critera>
+		</critera>
+		<critera type="TrsNetAnalysisCriteraCombine">
+			<!-- Umwelt RWK 4b -->
+			<critera type="TrsNetAnalysisCriteraSum2">
+				<data parametera="UU_4B_A" parameterb="UO_4B_A"/>
+				<filter significance="30.0">Kriterium 2a: Umwelt RWK IVb unter-/oberirdisch Flächen zu groß</filter>
+			</critera>
+			<!-- Raumordnung RWK 4b -->
+			<critera type="TrsNetAnalysisCriteraSum2">
+				<data parametera="RU_4B_A" parameterb="RO_4B_A"/>
+				<filter significance="30.0">Kriterium 2b: Raumordnung RWK IVb unter-/oberirdisch Flächen zu groß</filter>
+			</critera>
+		</critera>
+		<critera type="TrsNetAnalysisCriteraCombine">
+			<!-- Umwelt RWK III -->
+			<critera type="TrsNetAnalysisCriteraSum2">
+				<data parametera="UU_3_A" parameterb="UO_3_A"/>
+				<filter significance="30.0">Kriterium 3a: Umwelt RWK III unter-/oberirdisch Flächen zu groß</filter>
+			</critera>
+			<!-- Raumordnung RWK III -->
+			<critera type="TrsNetAnalysisCriteraSum2">
+				<data parametera="RU_3_A" parameterb="RO_3_A"/>
+				<filter significance="30.0">Kriterium 3b: Raumordnung RWK III unter-/oberirdisch Flächen zu groß</filter>
+			</critera>
+		</critera>
+		<critera type="TrsNetAnalysisCriteraCombine">
+			<!-- Umwelt RWK II -->
+			<critera type="TrsNetAnalysisCriteraSum2">
+				<data parametera="UU_2_A" parameterb="UO_2_A"/>
+				<filter significance="30.0">Kriterium 4a: Umwelt RWK II unter-/oberirdisch Flächen zu groß</filter>
+			</critera>
+			<!-- Raumordnung RWK II -->
+			<critera type="TrsNetAnalysisCriteraSum2">
+				<data parametera="RU_2_A" parameterb="RO_2_A"/>
+				<filter significance="30.0">Kriterium 4b: Raumordnung RWK II unter-/oberirdisch Flächen zu groß</filter>
+			</critera>
+		</critera>
+		<critera type="TrsNetAnalysisCriteraSum2">
+			<data parametera="UU_4A_U1_A" parameterb="UO_4A_U1_A"/>
+			<filter significance="30.0">Kriterium 5: Umwelt RWK IVa unter-/oberirdisch Wirkraum [-250, 250] Flächen zu groß</filter>
+		</critera>
+		<critera type="TrsNetAnalysisCriteraSum2">
+			<data parametera="UU_4A_U2_A" parameterb="UO_4A_U2_A"/>
+			<filter significance="30.0">Kriterium 6: Umwelt RWK IVa unter-/oberirdisch Wirkraum [-500, -250; 250, 500] Flächen zu groß</filter>
+		</critera>
+		<critera type="TrsNetAnalysisCriteraSum2">
+			<data parametera="UU_4B_U1_A" parameterb="UO_4B_U1_A"/>
+			<filter significance="30.0">Kriterium 7: Umwelt RWK IVb unter-/oberirdisch Wirkraum [-250, 250] Flächen zu groß</filter>
+		</critera>
+		<critera type="TrsNetAnalysisCriteraSum2">
+			<data parametera="UU_4B_U2_A" parameterb="UO_4B_U2_A"/>
+			<filter significance="30.0">Kriterium 8: Umwelt RWK IVb nter-/oberirdisch Wirkraum [-500, -250; 250, 500] Flächen zu groß</filter>
+		</critera>
+		<critera type="TrsNetAnalysisCriteraLength">
+			<filter significance="30.0">Kriterium 9: Länge zu groß</filter>
+		</critera>
+		<critera type="TrsNetAnalysisCriteraCut">
+			<filter significance="30.0">Kriterium 10: Abtrag zu groß</filter>
+		</critera>
+	</blacksheep>
+</asdatafile>

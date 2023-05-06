@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asdatafile>
+	<volumes>
+		<volume id="{E6415734-A4EB-46F1-BDBB-933343E3197B}" type="TsfUCProfileTerrain" name="Oberbodenabtrag" info="Oberbodenabtrag t vorgegebener Höhe 0.3 m">
+			<target system="cableroute" line="topsoil" />
+			<terraindelta left="-17.41" right="26.58" depth="-0.3"/>
+		</volume>
+		<volume id="{BC6FE80E-AD36-4DC4-A641-FACE8E929955}" type="TsfUCProfileSloped" name="Haufwerk Unterboden (Höhe 2m, Breite 0.86m)" info="Haufwerk mit Breite 0.86m und Höhe 2m">
+			<target system="cablesystem" line="Pile"/>
+			<profile>
+				<d t="-0.43" z="2.0" ftag="base" system="cableroute" line="topsoil"/>
+				<d t="0.43" z="2.0" ftag="base" system="cableroute" line="topsoil"/>
+			</profile>
+			<left alphadeg="45.0" z="0.0" system="cableroute" line="topsoil"/>
+			<right alphadeg="-45.0" z="0.0" system="cableroute" line="topsoil"/>
+		</volume>
+		<volume id="{1955a7fb-e173-42ec-9081-6a4b84dc9d1f}" type="TsfUCProfileSloped" name="Haufwerk Unterboden (Höhe 2m, Breite 0.51m)" info="Haufwerk mit Breite 0.51m und Höhe 2m">
+			<target system="cablesystem" line="Pile"/>
+			<profile>
+				<d t="-0.255" z="2.0" ftag="base" system="cableroute" line="topsoil"/>
+				<d t="0.255" z="2.0" ftag="base" system="cableroute" line="topsoil"/>
+			</profile>
+			<left alphadeg="45.0" z="0.0" system="cableroute" line="topsoil"/>
+			<right alphadeg="-45.0" z="0.0" system="cableroute" line="topsoil"/>
+		</volume>
+		<volume id="{A1C94B70-B465-4538-B1AE-0FC06C187280}" type="TsfUCProfileSloped" name="Haufwerk Unterboden (Höhe 1.69m)" info="Haufwerk mit vorgegebener Höhe 1.69 m">
+			<target system="cablesystem" line="Pile"/>
+			<profile>
+				<d t="0.0" z="1.69" ftag="base" system="cableroute" line="topsoil"/>
+			</profile>
+			<left alphadeg="45.0" z="0.0" system="cableroute" line="topsoil"/>
+			<right alphadeg="-45.0" z="0.0" system="cableroute" line="topsoil"/>
+		</volume>
+		<volume id="{20EA53F1-04AF-4EC6-BDB8-0241D1C5C6FB}" type="TsfUCProfileSloped" name="Haufwerk Oberboden (Höhe 2m, Breite 4.67m)" info="Haufwerk mit vorgegebener Höhe 2 m und 4.67 Breite">
+			<target system="cableroute" line="pile"/>
+			<profile>
+				<d t="-2.335" z="2.0" ftag="base" system="cableroute" line="site"/>
+				<d t="+2.335" z="2.0" ftag="base" system="cableroute" line="site"/>
+			</profile>
+			<left alphadeg="45.0" z="0.0" system="cableroute" line="site"/>
+			<right alphadeg="-45.0" z="0.0" system="cableroute" line="site"/>
+		</volume>
+		<volume id="{A317CBB9-7917-460F-9061-FE3F64E727F2}" type="TsfUCProfileSloped" name="Haufwerk Oberboden (Höhe 2m, Breite 1.80m)" info="Haufwerk mit vorgegebener Höhe 2 m und 1.80 Breite">
+			<target system="cableroute" line="pile"/>
+			<profile>
+				<d t="-0.9" z="2.0" ftag="base" system="cableroute" line="site"/>
+				<d t="+0.9" z="2.0" ftag="base" system="cableroute" line="site"/>
+			</profile>
+			<left alphadeg="45.0" z="0.0" system="cableroute" line="site"/>
+			<right alphadeg="-45.0" z="0.0" system="cableroute" line="site"/>
+		</volume>
+		<volume id="{975315B3-D6FA-4A6A-8364-0D40A78AA934}" type="TsfUCProfileSloped" name="Haufwerk Oberboden (Höhe 2m, Breite 1.57m)" info="Haufwerk mit vorgegebener Höhe 2 m und 1.57 Breite">
+			<target system="cableroute" line="pile"/>
+			<profile>
+				<d t="-0.785" z="2.0" ftag="base" system="cableroute" line="site"/>
+				<d t="+0.785" z="2.0" ftag="base" system="cableroute" line="site"/>
+			</profile>
+			<left alphadeg="45.0" z="0.0" system="cableroute" line="site"/>
+			<right alphadeg="-45.0" z="0.0" system="cableroute" line="site"/>
+		</volume>
+		<volume id="{28EC66A0-D669-47A5-83B4-A43226A49991}" type="TsfUCProfileTrench" name="Kabelgraben (Überdeckung 1.30m, Tiefe 43cm unter Gradiente, 60° Böschung)" info="Kabelgraben mit Mindestüberdeckung von 1.3 m, Tiefe 43cm unter Gradiente und 60° Böschungsneigung" system="Cablesystem">
+			<target system="cablesystem" line="trench"/>
+			<profile>
+				<!-- Ausgangspunkt ist Linie welche auf Höhe Leerrohr liegt -->
+				<d t="-1.25" z="-0.43"/>
+				<d t="1.25" z="-0.43"/>
+			</profile>
+			<left alphadeg="-60.0" z="0.0" system="cableroute" line="topsoil" />
+			<right alphadeg="60.0" z="0.0" system="cableroute" line="topsoil" />
+			<constraints>
+				<!-- Mindestüberdeckung über Leerrohr-->
+				<d t="-0.95" z="-1.3"/>
+				<d t="0.95" z="-1.3"/>
+			</constraints>
+		</volume>
+		<volume id="{109C629A-60FF-4F6B-BC50-17929C710632}" type="TsfUCProfileSloped" name="Baustraße (Breite 5m)" info="Baustraße mit 5 m Breite">
+			<target system="cableroute" line="road"/>
+			<profile>
+				<d t="-2.5" z="0.3" ftag="base" system="cableroute" line="topsoil"/>
+				<d t="2.5" z="0.3" ftag="base" system="cableroute" line="topsoil"/>
+			</profile>
+			<left alphadeg="45.0" z="0.0" system="cableroute" line="topsoil" />
+			<right alphadeg="-45.0" z="0.0" system="cableroute" line="topsoil" />
+		</volume>
+		<volume id="{4A7D6045-925A-4597-B504-75C635B00F73}" type="TsfUCProfileCircle" name="Kabel DA 280" info="Kabel mit Durchmesser DA 280">
+			<target system="cableline" line="cable"/>
+			<circle t="0.0" z="-0.14" radius="0.14" count="5"/>
+		</volume>
+	</volumes>
+	<sections>
+		<!-- Baustraße-->
+		<section id="{F4EB5467-99B1-4426-9031-62FF385FF1C5}" name="Oberboden">
+			<volumeref ref="{E6415734-A4EB-46F1-BDBB-933343E3197B}" name="$TRACK Oberboden" material="CA $FFBF7E" />
+		</section>
+		<!-- Baustraße-->
+		<section id="{BAA109F5-CE8F-4CD5-92EF-741DCCD0F99E}" name="Baustraße">
+			<volumeref ref="{109C629A-60FF-4F6B-BC50-17929C710632}" name="$TRACK Baustraße" material="CA $7F7F7F" />
+		</section>
+		<!-- Standard Kabelgraben -->
+		<section id="{261D48A0-6175-42B5-BF7F-3D4EA362287B}" name="Kabelgraben">
+			<volumeref ref="{28EC66A0-D669-47A5-83B4-A43226A49991}" dt="0.0" name="$TRACK Graben" material="TR T_SAND1 AA $99 BA"/>
+			<volumeref ref="{4A7D6045-925A-4597-B504-75C635B00F73}" dt="-0.95" name="$TRACK LL" material="CA RAL 1028"/>
+			<volumeref ref="{4A7D6045-925A-4597-B504-75C635B00F73}" dt="0.95" name="$TRACK LR" material="CA RAL 1028"/>
+		</section>
+		<!-- Kabelgraben 2 fach Bodentrennung -->
+		<section id="{179C9A1C-B1E6-4EEF-A7A9-AC134330CDA9}" name="2-fach Bodentrennung links">
+			<volumeref ref="{A1C94B70-B465-4538-B1AE-0FC06C187280}" dt="-4.765" name="$TRACK B1" material="CA $CCB265"/>
+			<volumeref ref="{A1C94B70-B465-4538-B1AE-0FC06C187280}" dt="-8.645" name="$TRACK B2" material="CA $CC9965"/>
+		</section>
+		<section id="{0E19A43D-5C94-4753-BDC6-2A3EEC390834}" name="2-fach Bodentrennung rechts">
+			<volumeref ref="{A1C94B70-B465-4538-B1AE-0FC06C187280}" dt="4.765" name="$TRACK B2" material="CA $CC9965"/>
+			<volumeref ref="{A1C94B70-B465-4538-B1AE-0FC06C187280}" dt="8.645" name="$TRACK B1" material="CA $CCB265"/>
+			<volumeref ref="{20EA53F1-04AF-4EC6-BDB8-0241D1C5C6FB}" dt="15,17" name="$TRACK OBBO Haufwerk " material="CA $FFBF7E"/>
+		</section>
+		<!-- Kabelgraben 1 fach Bodentrennung -->
+		<section id="{D9594E1E-2250-4EB6-9467-7EE92FA72FE5}" name="keine Bodentrennung links">
+			<volumeref ref="{BC6FE80E-AD36-4DC4-A641-FACE8E929955}" dt="-5.505" name="$TRACK B" material="CA $CCB265"/>
+		</section>
+		<section id="{3458F4C2-B06B-453E-A8E9-E8715A4D2F48}" name="keine Bodentrennung rechts (Haufwerk und Oberboden)">
+			<volumeref ref="{BC6FE80E-AD36-4DC4-A641-FACE8E929955}" dt="5.505" name="$TRACK B" material="CA $CCB265"/>
+			<volumeref ref="{20EA53F1-04AF-4EC6-BDB8-0241D1C5C6FB}" dt="12,77" name="$TRACK OBBO Haufwerk " material="CA $FFBF7E"/>
+		</section>
+		<!-- Querung Waldgebiet mit Baustraße -->
+		<section id="{529FF8C4-6C95-4602-A770-01DD8B3B08B8}" name="Querung Waldgebiet mit Baustraße Phase 1 Kabelsystem links">
+			<volumeref ref="{109C629A-60FF-4F6B-BC50-17929C710632}" dt="-5.575" name="$TRACK Baustraße Phase 1" material="CA $7F7F7F" />
+			<volumeref ref="{BC6FE80E-AD36-4DC4-A641-FACE8E929955}" dt="5.505" name="$TRACK Haufwerk Phase 1" material="CA $CCB265"/>
+		</section>
+		<section id="{491EF865-C83B-4783-888D-431921A8A64D}" name="Querung Waldgebiet mit Baustraße  Phase 2 Kabelsystem links">
+			<volumeref ref="{A317CBB9-7917-460F-9061-FE3F64E727F2}" dt="6.975" name="$TRACK Oberbodenabtrag" material="CA $FFBF7E AA $99 BA"/>
+			<volumeref ref="{109C629A-60FF-4F6B-BC50-17929C710632}" dt="-6.575" name="$TRACK Baustraße Phase 2" material="CA $7F7F7F" />
+			<volumeref ref="{BC6FE80E-AD36-4DC4-A641-FACE8E929955}" dt="-12.505" name="$TRACK Haufwerk Phase 2" material="CA $CCB265"/>
+		</section>
+		<!-- Querung Waldgebiet ohne Baustraße -->
+		<section id="{5A6FCA80-AF0E-48DD-B13C-942ED2F3E112}" name="Querung Waldgebiet ohne Baustraße Phase 1 Kabelsystem links">
+			<volumeref ref="{BC6FE80E-AD36-4DC4-A641-FACE8E929955}" dt="5.505" name="$TRACK Haufwerk Phase 1" material="CA $CCB265"/>
+		</section>
+		<section id="{8C1C70A7-324E-4184-8288-EE7DE6B707AA}" name="Querung Waldgebiet ohne Baustraße  Phase 2 Kabelsystem links">
+			<volumeref ref="{975315B3-D6FA-4A6A-8364-0D40A78AA934}" dt="5.86" name="$TRACK Oberbodenabtrag" material="CA $FFBF7E AA $99 BA"/>
+			<volumeref ref="{BC6FE80E-AD36-4DC4-A641-FACE8E929955}" dt="-5.505" name="$TRACK Haufwerk Phase 2" material="CA $CCB265"/>
+		</section>
+	</sections>
+</asdatafile>

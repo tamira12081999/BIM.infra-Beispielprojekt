@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<asdatafile>
+    <BIMMapping name="MyDemoMapping">
+        <!-- mapping of Feature/Objektname to system internal BASE/BASE_NAME -->
+        <CopyAttribute sourceFamily="Feature" sourceName="Objektname" targetFamily="BASE" targetName="BASE_NAME"/>
+        <!-- mapping of Civil-Größen/Volumen (m³) to system internal MEASUREMENT/MEASUREMENT_VOLUMEVALUE1 -->
+        <CopyAttribute sourceFamily="Civil-Größen" sourceName="Volumen (m³)" targetFamily="MEASUREMENT" targetName="MEASUREMENT_VOLUMEVALUE1"/>
+   </BIMMapping>
+
+</asdatafile>

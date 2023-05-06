@@ -1,0 +1,1875 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asdatafile>
+	<description>
+		<creator name="HWUZ" date="2019.07.02"/>
+		<content type="application" name="korfin model" version="4.4.4" changeset="3a35755609b3708c2d37c280722576c6332a3dd6"/>
+	</description>
+	<project id="{6AF65984-0B36-42A3-903D-952F0085ECDF}">
+		<resources/>
+		<create trnsprnt="false" coltrs="0" coltrstol="0" coldef="39168" coldgm="16777215" alphablend="false" alpha="0" defalpha="0" oversampling="true" zwrite="true" culling="true" nomodel="false" heighter="0" idwr="100" idwp="2" idwextend="false" sectorextend="false" pilot="false" gridenv="false" dgmenv="false"/>
+		<transform>
+			<targetsystem plansystem="ETRS89UTMKZ"/>
+			<sourcedef>
+				<sourcesystem plansystem="ETRS89UTM"/>
+			</sourcedef>
+		</transform>
+		<zero modelzero="32480700; 5371900; 0" sectorzero="32480700; 5371900; 0"/>
+		<container name="environments" id="{FB72A775-CDE3-4CE4-AC0F-550F34B373F3}">
+			<groupproperties>
+				<groupproperty id="{D5BF2270-BB35-433B-847F-AD08A4B141E8}" name="Bundesautobahn - vorhanden" linestyle="0" linebackcolor="16056534" linewidth="5"/>
+				<groupproperty id="{E650EF07-DD03-4639-92A4-26073E22FDCE}" name="Bundesautobahn - geplant" linestyle="2" linecolor="16056534" linebackcolor="0" linewidth="5"/>
+				<groupproperty id="{BD520F9B-1069-4E60-901B-68E7A24DE99C}" name="Bundesstraße - vorhanden" linestyle="0" linebackcolor="13469952" linewidth="5"/>
+				<groupproperty id="{B9969A57-3929-472B-B158-0A8FD5A828C2}" name="Bundesstraße - geplant" linestyle="2" linecolor="13469952" linebackcolor="0" linewidth="5"/>
+				<groupproperty id="{50906E3B-C40F-431D-BF95-BDF01862E984}" name="Landes-/Staatsstraße - vorhanden" linestyle="0" linebackcolor="65280" linewidth="5"/>
+				<groupproperty id="{AB0ACFED-9B29-487F-BB5A-1732373EB93A}" name="Landes-/Staatsstraße - geplant" linestyle="2" linecolor="65280" linebackcolor="0" linewidth="5"/>
+				<groupproperty id="{B472D344-422B-418B-80B4-AB66AAAA9F26}" name="Kreisstraße - vorhanden" linestyle="0" linebackcolor="36776" linewidth="5"/>
+				<groupproperty id="{9F5820AE-7B0E-44D6-81F7-9264186C8A93}" name="Kreisstraße - geplant" linestyle="2" linecolor="36776" linebackcolor="0" linewidth="5"/>
+				<groupproperty id="{C0ADB4C4-7D56-48A3-A492-981CE5206B9A}" name="kommunale Straße - vorhanden" linestyle="0" linebackcolor="16777215" linewidth="5"/>
+				<groupproperty id="{317FA15B-A8AB-4E6C-BAD5-CE82E8B4D7F9}" name="kommunale Straße - geplant" linestyle="2" linecolor="16777215" linebackcolor="-1" linewidth="5"/>
+				<groupproperty id="{FC9F013C-3321-43AD-8F66-01A4111EDEEC}" name="Rückbau" linestyle="1" linebackcolor="16777215" linewidth="5"/>
+				<groupproperty id="{7370E4A1-C0FA-41EC-943E-94395804CE02}" name="Bundesgrenze" borderstyle="4" bordercolor="16711935" borderwidth="3" fillstyle="0" linestyle="4" linecolor="0" linebackcolor="16711935" linewidth="5"/>
+				<groupproperty id="{2E345903-6B54-40E2-AD18-1C9B5EB677E2}" name="Landesgrenze" borderstyle="5" bordercolor="16711935" borderwidth="2" fillstyle="0" linestyle="4" linecolor="0" linebackcolor="16711935" linewidth="5"/>
+				<groupproperty id="{7EA7E725-97E8-4CCE-82FA-4A33C4158513}" name="Regierungsbezirk" borderstyle="7" bordercolor="16711935" borderwidth="1" fillstyle="0" linestyle="4" linecolor="0" linebackcolor="16711935" linewidth="3"/>
+				<groupproperty id="{553F3743-CBBD-4174-9D5E-E9C9EA600951}" name="Kreisgrenze" borderstyle="6" bordercolor="16711935" borderwidth="1" fillstyle="0" linestyle="5" linecolor="0" linebackcolor="16711935" linewidth="3"/>
+				<groupproperty id="{0214D167-62FA-4196-83F2-C36C8C0B737A}" name="Gemeindegrenze" borderstyle="4" bordercolor="16711935" borderwidth="0" fillstyle="0" linestyle="4" linecolor="0" linebackcolor="16711935" linewidth="3"/>
+				<groupproperty id="{1C3D9B94-77D2-48E3-A6B8-A9FB966C7C46}" name="reines und allgemeines Wohngebiet, Kleinsiedlungsgebiet - vorhanden" borderstyle="1" bordercolor="12151551" borderwidth="3" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{0E03E6B4-00D4-4852-9D32-F51F99D2C663}" name="reines und allgemeines Wohngebiet, Kleinsiedlungsgebiet - geplant" borderstyle="1" bordercolor="12151551" borderwidth="3" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{03005A4F-E2B5-4871-BA1D-9095F0C0C015}" name="Kerngebiet, Dorfgebiet, Mischgebiet - vorhanden" borderstyle="1" bordercolor="9013709" borderwidth="3" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{880D7FC1-FF4E-4A1C-8964-6AC03DA4AF5E}" name="Kerngebiet, Dorfgebiet, Mischgebiet - geplant" borderstyle="1" bordercolor="9013709" borderwidth="3" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{B496A452-FF03-42EC-BE97-32F2A90CB516}" name="Gewerbegebiet - vorhanden" borderstyle="1" bordercolor="10066329" borderwidth="3" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{1876E389-58B1-41D7-B132-53FF7F4BD3D8}" name="Gewerbegebiet - geplant" borderstyle="1" bordercolor="10066329" borderwidth="3" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{DDAE3C13-763B-484D-9D96-3DEE761EC3FD}" name="Sondergebiet - vorhanden" borderstyle="1" bordercolor="43263" borderwidth="3" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{730BE424-1C99-4E56-8D1F-918DD1A51E46}" name="Sondergebiet - geplant" borderstyle="1" bordercolor="43263" borderwidth="3" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{0F78C0CF-741B-4BDC-A349-DA19E9CAABA4}" name="Gemeinbedarf" borderstyle="1" bordercolor="16056534" borderwidth="3" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{58B2F3A2-1911-4217-B1B9-73E8FF7322DA}" name="europäisches Vogelschutzgebiet" borderstyle="1" bordercolor="16747735" borderwidth="1" bordertransparency="0" fillstyle="5" fillcolor="16747735" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{BE730505-22A9-45D4-8A6F-C2E064B7C993}" name="FFH-Gebiet" borderstyle="1" bordercolor="43263" borderwidth="1" bordertransparency="0" fillstyle="5" fillcolor="43263" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{1568670A-1FB2-4915-A020-86D7DA2451C3}" name="Naturpark/Nationalpark" borderstyle="1" bordercolor="12626175" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{3D42DF89-F9AF-41AF-8A95-D7A956DB38B8}" name="Landschaftsschutzgebiet" borderstyle="1" bordercolor="56430" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{09356BB2-CB7C-4B5D-8718-6B8B1A4AD197}" name="Naturschutzgebiet" borderstyle="1" bordercolor="8421631" borderwidth="1" bordertransparency="0" fillstyle="3" fillcolor="8421631" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{EA8BB0B7-F315-481F-AEC9-753F2194935E}" name="Biosphärenreservat" borderstyle="1" bordercolor="11075563" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{73518171-3376-4CB8-B523-F0B668A85492}" name="geschützter Landschaftsbestandteil" borderstyle="1" bordercolor="4521963" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{582B7FFC-A134-43C8-9DA5-8502F6FE5A73}" name="geschütztes Biotop" borderstyle="1" bordercolor="255" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" name="Fläche des Biotopverbundes" borderstyle="1" bordercolor="2705920" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{78F9022F-20C1-4834-A67D-0BD6B90A7C56}" name="Naturdenkmal" borderstyle="1" bordercolor="55039" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{16EC4DBF-6E0E-40DF-894A-A62BD18D77EF}" name="Kultur-, Bau-, Bodendenkmal" borderstyle="1" bordercolor="29608" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{BFBD0BB8-9C26-4640-A6F8-9D85069B611A}" name="Überschwemmungsgebiet" borderstyle="1" bordercolor="16766632" borderwidth="1" bordertransparency="0" fillstyle="9" fillcolor="16766632" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{C62F510A-A3E6-429B-9984-EB9108AA85C8}" name="Heilquellenschutzgebiet" borderstyle="1" bordercolor="16711680" borderwidth="1" bordertransparency="0" fillstyle="8" fillcolor="16711680" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{1FBDD2AF-5BEB-4C24-8D95-24F9F8AEA939}" name="Wasserschutzzone I / II - vorhanden" borderstyle="1" bordercolor="16746753" borderwidth="1" bordertransparency="0" fillstyle="2" fillcolor="16746752" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{CED37F75-CF24-4735-95A0-E632969F947A}" name="Wasserschutzzone III - vorhanden" borderstyle="1" bordercolor="16746752" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{738B8DD7-2080-407E-8516-82DB2399FF91}" name="Ramsar Feuchtgebiete" borderstyle="1" bordercolor="16766572" borderwidth="1" bordertransparency="0" fillstyle="7" fillcolor="16766572" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{88CDF059-499F-4D7C-B490-09EB7A1CDFE7}" name="Vorranggebiet Hochwasserschutz" borderstyle="1" bordercolor="16766572" borderwidth="1" bordertransparency="0" fillstyle="9" fillcolor="16766572" fillwidth="1" filldistance="4" filltransparency="0"/>
+				<groupproperty id="{DB2F4CA6-52F4-4412-88E5-D5639F126D78}" name="Vorranggebiet Militär" borderstyle="1" bordercolor="0" borderwidth="1" bordertransparency="0" fillstyle="8" fillcolor="11010303" fillwidth="3" filldistance="4" filltransparency="0"/>
+				<groupproperty id="{7853E415-1DB8-4894-BF65-88424134E8A0}" name="Vorranggebiet Schutz des Bodens" borderstyle="1" bordercolor="11721727" borderwidth="1" bordertransparency="0" fillstyle="2" fillcolor="11721727" fillwidth="2" filldistance="3" filltransparency="0"/>
+				<groupproperty id="{8F681658-CF76-4EF4-8910-70F1F4FE04F0}" name="Vorbehaltsgebiet Schutz des Bodens" borderstyle="1" bordercolor="11721727" borderwidth="1" bordertransparency="0" fillstyle="2" fillcolor="11721727" fillwidth="2" filldistance="5" filltransparency="0"/>
+				<groupproperty id="{2652A786-EBE2-45BE-B39F-7A3759234DEE}" name="Vorranggebiet Freiraumsicherung" borderstyle="1" bordercolor="43008" borderwidth="1" bordertransparency="0" fillstyle="3" fillcolor="43008" fillwidth="2" filldistance="3" filltransparency="0"/>
+				<groupproperty id="{08F39EE3-1F1C-4E78-9F8D-ED6F4563FAA7}" name="Vorbehaltsgebiet Freiraumsicherung" borderstyle="1" bordercolor="43008" borderwidth="1" bordertransparency="0" fillstyle="2" fillcolor="43008" fillwidth="2" filldistance="5" filltransparency="0"/>
+				<groupproperty id="{801882BF-E3B6-4EE2-83DB-59BEF8C4C061}" name="Vorranggebiet Waldmehrung" borderstyle="1" bordercolor="43008" borderwidth="4" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{027F3EA2-35C9-4878-A7C4-F90DBAB1CFB3}" name="Vorbehaltsgebiet Waldmehrung" borderstyle="1" bordercolor="43008" borderwidth="0" bordertransparency="0" fillstyle="5" fillcolor="43008" fillwidth="0" filldistance="4" filltransparency="0"/>
+				<groupproperty id="{D888269C-A891-4404-9A1A-03E7DE21D1FE}" name="Vorranggebiet großflächige Industrieansiedlung" borderstyle="1" bordercolor="11141290" borderwidth="4" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{3549B13D-9E39-454A-A03F-22598FC91859}" name="Vorranggebiet regional bedeutsame Industrieansiedlung" borderstyle="1" bordercolor="0" borderwidth="1" bordertransparency="0" fillstyle="8" fillcolor="11141290" fillwidth="0" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{541919ED-1B1C-4DB1-A6D5-61F06FD9443F}" name="Vorbehaltsgebiet Tourismus und Erholung" borderstyle="1" bordercolor="13737983" borderwidth="1" bordertransparency="0" fillstyle="6" fillcolor="13737983" fillwidth="1" filldistance="4" filltransparency="0"/>
+				<groupproperty id="{0BC3DCBF-F68D-469C-8091-5F7704F545FE}" name="Vorranggebiet Anlagen Windenergiegewinnung" borderstyle="1" bordercolor="11059455" borderwidth="4" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{900596A1-49F4-4062-B913-BAD59B129973}" name="Vorranggebiet Rohstoffgewinnung" borderstyle="1" bordercolor="29608" borderwidth="4" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{3D5F36DD-0B66-4CF7-8416-B567558A21BE}" name="Vorbehaltsgebiet Rohstoffgewinnung" borderstyle="1" bordercolor="29608" borderwidth="0" bordertransparency="0" fillstyle="5" fillcolor="29608" fillwidth="0" filldistance="4" filltransparency="0"/>
+				<groupproperty id="{0CBB8E65-CE9B-489D-B5B2-F1C52111D3BB}" name="militärisches Gebiet" borderstyle="1" bordercolor="0" borderwidth="1" bordertransparency="0" fillstyle="8" fillcolor="10066329" fillwidth="3" filldistance="4" filltransparency="0"/>
+				<groupproperty id="{8CD7F9AC-CEE4-46EF-9E2D-1F4629305D37}" name="Deponie" borderstyle="1" bordercolor="836326" borderwidth="4" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{14ED7E8E-77C2-47F2-8FC7-B31DDE14ECFA}" name="Altbergbauflächen" borderstyle="1" bordercolor="0" borderwidth="0" bordertransparency="0" fillstyle="7" fillcolor="0" fillwidth="0" filldistance="4" filltransparency="0"/>
+				<groupproperty id="{0A6EF01B-2C05-44E9-9C8E-757B22D45427}" name="Archäologische Verdachtsflächen" borderstyle="0" fillstyle="3" fillcolor="11065087" fillwidth="5" filldistance="5" filltransparency="0"/>
+				<groupproperty id="{0AD1E9F2-F6E5-45DC-B812-79DA7FCAB463}" name="Flurbereinigungsflächen" borderstyle="1" bordercolor="0" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{9C640A5C-98DF-4B34-A85D-DDD6E3A78D3C}" name="Seitenentnahme / Abgrabung" borderstyle="1" bordercolor="10066329" borderwidth="1" bordertransparency="0" fillstyle="1" fillcolor="10066329" fillwidth="3" filldistance="4" filltransparency="127"/>
+				<groupproperty id="{DB10C203-2BC5-4001-9F8E-0C5147849CC0}" name="nicht zugeordnet" borderstyle="1" bordercolor="255" fillstyle="1" fillcolor="65535" fillwidth="3" filldistance="4" filltransparency="127"/>
+				<groupproperty id="{A11A6D27-D1C2-4B89-8EEB-D3217CE9360A}" name="Kernräume Feuchtlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{6F12ED08-3E48-4C20-8485-D1C30E9B692C}" name="Kernräume Trockenlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{F746F676-5023-4F90-925D-A66BD3799162}" name="Nationale Lebensraumachsen/-korridore" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0" linestyle="0" linebackcolor="47615" linewidth="3"/>
+				<groupproperty id="{C4762140-B25B-4F24-B275-25520F9A52F5}" name="Großräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{B944E717-E482-4B00-9F5D-5967E49B6A5B}" name="Großräume Großsäugerlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{C0C99D14-C256-4B9B-A69E-222E2D6C15A7}" name="Kernräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{773CAF73-AA95-411B-AE1E-91E4BE413E94}" name="Kernräume Waldlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{1FED807F-00D0-4591-8FAB-ECD12E4D3987}" name="Großräume Feuchtlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{A7507C2B-D079-49ED-BD14-48D49691ED1C}" name="Großräume Trockenlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{9FE8AE29-B67B-4E1E-B6C8-71C8F0CDD9C5}" name="Prioritäre Abschnitte Wiedervernetzung" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{E9343374-AABA-495A-8332-251FBA57C89A}" name="Großräume Waldlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{022F9AC2-A48B-493E-AA42-1B6CF0559762}" name="Prioritäre Abschnitte Wiedervernetzung Waldlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{716A7F1F-55F0-42C2-BE72-42363B8E3678}" name="Prioritäre Abschnitte Wiedervernetzung Trockenlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{6BF25814-742A-4E46-AF94-251BE61FF11A}" name="Prioritäre Abschnitte Wiedervernetzung Feuchtlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{B0DCA452-366F-435C-B5D9-49FB94DF82C4}" name="Prioritäre Abschnitte Wiedervernetzung Großsäugerlebensräume" borderstyle="1" bordercolor="47615" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{8E9C8058-207F-4B20-A362-157727DBFFC6}" name="Generalwildwegeplan" borderstyle="1" bordercolor="12626175" borderwidth="3" fillstyle="0" linestyle="0" linebackcolor="12626175"/>
+				<groupproperty id="{84E1D325-668C-4F46-BB5E-50FE716AE622}" name="Baumaßnahme einbahnig" linestyle="0" linebackcolor="255" linewidth="3"/>
+				<groupproperty id="{BACFCA3F-6823-4A60-B89E-50C3A6AA04EC}" name="Variante" linestyle="4" linecolor="255" linebackcolor="0" linewidth="1"/>
+				<groupproperty id="{961779D9-6D64-4A6A-B0B1-1C78AE4678EC}" name="Unzerschnittene verkehrsarme Funktionsräume" borderstyle="1" bordercolor="55433" borderwidth="3" fillstyle="0"/>
+				<groupproperty id="{CD0291D5-74F0-480B-98BF-7294E390867E}" name="Ortslage" borderstyle="0" fillstyle="1" fillcolor="12632256" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{4371E637-B1CD-498B-BACE-942D3E297F5E}" name="Wasserschutzzone Quellen" borderstyle="0" fillstyle="4" fillcolor="16744448" fillwidth="1" filldistance="3" filltransparency="0"/>
+				<groupproperty id="{7AFB483B-EA58-42EA-A04F-53AC7195BB63}" name="Allgemeine Siedlungsbereiche (ASB)" borderstyle="0" fillstyle="1" fillcolor="9884898" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{49181EFA-5611-4EC0-8B39-AFB4DCC6D65B}" name="ASB für zweckgebundene Nutzungen" borderstyle="1" bordercolor="3820740" borderwidth="3" bordertransparency="0" fillstyle="1" fillcolor="9884898" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{0A52F490-FEEC-4A2E-9187-447B3ED40A98}" name="Bereiche für gewerbliche und industrielle Nutzungen (GIB)" borderstyle="0" fillstyle="1" fillcolor="13684685" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{616640AC-9861-4719-BD72-0F48C9D949A0}" name="GIB für flächenintensive Großvorhaben" borderstyle="1" bordercolor="2170143" borderwidth="2" bordertransparency="0" fillstyle="1" fillcolor="13684685" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{10F1BB24-1091-4B86-94A3-080E42F1982A}" name="GIB für zweckgebundene Nutzungen" borderstyle="1" bordercolor="3820740" borderwidth="3" bordertransparency="0" fillstyle="1" fillcolor="13684685" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{76724297-BE3F-49EB-8065-3BB358B09580}" name="Bahnbetriebsflächen" borderstyle="1" bordercolor="16711808" borderwidth="3" bordertransparency="0" fillstyle="1" fillcolor="12632256" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{695D0DDE-71EB-496B-A87A-CED5717C701E}" name="Flugplätze" borderstyle="0" fillstyle="1" fillcolor="10799042" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{79A7B496-B825-4D0F-A8D5-632BD95B232A}" name="Oberflächengewässer" borderstyle="0" fillstyle="1" fillcolor="14927276" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{8B7B401F-01B7-4781-B59E-8F3C9165D083}" name="Waldbereiche" borderstyle="0" fillstyle="1" fillcolor="7132877" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{6ACFD194-C819-4F67-80CE-0D2710EC09AF}" name="Allgemeine Freiraum- und Agrarbereiche" borderstyle="0" fillstyle="1" fillcolor="13695483" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{034FC5ED-B090-44D2-B603-438011B930EA}" name="Freiraumbereiche für zweckgebundene Nutzung, Agrar" borderstyle="1" bordercolor="3820740" borderwidth="3" bordertransparency="0" fillstyle="1" fillcolor="13695483" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{B3AC2273-B7EF-4D71-9825-3888523E287D}" name="Freiraumbereiche für zweckgebundene Nutzung, Wasser" borderstyle="1" bordercolor="3820740" borderwidth="3" bordertransparency="0" fillstyle="1" fillcolor="14927276" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{448AB635-D6CB-48CF-B96F-2FA5D79C6525}" name="Freiraumbereiche für zweckgebundene Nutzung, Wald" borderstyle="1" bordercolor="3820740" borderwidth="3" bordertransparency="0" fillstyle="1" fillcolor="7132877" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{8E6B1767-7AD3-4348-BC72-BF6D24D1FF7B}" name="Grenzen der Lärmschutzgebiete gem. LEP Schutz vor Fluglärm" borderstyle="1" bordercolor="2170143" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{8917A7AD-3696-43B1-BAD8-F6C35C6292F8}" name="Grundwasser- und Gewässerschutz" borderstyle="0" fillstyle="2" fillcolor="8399656" fillwidth="1" filldistance="5" filltransparency="124"/>
+				<groupproperty id="{56446465-5EDC-477B-83CA-4E5022C272DB}" name="Sicherung und Abbau oberflächennaher Bodenschätze" borderstyle="1" bordercolor="2170143" borderwidth="3" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{339A036A-F6E2-4312-91C5-DBE4DC4F6313}" name="Aufschüttungen und Ablagerungen" borderstyle="1" bordercolor="2170143" borderwidth="2" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{E851500B-EF74-4EE0-AD5A-7313AABB6C96}" name="Regionale Grünzüge" borderstyle="0" fillstyle="2" fillcolor="6207149" fillwidth="4" filldistance="5" filltransparency="124"/>
+				<groupproperty id="{CFD2062C-2715-4127-9E31-81D5B62D78E0}" name="Freiraumbereiche für zweckgebundene Nutzung, sonstige" borderstyle="1" bordercolor="3820740" borderwidth="3" bordertransparency="0" fillstyle="1" fillcolor="13684685" fillwidth="1" filldistance="2" filltransparency="124"/>
+				<groupproperty id="{53265974-8EBE-40D4-9C11-30C0665F6B4D}" name="Wasserschutzzone I / II - geplant" borderstyle="1" bordercolor="16746752" borderwidth="0" bordertransparency="0" fillstyle="9" fillcolor="16746752" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{CC2838AB-88E2-4AB5-BFCB-783286E2C3C4}" name="Wasserschutzzone III - geplant" borderstyle="1" bordercolor="16746752" borderwidth="0" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{5CD092EC-6526-4E20-81FA-AC77D5814826}" name="Transparente Daten" borderstyle="0" bordercolor="0" borderwidth="0" bordertransparency="0" linestyle="0" linecolor="0" linebackcolor="0" linewidth="0" linetransparency="0"/>
+				<groupproperty id="{4557D166-B7F1-4558-9CBE-27BA052C0977}" name="Feuchtbiotop" borderstyle="1" bordercolor="3302585" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{FBC8FB7A-D2F9-4FDA-8AC7-1C5EB8D77BEF}" name="Gewässerbiotop" borderstyle="1" bordercolor="16744448" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{D0C9A64B-3D66-407D-8719-F8B245C3CE18}" name="Trockenbiotop" borderstyle="1" bordercolor="33023" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{E9C1950A-5CE4-456E-80C2-4609B84659AE}" name="Gehölzbiotop" borderstyle="1" bordercolor="32768" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{E8F60F2F-BCA0-4F7F-BAAA-7040B654D1E8}" name="Küstenbiotop" borderstyle="1" bordercolor="65535" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{64786489-F651-48E1-A828-D8448FAEA34A}" name="Blockpackungen" borderstyle="1" bordercolor="8421504" borderwidth="1" bordertransparency="0" fillstyle="0"/>
+				<groupproperty id="{F8545F84-DA50-4681-A6EB-B78045AD3D99}" name="Nationale Lebensraumachsen/-korridore (feu)" borderstyle="1" bordercolor="12615680" borderwidth="3" fillstyle="0" linestyle="0" linebackcolor="12615680" linewidth="3"/>
+				<groupproperty id="{E533587B-291D-4E66-84FD-030CCE5F5F33}" name="Nationale Lebensraumachsen/-korridore (tro)" borderstyle="1" bordercolor="12648447" borderwidth="3" fillstyle="0" linestyle="0" linebackcolor="12648447" linewidth="3"/>
+				<groupproperty id="{002C49A6-4431-4544-809C-F74E0D6FE49E}" name="Nationale Lebensraumachsen/-korridore (wald)" borderstyle="1" bordercolor="4227136" borderwidth="3" fillstyle="0" linestyle="0" linebackcolor="4227136" linewidth="3"/>
+				<groupproperty id="{4C1A4D61-87A0-4A78-BB15-53CF36F52FD3}" name="Nationale Lebensraumachsen/-korridore (gs)" borderstyle="1" bordercolor="2113664" borderwidth="3" fillstyle="0" linestyle="0" linebackcolor="2113664" linewidth="3"/>
+				<groupproperty id="{63159531-9BAC-449D-ADAE-1552503F8F74}" name="AX_Wald Laub" fillstyle="1" fillcolor="8454079" filltransparency="191"/>
+				<groupproperty id="{73D7643F-B689-4986-9636-EDA5F7CB11B9}" name="AX_Landwirtschaft Ackerland" fillstyle="1" fillcolor="15138815" filltransparency="191"/>
+				<groupproperty id="{EDA9232C-16F2-4DCB-A9A2-6CBBB2D94E82}" name="AX_Landwirtschaft Grünland" fillstyle="1" fillcolor="13434854" filltransparency="191"/>
+				<groupproperty id="{1AD96519-5D48-476D-892E-7803D8722591}" name="AX_Wohnbaufläche" fillstyle="1" fillcolor="15125759" filltransparency="191"/>
+				<groupproperty id="{8782845C-5011-43FD-8940-332449CABDEE}" name="AX_IndustrieUndGewerbefläche" fillstyle="1" fillcolor="13421772" filltransparency="191"/>
+				<groupproperty id="{6E7D3429-8183-44C1-B6CB-97B67E0A507D}" name="AX_Straßenachse Bundesstraße" linestyle="1" linecolor="46079" linebackcolor="102" linewidth="4"/>
+				<groupproperty id="{949E1407-98E6-4018-994A-033454FB03D9}" name="AX_Straßenachse Landesstraße" linestyle="1" linecolor="65535" linebackcolor="102" linewidth="3"/>
+				<groupproperty id="{E380A607-6303-495A-A3D1-5FFD838293FC}" name="AX_Gewässerachse" linestyle="1" linecolor="16776960" linewidth="3" linetransparency="0"/>
+				<groupproperty id="{08874C3B-E393-42D1-A617-8B286720ADE9}" name="AX_Fließgewässer" borderstyle="1" bordercolor="16776960" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="16777151" filltransparency="191"/>
+				<groupproperty id="{38DF194B-46E7-486D-9E0E-C92BB3A7C540}" name="AX_Bahnstrecke" linestyle="1" linecolor="0" linewidth="4" linetransparency="0"/>
+				<groupproperty id="{0178FE01-1E89-435C-8CC0-7BDDAEF1A69B}" name="ALKIS_Wald" borderstyle="1" bordercolor="3179008" borderwidth="3" fillstyle="1" fillcolor="14280911"/>
+				<groupproperty id="{236F5EFB-4DD7-42A6-84ED-6D36B4BC0852}" name="ALKIS_Ackerland" borderstyle="1" bordercolor="11776947" borderwidth="3" fillstyle="1" fillcolor="14415871"/>
+				<groupproperty id="{0CA2E414-1F1E-4B20-B2FB-B70B6579E055}" name="ALKIS_Gewaesser" borderstyle="1" bordercolor="10578176" borderwidth="3" fillstyle="1" fillcolor="16443583"/>
+				<groupproperty id="{D144174F-7341-4672-8DF9-8A997D13C37A}" name="ALKIS_Gruenland" borderstyle="1" bordercolor="11776947" borderwidth="3" fillstyle="1" fillcolor="13432306"/>
+				<groupproperty id="{13AE48C1-5E77-4EC0-B6C1-E4878292B2FD}" name="AX_SportFreizeitUndErholungsflaeche" fillstyle="1" fillcolor="11796377" filltransparency="191"/>
+				<groupproperty id="{1985DF89-659C-4EFF-81A3-1ED3CFD3D96C}" name="AX_Heide" fillstyle="1" fillcolor="13431538" filltransparency="191"/>
+				<groupproperty id="{8226E4A7-04A9-4912-9029-2561B6E91709}" name="AX_UnlandVegetationsloseFläche" fillstyle="1" fillcolor="16777215" filltransparency="191"/>
+				<groupproperty id="{9C464D54-1B7C-49BF-9D81-F0B5B15BAB05}" name="AX_Platz Fußgängerzone" borderstyle="1" bordercolor="102" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="11796377" filltransparency="191"/>
+				<groupproperty id="{D50F37E2-612D-49D3-A97A-5A466FF1D2CA}" name="AX_Platz Parkplatz" borderstyle="1" bordercolor="102" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="16777215" filltransparency="191"/>
+				<groupproperty id="{193A0CC0-73E1-4667-B469-8AEB44885175}" name="AX_Gleis" linestyle="1" linecolor="0" linewidth="2" linetransparency="0"/>
+				<groupproperty id="{059CC361-FCE4-45FC-B727-58F18B44D562}" name="AX_Wald Nadel" fillstyle="1" fillcolor="8454079" filltransparency="191"/>
+				<groupproperty id="{7FA64BCE-640F-4965-81DA-A1C06A7476AF}" name="AX_Wald Misch" fillstyle="1" fillcolor="8454079" filltransparency="191"/>
+				<groupproperty id="{2A5D1DD7-CDD3-44FC-981C-D23D11BB76EE}" name="AX_Landwirtschaft Baumschule" fillstyle="1" fillcolor="15138815" filltransparency="191"/>
+				<groupproperty id="{5AE72C2F-4461-4001-978A-8F0C5943F856}" name="AX_Gehölz" fillstyle="1" fillcolor="8454079" filltransparency="191"/>
+				<groupproperty id="{A56E73B5-0FB1-437E-974D-748937786E00}" name="AX_Halde" fillstyle="1" fillcolor="13421772" filltransparency="191"/>
+				<groupproperty id="{3F4056A0-DF85-4D71-B905-6C8B60F34287}" name="AX_TagebauGrubeSteinbruch" fillstyle="1" fillcolor="13421772" filltransparency="191"/>
+				<groupproperty id="{7FF69C07-A675-4B8E-8F8F-9B5D28741BDB}" name="AX_FlaecheGemischterNutzung" fillstyle="1" fillcolor="15125759" filltransparency="191"/>
+				<groupproperty id="{4DD9EF25-CAA6-4C6F-92FB-1A489CB4A764}" name="AX_FlaecheBesondererFunktionalerPraegung" fillstyle="1" fillcolor="15125759" filltransparency="191"/>
+				<groupproperty id="{1D4B7268-D73C-4F2F-A133-845C52F21950}" name="AX_Friedhof" fillstyle="1" fillcolor="13434854" filltransparency="191"/>
+				<groupproperty id="{D5188BDD-331A-4AFA-AD9A-5E51F23551D1}" name="AX_Moor" fillstyle="1" fillcolor="13431538" filltransparency="191"/>
+				<groupproperty id="{1B381300-310D-4D31-9874-79106FB747C9}" name="AX_Sumpf" fillstyle="1" fillcolor="13431538" filltransparency="191"/>
+				<groupproperty id="{ABB3244A-2D05-4516-AE32-28D3EBE1F5D5}" name="AX_Vegetationsmerkmal Gras" fillstyle="1" fillcolor="13434854" filltransparency="191"/>
+				<groupproperty id="{73CA22A5-03A5-4412-B5A7-B825F6929A81}" name="AX_Vegetationsmerkmal Wald, Gehölz, Busch" fillstyle="1" fillcolor="8454079" filltransparency="191"/>
+				<groupproperty id="{B600945D-112E-4F8E-B9D2-91067F7B9A3A}" name="AX_Hafenbecken" borderstyle="1" bordercolor="16776960" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="16777151" filltransparency="191"/>
+				<groupproperty id="{B862AB49-74A5-46B9-AC95-4239A5AA2605}" name="AX_StehendesGewässer" borderstyle="1" bordercolor="16776960" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="16777151" filltransparency="191"/>
+				<groupproperty id="{1226D511-BC12-42A2-A144-86485F39C0E0}" name="AX_Straßenverkehr Straße" fillstyle="1" fillcolor="13421772" filltransparency="191"/>
+				<groupproperty id="{04FA59C3-FFCA-4368-A264-0C3FC916BB2C}" name="AX_Straßenverkehr Verkehrsbegleitfläche" fillstyle="1" fillcolor="13434854" filltransparency="191"/>
+				<groupproperty id="{D19180F4-EA9E-4743-848D-86E414151CEA}" name="AX_Bahnverkehr" fillstyle="1" fillcolor="13421772" filltransparency="191"/>
+				<groupproperty id="{189BA3D1-3C24-4FAD-BF95-5A58A1D93EB7}" name="AX_Schiffsverkehr" fillstyle="1" fillcolor="13421772" filltransparency="191"/>
+				<groupproperty id="{85B0C452-9807-490D-B9F5-6C217CE94DCD}" name="AX_Flugverkehrsanlage" borderstyle="1" bordercolor="16777215" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="102" filltransparency="191"/>
+				<groupproperty id="{95171E03-1F19-48FA-B537-8A36B47B730F}" name="AX_Platz Platz" borderstyle="1" bordercolor="102" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="16777215" filltransparency="191"/>
+				<groupproperty id="{C7E61DAC-3EFF-452C-8EF4-13A6DB7735ED}" name="AX_Bahnverkehrsanlage" fillstyle="1" fillcolor="13421772" filltransparency="191"/>
+				<groupproperty id="{1C98D5B7-B777-4DA3-93EF-83AADFEBAFB4}" name="AX_Gebietsgrenze" linestyle="4" linecolor="16711833" linewidth="4"/>
+				<groupproperty id="{815BF045-7FD0-4BF3-8463-D6F9827028F4}" name="AX_NaturUmweltUndBodenschutz Naturschutzgebiet" linestyle="1" linecolor="65280" linewidth="4"/>
+				<groupproperty id="{346CEDF8-D382-433E-98D7-68D18F44ABDF}" name="AX_Gewässermerkmal" borderstyle="1" bordercolor="16776960" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="16777151" filltransparency="191"/>
+				<groupproperty id="{42BBBA1D-9871-4330-89AB-B4365A35C697}" name="AX_BauwerkUndAnlageFuerIndustrieUndGewerbe Klaerbecken" borderstyle="1" bordercolor="16776960" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="13431538" filltransparency="191"/>
+				<groupproperty id="{3FED6351-645C-48F8-8154-1F5F4811A245}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Spielfeld" borderstyle="1" bordercolor="102" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="11796377" filltransparency="191"/>
+				<groupproperty id="{9925E84B-5A86-47DF-80E4-90B5BA1635BB}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Stadion" fillstyle="1" fillcolor="6710886" filltransparency="191"/>
+				<groupproperty id="{D7F842F0-EC60-4154-83BB-E1FFFC064F2B}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Schießanlage" fillstyle="1" fillcolor="11796377" filltransparency="191"/>
+				<groupproperty id="{D8F83EEB-5BE2-4653-8C96-483000757E69}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Zuschauertribüne" borderstyle="1" bordercolor="102" borderwidth="3" bordertransparency="188"/>
+				<groupproperty id="{599C0CE8-A0B8-4BAD-B954-268D05D183E5}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Schwimmbecken" fillstyle="1" fillcolor="16776960" filltransparency="191"/>
+				<groupproperty id="{317755A0-7A96-436B-902C-7AB5591719F8}" name="AX_HistorischesBauwerkOderHistorischeEinrichtung Lager" borderstyle="2" bordercolor="0" borderwidth="3" bordertransparency="188"/>
+				<groupproperty id="{E085946D-A4B3-4BA4-AB21-AD5AB3B9271B}" name="AX_Leitung" linestyle="1" linecolor="102" linewidth="2"/>
+				<groupproperty id="{078DE0AE-3FA9-4417-9698-56AC60F3DE8F}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Rennbahn" linestyle="1" linecolor="16777215" linebackcolor="102" linewidth="5"/>
+				<groupproperty id="{B926002C-5894-4B6E-9490-560D242FA297}" name="AX_HistorischesBauwerkOderHistorischeEinrichtung Befestigung, Burg, Schanze" linestyle="1" linecolor="0" linewidth="2"/>
+				<groupproperty id="{E5666AB2-7EF4-4643-9554-207F0F0B4437}" name="AX_SonstigesBauwerkOderSonstigeEinrichtung Zaun" linestyle="1" linecolor="102" linewidth="1"/>
+				<groupproperty id="{F96D8DA8-6D65-44A5-8A53-D51D7461EE5F}" name="AX_SonstigesBauwerkOderSonstigeEinrichtung Mauer" linestyle="1" linecolor="102" linewidth="3"/>
+				<groupproperty id="{3195EA2D-CDB1-4C3A-B1EF-A447C50C4798}" name="AX_FlaecheZurZeitUnbestimmbar" fillstyle="1" fillcolor="16777215" filltransparency="191"/>
+				<groupproperty id="{914F1B5C-AEAF-41D6-A2B2-6D10F3EE85E8}" name="AX_Straßenachse Autobahn" linestyle="1" linecolor="46079" linebackcolor="102" linewidth="5"/>
+				<groupproperty id="{4968A66D-FDA8-47A5-8E8F-C97EED30DCB7}" name="AX_Straßenachse Kreisstraße, Gemeindestraße" linestyle="1" linecolor="16777215" linebackcolor="102" linewidth="2"/>
+				<groupproperty id="{22DC7AE4-4E83-4E71-A48B-16FB2F999D50}" name="AX_Fahrwegachse Hauptwirtschaftsweg" linestyle="1" linecolor="16777215" linebackcolor="102" linewidth="1"/>
+				<groupproperty id="{B40F1C11-A24B-4D70-8B71-52D90392137A}" name="AX_Fahrwegachse Wirtschaftsweg" linestyle="1" linecolor="102" linewidth="1"/>
+				<groupproperty id="{13C612D0-5B1D-4A85-99F6-16555BE7A697}" name="AX_BauwerkImVerkehrsbereich Brückenfläche" borderstyle="1" bordercolor="102" borderwidth="4" bordertransparency="188" fillstyle="1" fillcolor="16777215" filltransparency="191"/>
+				<groupproperty id="{09311722-2462-4876-91F5-4FC55529749D}" name="AX_BauwerkImVerkehrsbereich Unterführung" borderstyle="1" bordercolor="0" borderwidth="3" bordertransparency="188"/>
+				<groupproperty id="{16D502A4-626C-477F-8B04-E0CF126131E9}" name="AX_BauwerkImVerkehrsbereich Schleusenkammer" borderstyle="1" bordercolor="0" borderwidth="3" bordertransparency="188" fillstyle="1" fillcolor="16777151" filltransparency="191"/>
+				<groupproperty id="{D88D3C7B-A415-4512-B677-5C0B05751A52}" name="AX_BauwerkImVerkehrsbereich Steg" linestyle="1" linecolor="102" linewidth="3" linetransparency="0"/>
+				<groupproperty id="{2BAA5928-EE1F-4045-80DE-565DCF416A80}" name="AX_BauwerkImGewaesserbereich Wehr" linestyle="1" linecolor="0" linewidth="3" linetransparency="0"/>
+				<groupproperty id="{A2491BCF-E2EF-4BEA-93E7-4976B4E9CCE9}" name="AX_BauwerkImGewaesserbereich Uferbefestigung" linestyle="1" linecolor="102" linewidth="3" linetransparency="0"/>
+				<groupproperty id="{E277E423-3734-40DD-BDC0-A555F4C17F3E}" name="AX_BauwerkImGewaesserbereich Wellenbrecher" linestyle="1" linecolor="102" linewidth="2" linetransparency="0"/>
+				<groupproperty id="{DE494E18-675C-46D3-A550-E9A665C00C0B}" name="AX_Ortslage" fillstyle="1" fillcolor="13408767" filltransparency="191"/>
+				<groupproperty id="{A14F44B4-B62E-4292-AA50-12D9B1B1CF35}" name="Trinkwasserschutzgebiet" borderstyle="1" bordercolor="16746753" borderwidth="1" bordertransparency="0" fillstyle="7" fillcolor="16746752" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{B2B99E6D-3146-4974-BF8F-47887F47E1EA}" name="HQ100" fillstyle="1" fillcolor="16746752"/>
+				<groupproperty id="{13232C24-4459-4383-8542-2B132A181174}" name="Trinkwassergewinnungsgebiet" borderstyle="1" bordercolor="16746753" borderwidth="1" bordertransparency="0" fillstyle="8" fillcolor="16746752" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{62F6C787-C7CE-42C3-B20D-11F9A8E8B85F}" name="HQ10" fillstyle="1" fillcolor="16759923"/>
+				<groupproperty id="{354DFB12-5B08-4F84-B479-3F1360FB1CB6}" name="HQ1000" fillstyle="1" fillcolor="16711680"/>
+				<groupproperty id="{690E15B4-A1DF-44C0-A6DF-808687454646}" name="Faunaerhebungsgebiete" borderstyle="1" bordercolor="12648447" borderwidth="3" fillstyle="0" linestyle="0" linebackcolor="12648447" linewidth="3"/>
+				<groupproperty id="{A2150C8F-1EBD-4E31-801F-1D5AF480B4A6}" name="Wasserschutzgebiet" borderstyle="1" bordercolor="16746753" borderwidth="1" bordertransparency="0" fillstyle="2" fillcolor="16746752" fillwidth="1" filldistance="2" filltransparency="0"/>
+				<groupproperty id="{1004C94B-179F-4CCB-BED2-D8390F56DC19}" name="Netzknotenpunkte" tag="15" borderstyle="1" bordercolor="255" fillstyle="1" fillcolor="12632256"/>
+				<groupproperty id="{25CABDA1-D153-40E2-AB59-A24156001F27}" name="Halde" borderstyle="1" bordercolor="12632256" fillstyle="1" fillcolor="13421772" filltransparency="191"/>
+				<groupproperty id="{F51CC6ED-5E14-4124-AB58-9AB45FFB9AB4}" name="TagebauGrubeSteinbruch" borderstyle="1" bordercolor="13421772" fillstyle="1" fillcolor="13421772" filltransparency="191"/>
+				<groupproperty id="{406F11A9-C7F2-4233-837C-BE7AFD5D8605}" name="SportFreizeitUndErholungsflaeche" borderstyle="1" bordercolor="11796377" fillstyle="1" fillcolor="11796377" filltransparency="191"/>
+				<groupproperty id="{63653059-269F-4B64-BE21-D584431CEFD6}" name="Friedhof" borderstyle="1" bordercolor="13434854" fillstyle="1" fillcolor="13434854" filltransparency="191"/>
+				<groupproperty id="{CDEC37D8-4F65-4779-82EF-C22BEFDA7046}" name="Bergbaugebiet" borderstyle="1" bordercolor="29608" borderwidth="4" bordertransparency="0" fillstyle="0"/>
+			</groupproperties>
+			<tree type="groupproperties">
+				<folder name="Linien">
+					<folder name="Straßennetz">
+						<entry id="{D5BF2270-BB35-433B-847F-AD08A4B141E8}"/>
+						<entry id="{E650EF07-DD03-4639-92A4-26073E22FDCE}"/>
+						<entry id="{BD520F9B-1069-4E60-901B-68E7A24DE99C}"/>
+						<entry id="{B9969A57-3929-472B-B158-0A8FD5A828C2}"/>
+						<entry id="{50906E3B-C40F-431D-BF95-BDF01862E984}"/>
+						<entry id="{AB0ACFED-9B29-487F-BB5A-1732373EB93A}"/>
+						<entry id="{B472D344-422B-418B-80B4-AB66AAAA9F26}"/>
+						<entry id="{9F5820AE-7B0E-44D6-81F7-9264186C8A93}"/>
+						<entry id="{C0ADB4C4-7D56-48A3-A492-981CE5206B9A}"/>
+						<entry id="{317FA15B-A8AB-4E6C-BAD5-CE82E8B4D7F9}"/>
+						<entry id="{FC9F013C-3321-43AD-8F66-01A4111EDEEC}"/>
+						<entry id="{1004C94B-179F-4CCB-BED2-D8390F56DC19}"/>
+					</folder>
+					<folder name="Verwaltung">
+						<entry id="{7370E4A1-C0FA-41EC-943E-94395804CE02}"/>
+						<entry id="{2E345903-6B54-40E2-AD18-1C9B5EB677E2}"/>
+						<entry id="{7EA7E725-97E8-4CCE-82FA-4A33C4158513}"/>
+						<entry id="{553F3743-CBBD-4174-9D5E-E9C9EA600951}"/>
+						<entry id="{0214D167-62FA-4196-83F2-C36C8C0B737A}"/>
+					</folder>
+					<folder name="Planung">
+						<entry id="{84E1D325-668C-4F46-BB5E-50FE716AE622}"/>
+						<entry id="{BACFCA3F-6823-4A60-B89E-50C3A6AA04EC}"/>
+					</folder>
+				</folder>
+				<folder name="Flächen">
+					<folder name="RE2012">
+						<folder name="Gebiete und Flächen">
+							<entry id="{1C3D9B94-77D2-48E3-A6B8-A9FB966C7C46}"/>
+							<entry id="{0E03E6B4-00D4-4852-9D32-F51F99D2C663}"/>
+							<entry id="{03005A4F-E2B5-4871-BA1D-9095F0C0C015}"/>
+							<entry id="{880D7FC1-FF4E-4A1C-8964-6AC03DA4AF5E}"/>
+							<entry id="{B496A452-FF03-42EC-BE97-32F2A90CB516}"/>
+							<entry id="{1876E389-58B1-41D7-B132-53FF7F4BD3D8}"/>
+							<entry id="{DDAE3C13-763B-484D-9D96-3DEE761EC3FD}"/>
+							<entry id="{730BE424-1C99-4E56-8D1F-918DD1A51E46}"/>
+							<entry id="{0F78C0CF-741B-4BDC-A349-DA19E9CAABA4}"/>
+						</folder>
+						<folder name="Schutzgebiete Natur, Landschaft, Wasser">
+							<entry id="{58B2F3A2-1911-4217-B1B9-73E8FF7322DA}"/>
+							<entry id="{BE730505-22A9-45D4-8A6F-C2E064B7C993}"/>
+							<entry id="{1568670A-1FB2-4915-A020-86D7DA2451C3}"/>
+							<entry id="{09356BB2-CB7C-4B5D-8718-6B8B1A4AD197}"/>
+							<entry id="{3D42DF89-F9AF-41AF-8A95-D7A956DB38B8}"/>
+							<entry id="{EA8BB0B7-F315-481F-AEC9-753F2194935E}"/>
+							<entry id="{73518171-3376-4CB8-B523-F0B668A85492}"/>
+							<entry id="{582B7FFC-A134-43C8-9DA5-8502F6FE5A73}"/>
+							<entry id="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}"/>
+							<entry id="{78F9022F-20C1-4834-A67D-0BD6B90A7C56}"/>
+							<entry id="{16EC4DBF-6E0E-40DF-894A-A62BD18D77EF}"/>
+							<entry id="{BFBD0BB8-9C26-4640-A6F8-9D85069B611A}"/>
+							<entry id="{C62F510A-A3E6-429B-9984-EB9108AA85C8}"/>
+							<entry id="{1FBDD2AF-5BEB-4C24-8D95-24F9F8AEA939}"/>
+							<entry id="{53265974-8EBE-40D4-9C11-30C0665F6B4D}"/>
+							<entry id="{CED37F75-CF24-4735-95A0-E632969F947A}"/>
+							<entry id="{CC2838AB-88E2-4AB5-BFCB-783286E2C3C4}"/>
+							<entry id="{4371E637-B1CD-498B-BACE-942D3E297F5E}"/>
+							<entry id="{A14F44B4-B62E-4292-AA50-12D9B1B1CF35}"/>
+							<entry id="{13232C24-4459-4383-8542-2B132A181174}"/>
+							<entry id="{62F6C787-C7CE-42C3-B20D-11F9A8E8B85F}"/>
+							<entry id="{B2B99E6D-3146-4974-BF8F-47887F47E1EA}"/>
+							<entry id="{354DFB12-5B08-4F84-B479-3F1360FB1CB6}"/>
+							<entry id="{690E15B4-A1DF-44C0-A6DF-808687454646}"/>
+							<entry id="{A2150C8F-1EBD-4E31-801F-1D5AF480B4A6}"/>
+						</folder>
+						<folder name="Ziele der Raumordnung">
+							<entry id="{88CDF059-499F-4D7C-B490-09EB7A1CDFE7}"/>
+							<entry id="{DB2F4CA6-52F4-4412-88E5-D5639F126D78}"/>
+							<entry id="{7853E415-1DB8-4894-BF65-88424134E8A0}"/>
+							<entry id="{8F681658-CF76-4EF4-8910-70F1F4FE04F0}"/>
+							<entry id="{2652A786-EBE2-45BE-B39F-7A3759234DEE}"/>
+							<entry id="{08F39EE3-1F1C-4E78-9F8D-ED6F4563FAA7}"/>
+							<entry id="{801882BF-E3B6-4EE2-83DB-59BEF8C4C061}"/>
+							<entry id="{027F3EA2-35C9-4878-A7C4-F90DBAB1CFB3}"/>
+							<entry id="{D888269C-A891-4404-9A1A-03E7DE21D1FE}"/>
+							<entry id="{3549B13D-9E39-454A-A03F-22598FC91859}"/>
+							<entry id="{541919ED-1B1C-4DB1-A6D5-61F06FD9443F}"/>
+							<entry id="{0BC3DCBF-F68D-469C-8091-5F7704F545FE}"/>
+							<entry id="{900596A1-49F4-4062-B913-BAD59B129973}"/>
+							<entry id="{3D5F36DD-0B66-4CF7-8416-B567558A21BE}"/>
+						</folder>
+						<folder name="weitere Gebiete">
+							<entry id="{0CBB8E65-CE9B-489D-B5B2-F1C52111D3BB}"/>
+							<entry id="{8CD7F9AC-CEE4-46EF-9E2D-1F4629305D37}"/>
+							<entry id="{14ED7E8E-77C2-47F2-8FC7-B31DDE14ECFA}"/>
+							<entry id="{0A6EF01B-2C05-44E9-9C8E-757B22D45427}"/>
+							<entry id="{0AD1E9F2-F6E5-45DC-B812-79DA7FCAB463}"/>
+							<entry id="{9C640A5C-98DF-4B34-A85D-DDD6E3A78D3C}"/>
+						</folder>
+					</folder>
+					<folder name="Unzerschnittene Funktionsräume">
+						<entry id="{F746F676-5023-4F90-925D-A66BD3799162}"/>
+						<entry id="{F8545F84-DA50-4681-A6EB-B78045AD3D99}"/>
+						<entry id="{E533587B-291D-4E66-84FD-030CCE5F5F33}"/>
+						<entry id="{002C49A6-4431-4544-809C-F74E0D6FE49E}"/>
+						<entry id="{4C1A4D61-87A0-4A78-BB15-53CF36F52FD3}"/>
+						<entry id="{C4762140-B25B-4F24-B275-25520F9A52F5}"/>
+						<entry id="{1FED807F-00D0-4591-8FAB-ECD12E4D3987}"/>
+						<entry id="{A7507C2B-D079-49ED-BD14-48D49691ED1C}"/>
+						<entry id="{E9343374-AABA-495A-8332-251FBA57C89A}"/>
+						<entry id="{B944E717-E482-4B00-9F5D-5967E49B6A5B}"/>
+						<entry id="{C0C99D14-C256-4B9B-A69E-222E2D6C15A7}"/>
+						<entry id="{A11A6D27-D1C2-4B89-8EEB-D3217CE9360A}"/>
+						<entry id="{6F12ED08-3E48-4C20-8485-D1C30E9B692C}"/>
+						<entry id="{773CAF73-AA95-411B-AE1E-91E4BE413E94}"/>
+						<entry id="{9FE8AE29-B67B-4E1E-B6C8-71C8F0CDD9C5}"/>
+						<entry id="{6BF25814-742A-4E46-AF94-251BE61FF11A}"/>
+						<entry id="{716A7F1F-55F0-42C2-BE72-42363B8E3678}"/>
+						<entry id="{022F9AC2-A48B-493E-AA42-1B6CF0559762}"/>
+						<entry id="{B0DCA452-366F-435C-B5D9-49FB94DF82C4}"/>
+					</folder>
+					<folder name="Unzerschnittene verkehrsarme Funktionsräume">
+						<entry id="{961779D9-6D64-4A6A-B0B1-1C78AE4678EC}"/>
+					</folder>
+					<folder name="Generalwildwegeplan">
+						<entry id="{8E9C8058-207F-4B20-A362-157727DBFFC6}"/>
+					</folder>
+					<folder name="Regionalplanausweisungen">
+						<entry id="{7AFB483B-EA58-42EA-A04F-53AC7195BB63}"/>
+						<entry id="{49181EFA-5611-4EC0-8B39-AFB4DCC6D65B}"/>
+						<entry id="{0A52F490-FEEC-4A2E-9187-447B3ED40A98}"/>
+						<entry id="{616640AC-9861-4719-BD72-0F48C9D949A0}"/>
+						<entry id="{10F1BB24-1091-4B86-94A3-080E42F1982A}"/>
+						<entry id="{76724297-BE3F-49EB-8065-3BB358B09580}"/>
+						<entry id="{695D0DDE-71EB-496B-A87A-CED5717C701E}"/>
+						<entry id="{25CABDA1-D153-40E2-AB59-A24156001F27}"/>
+						<entry id="{63653059-269F-4B64-BE21-D584431CEFD6}"/>
+						<entry id="{F51CC6ED-5E14-4124-AB58-9AB45FFB9AB4}"/>
+						<entry id="{CDEC37D8-4F65-4779-82EF-C22BEFDA7046}"/>
+						<entry id="{406F11A9-C7F2-4233-837C-BE7AFD5D8605}"/>
+						<entry id="{79A7B496-B825-4D0F-A8D5-632BD95B232A}"/>
+						<entry id="{8B7B401F-01B7-4781-B59E-8F3C9165D083}"/>
+						<entry id="{6ACFD194-C819-4F67-80CE-0D2710EC09AF}"/>
+						<entry id="{034FC5ED-B090-44D2-B603-438011B930EA}"/>
+						<entry id="{B3AC2273-B7EF-4D71-9825-3888523E287D}"/>
+						<entry id="{448AB635-D6CB-48CF-B96F-2FA5D79C6525}"/>
+						<entry id="{8E6B1767-7AD3-4348-BC72-BF6D24D1FF7B}"/>
+						<entry id="{8917A7AD-3696-43B1-BAD8-F6C35C6292F8}"/>
+						<entry id="{56446465-5EDC-477B-83CA-4E5022C272DB}"/>
+						<entry id="{339A036A-F6E2-4312-91C5-DBE4DC4F6313}"/>
+						<entry id="{E851500B-EF74-4EE0-AD5A-7313AABB6C96}"/>
+						<entry id="{CFD2062C-2715-4127-9E31-81D5B62D78E0}"/>
+					</folder>
+					<folder name="Biotope">
+						<entry id="{4557D166-B7F1-4558-9CBE-27BA052C0977}"/>
+						<entry id="{FBC8FB7A-D2F9-4FDA-8AC7-1C5EB8D77BEF}"/>
+						<entry id="{D0C9A64B-3D66-407D-8719-F8B245C3CE18}"/>
+						<entry id="{E9C1950A-5CE4-456E-80C2-4609B84659AE}"/>
+						<entry id="{E8F60F2F-BCA0-4F7F-BAAA-7040B654D1E8}"/>
+						<entry id="{64786489-F651-48E1-A828-D8448FAEA34A}"/>
+					</folder>
+					<entry id="{CD0291D5-74F0-480B-98BF-7294E390867E}"/>
+					<entry id="{738B8DD7-2080-407E-8516-82DB2399FF91}"/>
+				</folder>
+				<folder name="Digitales Landschaftsmodell">
+					<entry id="{1C98D5B7-B777-4DA3-93EF-83AADFEBAFB4}"/>
+					<entry id="{815BF045-7FD0-4BF3-8463-D6F9827028F4}"/>
+					<entry id="{346CEDF8-D382-433E-98D7-68D18F44ABDF}"/>
+					<entry id="{63159531-9BAC-449D-ADAE-1552503F8F74}"/>
+					<entry id="{059CC361-FCE4-45FC-B727-58F18B44D562}"/>
+					<entry id="{7FA64BCE-640F-4965-81DA-A1C06A7476AF}"/>
+					<entry id="{73D7643F-B689-4986-9636-EDA5F7CB11B9}"/>
+					<entry id="{EDA9232C-16F2-4DCB-A9A2-6CBBB2D94E82}"/>
+					<entry id="{2A5D1DD7-CDD3-44FC-981C-D23D11BB76EE}"/>
+					<entry id="{5AE72C2F-4461-4001-978A-8F0C5943F856}"/>
+					<entry id="{1985DF89-659C-4EFF-81A3-1ED3CFD3D96C}"/>
+					<entry id="{D5188BDD-331A-4AFA-AD9A-5E51F23551D1}"/>
+					<entry id="{1B381300-310D-4D31-9874-79106FB747C9}"/>
+					<entry id="{8226E4A7-04A9-4912-9029-2561B6E91709}"/>
+					<entry id="{3195EA2D-CDB1-4C3A-B1EF-A447C50C4798}"/>
+					<entry id="{ABB3244A-2D05-4516-AE32-28D3EBE1F5D5}"/>
+					<entry id="{73CA22A5-03A5-4412-B5A7-B825F6929A81}"/>
+					<entry id="{DE494E18-675C-46D3-A550-E9A665C00C0B}"/>
+					<entry id="{1AD96519-5D48-476D-892E-7803D8722591}"/>
+					<entry id="{8782845C-5011-43FD-8940-332449CABDEE}"/>
+					<entry id="{A56E73B5-0FB1-437E-974D-748937786E00}"/>
+					<entry id="{3F4056A0-DF85-4D71-B905-6C8B60F34287}"/>
+					<entry id="{7FF69C07-A675-4B8E-8F8F-9B5D28741BDB}"/>
+					<entry id="{4DD9EF25-CAA6-4C6F-92FB-1A489CB4A764}"/>
+					<entry id="{13AE48C1-5E77-4EC0-B6C1-E4878292B2FD}"/>
+					<entry id="{1D4B7268-D73C-4F2F-A133-845C52F21950}"/>
+					<entry id="{42BBBA1D-9871-4330-89AB-B4365A35C697}"/>
+					<entry id="{3FED6351-645C-48F8-8154-1F5F4811A245}"/>
+					<entry id="{9925E84B-5A86-47DF-80E4-90B5BA1635BB}"/>
+					<entry id="{D7F842F0-EC60-4154-83BB-E1FFFC064F2B}"/>
+					<entry id="{D8F83EEB-5BE2-4653-8C96-483000757E69}"/>
+					<entry id="{599C0CE8-A0B8-4BAD-B954-268D05D183E5}"/>
+					<entry id="{078DE0AE-3FA9-4417-9698-56AC60F3DE8F}"/>
+					<entry id="{317755A0-7A96-436B-902C-7AB5591719F8}"/>
+					<entry id="{B926002C-5894-4B6E-9490-560D242FA297}"/>
+					<entry id="{E5666AB2-7EF4-4643-9554-207F0F0B4437}"/>
+					<entry id="{F96D8DA8-6D65-44A5-8A53-D51D7461EE5F}"/>
+					<entry id="{E085946D-A4B3-4BA4-AB21-AD5AB3B9271B}"/>
+					<entry id="{914F1B5C-AEAF-41D6-A2B2-6D10F3EE85E8}"/>
+					<entry id="{6E7D3429-8183-44C1-B6CB-97B67E0A507D}"/>
+					<entry id="{949E1407-98E6-4018-994A-033454FB03D9}"/>
+					<entry id="{4968A66D-FDA8-47A5-8E8F-C97EED30DCB7}"/>
+					<entry id="{22DC7AE4-4E83-4E71-A48B-16FB2F999D50}"/>
+					<entry id="{B40F1C11-A24B-4D70-8B71-52D90392137A}"/>
+					<entry id="{08874C3B-E393-42D1-A617-8B286720ADE9}"/>
+					<entry id="{E380A607-6303-495A-A3D1-5FFD838293FC}"/>
+					<entry id="{B600945D-112E-4F8E-B9D2-91067F7B9A3A}"/>
+					<entry id="{B862AB49-74A5-46B9-AC95-4239A5AA2605}"/>
+					<entry id="{1226D511-BC12-42A2-A144-86485F39C0E0}"/>
+					<entry id="{04FA59C3-FFCA-4368-A264-0C3FC916BB2C}"/>
+					<entry id="{95171E03-1F19-48FA-B537-8A36B47B730F}"/>
+					<entry id="{D50F37E2-612D-49D3-A97A-5A466FF1D2CA}"/>
+					<entry id="{9C464D54-1B7C-49BF-9D81-F0B5B15BAB05}"/>
+					<entry id="{D19180F4-EA9E-4743-848D-86E414151CEA}"/>
+					<entry id="{38DF194B-46E7-486D-9E0E-C92BB3A7C540}"/>
+					<entry id="{193A0CC0-73E1-4667-B469-8AEB44885175}"/>
+					<entry id="{189BA3D1-3C24-4FAD-BF95-5A58A1D93EB7}"/>
+					<entry id="{C7E61DAC-3EFF-452C-8EF4-13A6DB7735ED}"/>
+					<entry id="{85B0C452-9807-490D-B9F5-6C217CE94DCD}"/>
+					<entry id="{13C612D0-5B1D-4A85-99F6-16555BE7A697}"/>
+					<entry id="{09311722-2462-4876-91F5-4FC55529749D}"/>
+					<entry id="{16D502A4-626C-477F-8B04-E0CF126131E9}"/>
+					<entry id="{D88D3C7B-A415-4512-B677-5C0B05751A52}"/>
+					<entry id="{2BAA5928-EE1F-4045-80DE-565DCF416A80}"/>
+					<entry id="{A2491BCF-E2EF-4BEA-93E7-4976B4E9CCE9}"/>
+					<entry id="{E277E423-3734-40DD-BDC0-A555F4C17F3E}"/>
+				</folder>
+				<folder name="ALKIS">
+					<entry id="{0178FE01-1E89-435C-8CC0-7BDDAEF1A69B}"/>
+					<entry id="{236F5EFB-4DD7-42A6-84ED-6D36B4BC0852}"/>
+					<entry id="{D144174F-7341-4672-8DF9-8A997D13C37A}"/>
+					<entry id="{0CA2E414-1F1E-4B20-B2FB-B70B6579E055}"/>
+				</folder>
+				<entry id="{DB10C203-2BC5-4001-9F8E-0C5147849CC0}"/>
+				<entry id="{5CD092EC-6526-4E20-81FA-AC77D5814826}"/>
+			</tree>
+			<rootrule id="{64ADF28D-C8F4-4CD7-B3B2-A3DCF8B3B76B}" active="true">
+				<rule type="TrsPMEnvironmentRuleGroup" id="{3447B7FF-E40D-40DD-B0E9-AF0B2559F35F}" name="Deutschland" active="true">
+					<rule type="TrsPMEnvironmentRuleGroup" id="{BA975A20-BA1C-418F-9DB5-034412D96FCA}" name="BfN" active="true">
+						<rule type="TrsPMEnvironmentRule" groupproperties="{F746F676-5023-4F90-925D-A66BD3799162}" id="{4A60F06A-B236-4ED9-9D7B-7344199C8E37}" name="Catch-All Nationale Lebensraumachsen/-korridore (ACHSEN_BFN)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{C4762140-B25B-4F24-B275-25520F9A52F5}" id="{66530F5C-AB32-4872-B5F8-55E9FD7AC54E}" name="Catch-All Großräume (UFR_GROSSRAEUME_BFN)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{1FED807F-00D0-4591-8FAB-ECD12E4D3987}" id="{1C26FD9B-275B-40D8-9470-2308ED3105CB}" name="Catch-All Großräume Feuchtlebensräume (UFR_1000_FEU)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{A7507C2B-D079-49ED-BD14-48D49691ED1C}" id="{DB63935E-DFAB-47FE-9F9D-A2884C0D15F6}" name="Catch-All Großräume Trockenlebensräume (UFR_1500_TRO)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{E9343374-AABA-495A-8332-251FBA57C89A}" id="{1AE534A5-97D5-4B89-87C3-DEA22B4FCD41}" name="Catch-All Großräume Waldlebensräume (UFR_1000_WALD)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{B944E717-E482-4B00-9F5D-5967E49B6A5B}" id="{88A2940B-D332-4DC0-9686-CA8E950DAA8A}" name="Catch-All Großräume Großsäugerlebensräume (UFR_GROSSRAEUME_GS_BFN)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{B944E717-E482-4B00-9F5D-5967E49B6A5B}" id="{F1F0CC69-B207-40FB-BBBC-E4CD7FD8F558}" name="Catch-All Großräume Großsäugerlebensräume (UFR_1500_GS)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{C0C99D14-C256-4B9B-A69E-222E2D6C15A7}" id="{92CE72F8-FDB3-4CD4-98EB-27A63D2A475E}" name="Catch-All Kernräume Bund (UFR_KERNRAEUME_BFN)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{A11A6D27-D1C2-4B89-8EEB-D3217CE9360A}" id="{68592DDF-C409-42EE-A902-D03A1AA6106C}" name="Catch-All Kernräume Feuchtlebensräume (UFR_250_FEU)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{6F12ED08-3E48-4C20-8485-D1C30E9B692C}" id="{C7F18BB5-7625-4299-A262-CB879E5BB23E}" name="Catch-All Kernräume Trockenlebensräume (UFR_250_TRO)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{773CAF73-AA95-411B-AE1E-91E4BE413E94}" id="{8965B4D8-957A-4840-8463-56440E3C89B3}" name="Catch-All Kernräume Waldlebensräume (UFR_250_WALD)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{9FE8AE29-B67B-4E1E-B6C8-71C8F0CDD9C5}" id="{5C0311CD-CAF7-4742-AD31-D74EDDE36710}" name="Catch-All Prioritäre Abschnitte Wiedervernetzung (WIEDERVERNETZUNG_BFN)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{6BF25814-742A-4E46-AF94-251BE61FF11A}" id="{28B7AFE5-0794-47E8-8163-69C8E0CD3877}" name="Catch-All Prioritäre Abschnitte Wiedervernetzung Feuchtlebensräume (WIEDERVERNETZUNG_FEU)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{716A7F1F-55F0-42C2-BE72-42363B8E3678}" id="{429226FE-7AAB-4A3A-AD87-0D8351A712E7}" name="Catch-All Prioritäre Abschnitte Wiedervernetzung Trockenlebensräume (WIEDERVERNETZUNG_TRO)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{022F9AC2-A48B-493E-AA42-1B6CF0559762}" id="{3DC7DA05-B681-412D-A4AF-50808DF498CC}" name="Catch-All Prioritäre Abschnitte Wiedervernetzung Waldlebensräume (WIEDERVERNETZUNG_WALD)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{B0DCA452-366F-435C-B5D9-49FB94DF82C4}" id="{930F9CB1-827A-490C-956A-A457695CC6B4}" name="Catch-All Prioritäre Abschnitte Wiedervernetzung Großsäugerlebensräume (WIEDERVERNETZUNG_GS)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRuleGroup" id="{3F23148F-D267-4A9A-9237-DFD4488A244E}" name="ACHSEN_BFN" active="true">
+							<rule type="TrsPMEnvironmentRule" groupproperties="{F8545F84-DA50-4681-A6EB-B78045AD3D99}" id="{82B39CBE-3080-41DE-9F34-8FFABDF427F8}" name="Nationale Lebensraumachsen/-korridore (feu) (ACHSEN_BFN)" active="true">
+								<constraints>
+									<constraint formular="ACHSE_FEU=1"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{E533587B-291D-4E66-84FD-030CCE5F5F33}" id="{7958160F-D81A-4B64-AAC5-C76EEA0C12EC}" name="Nationale Lebensraumachsen/-korridore (tro) (ACHSEN_BFN)" active="true">
+								<constraints>
+									<constraint formular="ACHSE_TRO=1"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{002C49A6-4431-4544-809C-F74E0D6FE49E}" id="{26B4CBC5-A0D2-4D5D-953D-36FB7123C65D}" name="Nationale Lebensraumachsen/-korridore (wald) (ACHSEN_BFN)" active="true">
+								<constraints>
+									<constraint formular="ACHSE_WALD=1"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{4C1A4D61-87A0-4A78-BB15-53CF36F52FD3}" id="{83DED75B-2323-40CE-99B1-16DC924D514A}" name="Nationale Lebensraumachsen/-korridore (gs) (ACHSEN_BFN)" active="true">
+								<constraints>
+									<constraint formular="KORRID_GS=1"/>
+								</constraints>
+							</rule>
+						</rule>
+					</rule>
+					<rule type="TrsPMEnvironmentRuleGroup" id="{937892F9-1A08-4E60-8E07-96D3D84C1861}" name="NRW" active="false">
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BE730505-22A9-45D4-8A6F-C2E064B7C993}" id="{B6772228-761E-4A44-A0F5-B64C78F6A717}" name="FFH" active="true">
+							<constraints>
+								<constraint formular="KLASSE=7680016"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{582B7FFC-A134-43C8-9DA5-8502F6FE5A73}" id="{BDF4E949-13F4-4A4F-831B-85D4F1611595}" name="geschütztes Biotop" active="true">
+							<constraints>
+								<constraint formular="fbzahl=7680016"/>
+								<constraint formular="fbzahl=7680105"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{1568670A-1FB2-4915-A020-86D7DA2451C3}" id="{3D11EBFB-2035-4EF1-9559-E63B55513845}" name="Naturpark/Nationalpark" active="true">
+							<constraints>
+								<constraint formular="KLASSE=7680200"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{09356BB2-CB7C-4B5D-8718-6B8B1A4AD197}" id="{FC74133C-7A4D-442A-BB43-7D017CD6EBA9}" name="Naturschutzgebiet" active="true">
+							<constraints>
+								<constraint formular="KLASSE=7680100"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{738B8DD7-2080-407E-8516-82DB2399FF91}" id="{C82E016D-E381-4639-B6B9-7C2B9233C33B}" name="Ramsar Feuchtgebiet" active="true">
+							<constraints>
+								<constraint formular="KLASSE=7680500"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{58B2F3A2-1911-4217-B1B9-73E8FF7322DA}" id="{304A23D3-0C05-43F2-B5CD-FED9CB2C048A}" name="europäisches Vogelschutzgebiet" active="true">
+							<constraints>
+								<constraint formular="KLASSE=7680015"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{961779D9-6D64-4A6A-B0B1-1C78AE4678EC}" id="{D14E34CA-F307-4198-BACC-0F13265015A6}" name="UZVR_NRW_Project" active="true">
+							<constraints>
+								<constraint formular="KLASSE=7730100"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{7AFB483B-EA58-42EA-A04F-53AC7195BB63}" id="{7EA53803-DD48-4235-9E8B-F6A29A1DE187}" name="Flaechen-1111" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=1111"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{49181EFA-5611-4EC0-8B39-AFB4DCC6D65B}" id="{A3B36D79-54E5-47A2-8C8E-39C5FD3BDE28}" name="Flaechen-1112" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=1112"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{0A52F490-FEEC-4A2E-9187-447B3ED40A98}" id="{F98FF9CE-794C-4EE1-AE45-4D81FECE8846}" name="Flaechen-2000" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=2000"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{616640AC-9861-4719-BD72-0F48C9D949A0}" id="{33663DEA-28C6-476A-BCC1-2214BDF824EA}" name="Flaechen-2300" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=2300"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{10F1BB24-1091-4B86-94A3-080E42F1982A}" id="{BDE12998-1F6F-4C74-9B35-9C7A0FC14155}" name="Flaechen-2400" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=2400"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{76724297-BE3F-49EB-8065-3BB358B09580}" id="{2C95AC72-7BA6-4623-B3ED-2980E9E87BE7}" name="Flaechen-3332" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=3332"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{695D0DDE-71EB-496B-A87A-CED5717C701E}" id="{453A8F23-7A3A-408E-B8EF-67BC3027922E}" name="Flaechen-3511" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=3511"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{79A7B496-B825-4D0F-A8D5-632BD95B232A}" id="{778D9BA9-D177-444E-BDC8-644A969A631C}" name="Flaechen-4000" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=4000"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{8B7B401F-01B7-4781-B59E-8F3C9165D083}" id="{C69A6A49-BDF2-46B0-8A87-9DD692697725}" name="Flaechen-7600" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=7600"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{6ACFD194-C819-4F67-80CE-0D2710EC09AF}" id="{A9DAA11F-B47D-494A-B063-18ED63DBD941}" name="Flaechen-7900" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=7900"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{034FC5ED-B090-44D2-B603-438011B930EA}" id="{2DF6DEE4-1D13-44E4-A5DA-1602D7ACEC44}" name="Flaechen-7905" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=7905"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{B3AC2273-B7EF-4D71-9825-3888523E287D}" id="{E73FBB3A-69BA-4E8B-9068-162FCE66D431}" name="Flaechen-7906" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=7906"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{448AB635-D6CB-48CF-B96F-2FA5D79C6525}" id="{4BAC9CA2-7D92-4F42-85AB-524493067235}" name="Flaechen-7907" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=7907"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{8E6B1767-7AD3-4348-BC72-BF6D24D1FF7B}" id="{11FE6730-E71E-4566-A13B-14933B02A873}" name="Umriss_Schraffur-3560" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=3560"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{8917A7AD-3696-43B1-BAD8-F6C35C6292F8}" id="{4E19A0B9-EE41-4172-A463-744633FCD521}" name="Umriss_Schraffur-4300" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=4300"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BFBD0BB8-9C26-4640-A6F8-9D85069B611A}" id="{4F13FB56-A695-4F24-99C0-5AD1ABC71E7E}" name="Umriss_Schraffur-4400" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=4400"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{56446465-5EDC-477B-83CA-4E5022C272DB}" id="{84110A0C-468E-456C-979A-27C671260D39}" name="Umriss_Schraffur-6100" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=6100"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{339A036A-F6E2-4312-91C5-DBE4DC4F6313}" id="{6466609F-CF84-4CEF-9A15-8463444859FD}" name="Umriss_Schraffur-6200" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=6200"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{09356BB2-CB7C-4B5D-8718-6B8B1A4AD197}" id="{44AE0D59-BCC0-49C1-9499-E3BCFCCAFEE7}" name="Umriss_Schraffur-7410" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=7410"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{3D42DF89-F9AF-41AF-8A95-D7A956DB38B8}" id="{D8A66CD8-5E5F-443D-8B79-BD070635413F}" name="Umriss_Schraffur-7420" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=7420"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{E851500B-EF74-4EE0-AD5A-7313AABB6C96}" id="{F9E72CDD-BDAA-4FF2-9D38-A48A721E12F4}" name="Umriss_Schraffur-7500" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=7500"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{CFD2062C-2715-4127-9E31-81D5B62D78E0}" id="{103A6301-4293-4323-8CC6-029A91DA2D68}" name="Umriss_Schraffur-7908" active="true">
+							<constraints>
+								<constraint formular="SCHLUESSEL=7908"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{C62F510A-A3E6-429B-9984-EB9108AA85C8}" id="{97B643A4-61C7-46BC-B2FF-48AC787A2679}" name="trinkwasser_heilquellen_punkte_utm" active="true">
+							<constraints>
+								<constraint formular="zone_roem=&quot;I&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{C62F510A-A3E6-429B-9984-EB9108AA85C8}" id="{6B079D66-89B5-4B2A-BF6B-298D28E17C9B}" name="trinkwasser_heilquellen_schutzgebiete_utm - Heilquellenschutzgebiete" active="true">
+							<constraints>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;I&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;I A&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;I B&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;II&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;II A&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;II B&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;III&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;III A&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;III A1&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;III A2&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;III B&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;III C&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;R&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;IV&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;V&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;7&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;A&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;B&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;C&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;D&quot;)"/>
+								<constraint formular="(typ=&quot;H&quot;) AND (zone_roem=&quot;E&quot;)"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{1FBDD2AF-5BEB-4C24-8D95-24F9F8AEA939}" id="{01E9E588-18A4-4472-B8A9-DF95B76BCE4B}" name="trinkwasser_heilquellen_schutzgebiete_utm - Wasserschutzzonen I/II - vorhanden" active="true">
+							<constraints>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;I&quot;)"/>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;I A&quot;)"/>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;I B&quot;)"/>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;II&quot;)"/>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;II A&quot;)"/>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;II B&quot;)"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{53265974-8EBE-40D4-9C11-30C0665F6B4D}" id="{D2382DEC-C539-4304-A9CE-6D3DAEB8BC14}" name="trinkwasser_heilquellen_schutzgebiete_utm - Wasserschutzzonen I/II - geplant" active="true">
+							<constraints>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;I&quot;)"/>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;I A&quot;)"/>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;I B&quot;)"/>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;II&quot;)"/>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;II A&quot;)"/>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;II B&quot;)"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{CED37F75-CF24-4735-95A0-E632969F947A}" id="{16A71051-8A80-4872-8D6A-F81FD2745B6D}" name="trinkwasser_heilquellen_schutzgebiete_utm - Wasserschutzzonen III - vorhanden" active="true">
+							<constraints>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;III&quot;)"/>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;III A&quot;)"/>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;III A1&quot;)"/>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;III A2&quot;)"/>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;III B&quot;)"/>
+								<constraint formular="(typ=&quot;T&quot;) AND (zone_roem=&quot;III C&quot;)"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{CC2838AB-88E2-4AB5-BFCB-783286E2C3C4}" id="{F73137F1-8A9E-48DB-9CA5-F4CFEFB0CD2C}" name="trinkwasser_heilquellen_schutzgebiete_utm - Wasserschutzzonen III - geplant" active="true">
+							<constraints>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;III&quot;)"/>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;III A&quot;)"/>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;III A1&quot;)"/>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;III A2&quot;)"/>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;III B&quot;)"/>
+								<constraint formular="(typ=&quot;R&quot;) AND (zone_roem=&quot;III C&quot;)"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BFBD0BB8-9C26-4640-A6F8-9D85069B611A}" id="{7A496F1D-9D4A-4D16-887E-7C2A9141357E}" name="Catch-All alle_ermittelt_polygon" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BFBD0BB8-9C26-4640-A6F8-9D85069B611A}" id="{53D40427-B43B-4331-BE4D-5CB21360A705}" name="Catch-All alle_fest_polygon" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BFBD0BB8-9C26-4640-A6F8-9D85069B611A}" id="{1ACC6765-84D6-4912-BB99-760E63779E5A}" name="Catch-All preuss_nat_polygon" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BFBD0BB8-9C26-4640-A6F8-9D85069B611A}" id="{4A2407F1-9DFA-438C-8465-3C3DDF1A84CA}" name="Catch-All vorlaeufig_gesichert_polygon" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{D5BF2270-BB35-433B-847F-AD08A4B141E8}" id="{8334BDB8-7BB3-4F7E-990D-ADAF616123D5}" name="ast_a_polyline" active="true">
+							<constraints>
+								<constraint formular="SGR=&quot;ast_a&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BD520F9B-1069-4E60-901B-68E7A24DE99C}" id="{58218320-B663-4FCE-9BBF-D1250B3F7E1A}" name="ast_b_polyline" active="true">
+							<constraints>
+								<constraint formular="SGR=&quot;ast_b&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{50906E3B-C40F-431D-BF95-BDF01862E984}" id="{AD56223E-2B5E-4911-B201-04EAC28AE6EF}" name="ast_l_polyline" active="true">
+							<constraints>
+								<constraint formular="SGR=&quot;ast_l&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{B472D344-422B-418B-80B4-AB66AAAA9F26}" id="{EF1D851A-6437-4A43-ADA0-052146214CE8}" name="ast_k_polyline" active="true">
+							<constraints>
+								<constraint formular="SGR=&quot;ast_k&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{D5BF2270-BB35-433B-847F-AD08A4B141E8}" id="{78C87B9C-15B3-42CF-86DD-0B82E283BC66}" name="str_a_polyline" active="true">
+							<constraints>
+								<constraint formular="SGR=&quot;str_a&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BD520F9B-1069-4E60-901B-68E7A24DE99C}" id="{5148BF33-7864-40CD-B32F-3FE5453033C8}" name="str_b_polyline" active="true">
+							<constraints>
+								<constraint formular="SGR=&quot;str_b&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{50906E3B-C40F-431D-BF95-BDF01862E984}" id="{8DF82DE1-CE1C-445C-81AD-9CDDF7D561B8}" name="str_l_polyline" active="true">
+							<constraints>
+								<constraint formular="SGR=&quot;str_l&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{B472D344-422B-418B-80B4-AB66AAAA9F26}" id="{5EEA8AFD-1AD1-42A2-BFA8-753FDE1A3BBA}" name="str_k_polyline" active="true">
+							<constraints>
+								<constraint formular="SGR=&quot;str_k&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{335F2DC2-F0EF-4408-AA17-70712786F5B9}" name="BAB_Knnr_point-AS" active="true">
+							<constraints>
+								<constraint formular="KN_ART=&quot;AS&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{84029FF6-5E9C-41E4-80BD-1D4EFE312E87}" name="BAB_Knnr_point-AK" active="true">
+							<constraints>
+								<constraint formular="KN_ART=&quot;AK&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{D6461376-77E3-452B-B3A6-B1B448475EB9}" name="BAB_Knnr_point-AD" active="true">
+							<constraints>
+								<constraint formular="KN_ART=&quot;AD&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{E279A3EC-2560-4C49-90F9-50547A0A1514}" name="BAB_Knnr_point-AN" active="true">
+							<constraints>
+								<constraint formular="KN_ART=&quot;AN&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{245AC51B-4820-4141-9884-D3F9B72D91FA}" name="BAB_Knnr_point-LG" active="true">
+							<constraints>
+								<constraint formular="KN_ART=&quot;LG&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{6AB00E94-D863-4A32-BB1C-F39F3BC72D06}" name="BAB_Knnr_point-BG" active="true">
+							<constraints>
+								<constraint formular="KN_ART=&quot;BG&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{53FD9256-1B11-4D51-B3A6-DA048C735A64}" name="BAB_Knnr_point-LV" active="true">
+							<constraints>
+								<constraint formular="KN_ART=&quot;LV&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{2AC8CD54-03F7-4951-857C-5A3C557736F6}" name="Catch-All Bahnigkeit_polyline" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{D6B6F636-9330-44A3-A963-AD38F10E78D2}" name="Baulast_polyline-H" active="true">
+							<constraints>
+								<constraint formular="BAULAST=&quot;H&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{5136BAE3-21D5-4B10-B75B-9AB501FBB60C}" name="Baulast_polyline-G" active="true">
+							<constraints>
+								<constraint formular="BAULAST=&quot;G&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{4A3FC885-7DC6-4D6E-9EEF-F17C2F98B6A6}" name="Baulast_polyline-D" active="true">
+							<constraints>
+								<constraint formular="BAULAST=&quot;D&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{0BE50FCD-EE5B-4A7F-9661-6914015FBC13}" name="Catch-All Bauwerk_point" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{0A6EACC0-701C-4143-9B21-969FC581F1C4}" name="Catch-All Bauwerk_polyline" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{08D5C52A-80AA-4BE7-A0C4-1E0F48C5EA65}" name="Catch-All bebau_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{22802036-8899-4181-84E6-5637E4456C8E}" name="Catch-All gem_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{B4FCB8EB-067D-499F-B50F-7D28CE27752E}" name="Catch-All Gew_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{CDDCAE6C-0911-4D67-98EF-EB85457523AA}" name="Catch-All Kr_Bahn_point" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{E075F6A7-E90A-46F7-A918-B68602EE7BBD}" name="Catch-All krs_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{CC388C9A-4AC3-4731-8686-7EFEA0565F48}" name="Catch-All Land_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{D076C44F-7178-4FC8-8D11-F0BC723D7C38}" name="Catch-All NK_point" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{FE0016A7-CF8C-47F1-953B-09623CD88E25}" name="Catch-All Nl_bab_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{6620A2F3-80A9-4FD4-836D-65062B46762A}" name="Catch-All NL_Str_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{B5FBA591-DA45-4617-9FB4-60B4783D2091}" name="Catch-All Projektgeometrien_polyline" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{5CD092EC-6526-4E20-81FA-AC77D5814826}" id="{EE3B3737-FA0D-43AB-AB37-343942E07E41}" name="Catch-All Reg_region" active="false">
+							<constraints/>
+						</rule>
+					</rule>
+					<rule type="TrsPMEnvironmentRuleGroup" id="{4B06323E-B7F1-48B1-A990-BA7D1ED39D77}" name="MV" active="false">
+						<rule type="TrsPMEnvironmentRule" groupproperties="{0214D167-62FA-4196-83F2-C36C8C0B737A}" id="{2DC0971C-9B16-4C5B-B831-66C0F6F33ED0}" name="Catch-All ALK_Gemeinden_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{7AFB483B-EA58-42EA-A04F-53AC7195BB63}" id="{09118537-02F4-4D1C-B6A5-9F0D9361B840}" name="Catch-All bebau_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BE730505-22A9-45D4-8A6F-C2E064B7C993}" id="{ABAA6075-963C-4875-BA4F-F1D1DE534ADF}" name="Catch-All dl_t2_ffhmv_f" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{1568670A-1FB2-4915-A020-86D7DA2451C3}" id="{B6BC9B1F-93A0-4944-9009-E49CAE7C83B0}" name="Catch-All dl_t2_nlp_f" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{09356BB2-CB7C-4B5D-8718-6B8B1A4AD197}" id="{C0CEFE70-7349-4F15-9C2F-412F895F49EF}" name="Catch-All dl_t2_nsg_f" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{58B2F3A2-1911-4217-B1B9-73E8FF7322DA}" id="{E72BB9E0-6808-4AC5-8DC6-DB844EC84720}" name="Catch-All dl_t2_spamv08f" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BFBD0BB8-9C26-4640-A6F8-9D85069B611A}" id="{7A52331D-4185-4DE9-B913-1D47835906D2}" name="Catch-All dl_t3_uesg" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{582B7FFC-A134-43C8-9DA5-8502F6FE5A73}" id="{AB8EF1E8-67C9-4654-BA9F-E06527AD1452}" name="Catch-All bk_mv11_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{7AFB483B-EA58-42EA-A04F-53AC7195BB63}" id="{56E00EC7-B967-4605-B245-11B9CD161E51}" name="Catch-All Siedlungsflaechen_region" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRuleGroup" id="{16496F57-78A8-48D2-B628-1179BEEDAC59}" name="bk_mv11_region" active="true">
+							<rule type="TrsPMEnvironmentRule" groupproperties="{4557D166-B7F1-4558-9CBE-27BA052C0977}" id="{A29AC1AF-2D25-4314-9DAA-4EB00B2DDC78}" name="Feuchtbiotope (bk_mv11_region)" active="true">
+								<constraints>
+									<constraint formular="LEGENDE=1"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{FBC8FB7A-D2F9-4FDA-8AC7-1C5EB8D77BEF}" id="{09717876-187B-4F16-8912-09C747F5A2CB}" name="Gewässerbiotope (bk_mv11_region)" active="true">
+								<constraints>
+									<constraint formular="LEGENDE=2"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{D0C9A64B-3D66-407D-8719-F8B245C3CE18}" id="{7B0BB7C4-C66D-4B21-8514-B5FB36C949FE}" name="Trockenbiotope (bk_mv11_region)" active="true">
+								<constraints>
+									<constraint formular="LEGENDE=3"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{E9C1950A-5CE4-456E-80C2-4609B84659AE}" id="{D0608E79-159F-493D-AE49-7752F6231488}" name="Gehölzbiotope (bk_mv11_region)" active="true">
+								<constraints>
+									<constraint formular="LEGENDE=4"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{E8F60F2F-BCA0-4F7F-BAAA-7040B654D1E8}" id="{B37209B3-20BD-460B-9BDC-DD5EE9B371B8}" name="Küstenbiotope (bk_mv11_region)" active="true">
+								<constraints>
+									<constraint formular="LEGENDE=5"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{64786489-F651-48E1-A828-D8448FAEA34A}" id="{00E40780-A168-4C98-B276-9EC1EB07755D}" name="Blockpackungen (bk_mv11_region)" active="true">
+								<constraints>
+									<constraint formular="LEGENDE=6"/>
+								</constraints>
+							</rule>
+						</rule>
+						<rule type="TrsPMEnvironmentRuleGroup" id="{E061313F-DC84-43D0-BFC9-EAE0781F42C7}" name="AtkisFlaechenMaerz2012_region" active="true">
+							<rule type="TrsPMEnvironmentRule" groupproperties="{CD0291D5-74F0-480B-98BF-7294E390867E}" id="{7831641E-35B9-4D43-AAAF-A9625F5C21AB}" name="Ortslage (AtkisFlaechenMaerz2012_region)" active="true">
+								<constraints>
+									<constraint formular="OBJART=2101"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{1C3D9B94-77D2-48E3-A6B8-A9FB966C7C46}" id="{9FCC6B34-483C-45C6-A7B6-47FB1E9D338C}" name="Wohnplatz (AtkisFlaechenMaerz2012_region)" active="true">
+								<constraints>
+									<constraint formular="OBJART=2111"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{B496A452-FF03-42EC-BE97-32F2A90CB516}" id="{6BAE4555-C221-4B6E-9F75-79A243E90A40}" name="Industrie-, Gewerbefläche (AtkisFlaechenMaerz2012_region)" active="true">
+								<constraints>
+									<constraint formular="OBJART=2112"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{03005A4F-E2B5-4871-BA1D-9095F0C0C015}" id="{C7C6230F-7419-41CA-8693-5B191918B887}" name="Fäche gemischter Nutzung (AtkisFlaechenMaerz2012_region)" active="true">
+								<constraints>
+									<constraint formular="OBJART=2113"/>
+								</constraints>
+							</rule>
+							<rule type="TrsPMEnvironmentRule" groupproperties="{DDAE3C13-763B-484D-9D96-3DEE761EC3FD}" id="{DD299A78-BA1C-4FAB-B714-4EE64BC100D2}" name="Fläche besonderer funktionaler Prägung (AtkisFlaechenMaerz2012_region)" active="true">
+								<constraints>
+									<constraint formular="OBJART=2114"/>
+								</constraints>
+							</rule>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{B472D344-422B-418B-80B4-AB66AAAA9F26}" id="{B68A7ADE-2FFE-49F2-B680-4207275065CE}" name="Kreisstraße- vorhanden (K_Str_polyline)" active="true">
+							<constraints>
+								<constraint formular="STRASSENAR=K"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{CED37F75-CF24-4735-95A0-E632969F947A}" id="{5100BE34-B83D-40AE-8CC1-5CBBDD87587E}" name="Wasserschutzzone III (dl_t3_wsg)" active="true">
+							<constraints>
+								<constraint formular="WSG_ZONE=III"/>
+								<constraint formular="WSG_ZONE=IIIA"/>
+								<constraint formular="WSG_ZONE=IIIB"/>
+								<constraint formular="WSG_ZONE=IV"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{1FBDD2AF-5BEB-4C24-8D95-24F9F8AEA939}" id="{AF165D18-3F2E-4A52-9710-B8619CCB3C5A}" name="Wasserschutzzone I/II (dl_t3_wsg)" active="true">
+							<constraints>
+								<constraint formular="WSG_ZONE=I"/>
+								<constraint formular="WSG_ZONE=II"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{D5BF2270-BB35-433B-847F-AD08A4B141E8}" id="{6E1D93C9-5FC8-4C3B-93EF-CC96FFE4A6C7}" name="Bundesautobahn - vorhanden (A_Str_polyline)" active="true">
+							<constraints>
+								<constraint formular="STRASSENAR=A"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BD520F9B-1069-4E60-901B-68E7A24DE99C}" id="{0A1E5144-73DC-4F92-B62E-DA66D89A8D66}" name="Bundeststraße - vorhanden (B_Str_polyline)" active="true">
+							<constraints>
+								<constraint formular="STRASSENAR=B"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{50906E3B-C40F-431D-BF95-BDF01862E984}" id="{41694D2B-E466-401A-B639-A22FA2E80004}" name="Landes-/Staatsstraße- vorhanden (L_Str_polyline)" active="true">
+							<constraints>
+								<constraint formular="STRASSENAR=L"/>
+							</constraints>
+						</rule>
+					</rule>
+					<rule type="TrsPMEnvironmentRuleGroup" id="{FAEC3928-7312-4267-8E5F-F287D1961A61}" name="SL" active="false">
+						<rule type="TrsPMEnvironmentRule" groupproperties="{1FBDD2AF-5BEB-4C24-8D95-24F9F8AEA939}" id="{22B93A73-4B87-4DB1-8F69-B0ABAC498B02}" name="Wasserschutzgebiet - Zone I/II" active="true">
+							<constraints>
+								<constraint formular="SCHUTZZONE=I"/>
+								<constraint formular="SCHUTZZONE=II"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{CED37F75-CF24-4735-95A0-E632969F947A}" id="{0082A57D-2FA8-44A5-9C01-D653B51103CB}" name="Wasserschutzgebiet - Zone III" active="true">
+							<constraints>
+								<constraint formular="SCHUTZZONE=III"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{4371E637-B1CD-498B-BACE-942D3E297F5E}" id="{4DBD5147-5087-459A-8E55-EAEBA4C90E4E}" name="Wasserschutzgebiet - Zone B" active="true">
+							<constraints>
+								<constraint formular="SCHUTZZONE=B"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BE730505-22A9-45D4-8A6F-C2E064B7C993}" id="{EC4AB18C-9B65-47A8-AA01-CA4B36FBE7E3}" name="Catch-All FFH" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{09356BB2-CB7C-4B5D-8718-6B8B1A4AD197}" id="{516B6419-CFFA-4021-913B-AEA02D01D3F0}" name="Catch-All Naturschutz" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{58B2F3A2-1911-4217-B1B9-73E8FF7322DA}" id="{2E317182-F705-40D0-9C5D-6D215F0DFB39}" name="Catch-All Vogelschutz" active="false">
+							<constraints/>
+						</rule>
+					</rule>
+					<rule type="TrsPMEnvironmentRuleGroup" id="{AFD82494-18D6-407C-A7BB-3E16048F338C}" name="BW" active="false">
+						<rule type="TrsPMEnvironmentRule" groupproperties="{EA8BB0B7-F315-481F-AEC9-753F2194935E}" id="{1EDF0B1E-740B-4A7F-8C0F-01D5A38E6363}" name="Catch-All Biosphärenreservat (biosphaerengebiet_-_zone)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{263EAB0C-9D59-412C-B600-ABC3520B9028}" name="Catch-All Landesweiter Biotopverbund (bv-barriere)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{9FD865EE-E2BB-4D35-AACE-669FE9A3DAAC}" name="Catch-All Landesweiter Biotopverbund (bv_kr_mit_200)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{83E98344-D325-45D8-A1BC-80452CD259CA}" name="Catch-All Landesweiter Biotopverbund (bv_kf_mit)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{78B76518-5582-4655-B364-61FEA05B9566}" name="Catch-All Landesweiter Biotopverbund (bv_sr_mit_500)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{48A33A8A-50B4-4F62-9409-A3661C2A5757}" name="Catch-All Landesweiter Biotopverbund (bv_sr_mit_1000)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{6C2C90AB-DC2C-408E-BD64-D48E72B3CD6D}" name="Catch-All Landesweiter Biotopverbund Feuchtlebensräume(bv_kf_feu)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{82C5983A-01C6-4217-8267-59AB2E0A72CB}" name="Catch-All Landesweiter Biotopverbund Feuchtlebensräume (bv_kr_feu_200)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{256A9A46-3474-421E-A34D-44DECD98AB07}" name="Catch-All Landesweiter Biotopverbund Feuchtlebensräume (bv_sr_feu_500)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{FF4E6866-A1A2-47A1-B069-C31305474DDD}" name="Catch-All Landesweiter Biotopverbund Feuchtlebensräume (bv_sr_feu_1000)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{B9689A65-4F59-44D2-AE2F-F3E60B044CAD}" name="Catch-All Landesweiter Biotopverbund Trockenlebensräume (bv_kf_tro)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{98A5D006-CF49-4B21-893F-EB986B496600}" name="Catch-All Landesweiter Biotopverbund Trockenlebensräume (bv_kr_tro_200)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{FF20C62C-B637-4CF7-B6BD-67B86E6C564F}" name="Catch-All Landesweiter Biotopverbund Trockenlebensräume (bv_sr_tro_500)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{872C93FA-E8D6-4620-A5B8-8628CC653D5B}" name="Catch-All Landesweiter Biotopverbund Trockenlebensräume (bv_sr_tro_1000)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{8E9C8058-207F-4B20-A362-157727DBFFC6}" id="{EA8C8595-CF2F-4BF7-BCC6-5EA96B8D5478}" name="Catch-All Generalwildwegeplan (GWP)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{961779D9-6D64-4A6A-B0B1-1C78AE4678EC}" id="{4F0952E3-9EEB-4FB4-BF15-4759869FB1FC}" name="Catch-All Unzerschnittene verkehrsarme Funktionsräume (uzvr100_final)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BE730505-22A9-45D4-8A6F-C2E064B7C993}" id="{6108E630-13B6-4CD2-A11E-A9B55087CDA6}" name="Catch-All (ffh25)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{0214D167-62FA-4196-83F2-C36C8C0B737A}" id="{A3CF0025-E7A5-48CD-AF28-1F6A83572DA3}" name="Catch-All (gmd25)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{553F3743-CBBD-4174-9D5E-E9C9EA600951}" id="{E11EBC4E-CD8C-4C1C-B751-0A8967895A96}" name="Catch-All (krei25)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{2E345903-6B54-40E2-AD18-1C9B5EB677E2}" id="{1C685ABF-2C14-496F-A1E4-BF5FD7D9BDD5}" name="Catch-All (land25)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{3D42DF89-F9AF-41AF-8A95-D7A956DB38B8}" id="{014F35F7-C063-41D0-8861-07819BFB8554}" name="Catch-All (lsg25)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{09356BB2-CB7C-4B5D-8718-6B8B1A4AD197}" id="{79A26B5E-9777-4654-A0A6-6DA23EE87217}" name="Catch-All (nsg25)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{7EA7E725-97E8-4CCE-82FA-4A33C4158513}" id="{55250DA4-0A0C-4951-8D2F-D749EE8A2FBD}" name="Catch-All (rbz25)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{58B2F3A2-1911-4217-B1B9-73E8FF7322DA}" id="{19BA63B3-2B56-450E-9039-38ADE6B3DFEB}" name="Catch-All (spa25)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BFBD0BB8-9C26-4640-A6F8-9D85069B611A}" id="{4A0AEA06-683C-4FA9-9F5D-F67095513723}" name="Catch-All (uesg25)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{A2150C8F-1EBD-4E31-801F-1D5AF480B4A6}" id="{14FAF9F3-535F-4D8C-8896-6571A28DB249}" name="Catch-All (wsg)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{1004C94B-179F-4CCB-BED2-D8390F56DC19}" id="{26454F20-444C-4825-A23B-09CB308FBF9A}" name="Catch-All Netzknoten (Netzknoten_point)" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{CD0291D5-74F0-480B-98BF-7294E390867E}" id="{2DEFB6DF-841C-4744-A402-3014312D4CB1}" name="sie01_f_bw_Ortlage (t2a_f)" active="true">
+							<constraints>
+								<constraint formular="KLASSE=80001"/>
+								<constraint formular="OBJART=52001"/>
+								<constraint formular="OBJART_1=52001"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{1C3D9B94-77D2-48E3-A6B8-A9FB966C7C46}" id="{BE4CF814-B1E1-46BD-9A35-CC3A41E5E0B6}" name="sie02_f_bw_Wohngebiet (T2b_f-2111)" active="true">
+							<constraints>
+								<constraint formular="OBJEKTART=&quot;2111 Wohnbaufläche&quot;"/>
+								<constraint formular="OBJART=41001"/>
+								<constraint formular="OBJART_1=41001"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{B496A452-FF03-42EC-BE97-32F2A90CB516}" id="{8AC95432-7C9C-4067-AB82-40E7CAFC74D4}" name="sie02_f_bw_Gewerbegebiet (T2b_f-2112)" active="true">
+							<constraints>
+								<constraint formular="OBJEKTART=&quot;2112 Industrie- und Gewerbefläche&quot;"/>
+								<constraint formular="OBJART=41002"/>
+								<constraint formular="OBJART_1=41002"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{25CABDA1-D153-40E2-AB59-A24156001F27}" id="{33EA3FAE-25BA-4643-8BAD-B48A80B2C7B6}" name="sie02_f_bw_Halde" active="true">
+							<constraints>
+								<constraint formular="OBJART=&quot;41003&quot;"/>
+								<constraint formular="OBJART_1=&quot;41003&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{CDEC37D8-4F65-4779-82EF-C22BEFDA7046}" id="{1FD7564A-7C78-4E4E-A1FC-7BFD168C2DE1}" name="sie02_f_bw_Bergbaugebiet" active="true">
+							<constraints>
+								<constraint formular="OBJART=&quot;41004&quot;"/>
+								<constraint formular="OBJART_1=&quot;41004&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{F51CC6ED-5E14-4124-AB58-9AB45FFB9AB4}" id="{DB99BA1F-CA58-49E9-B680-196C777C52FA}" name="sie02_f_bw_TagebauGrubeSteinbruch" active="true">
+							<constraints>
+								<constraint formular="OBJART=&quot;41005&quot;"/>
+								<constraint formular="OBJART_1=&quot;41005&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{03005A4F-E2B5-4871-BA1D-9095F0C0C015}" id="{782BA0F4-B49F-42E3-823B-96E9548D3CFF}" name="sie02_f_bw_Mischgebiet (T2b_f-2113)" active="true">
+							<constraints>
+								<constraint formular="OBJEKTART=&quot;2113 Fläche gemischter Nutzung&quot;"/>
+								<constraint formular="OBJART=41006"/>
+								<constraint formular="OBJART_1=41006"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{DDAE3C13-763B-484D-9D96-3DEE761EC3FD}" id="{2923E68C-9F93-4283-A294-2CB53C0E6692}" name="sie02_f_bw_BesonderePraegung (T2b_f-2114)" active="true">
+							<constraints>
+								<constraint formular="OBJEKTART=&quot;2114 Fläche besonderer funktionaler Prägung&quot;"/>
+								<constraint formular="OBJART=41007"/>
+								<constraint formular="OBJART_1=41007"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{406F11A9-C7F2-4233-837C-BE7AFD5D8605}" id="{71A6FA15-61A4-4720-9D13-353885EE9172}" name="sie02_f_bw_SportFreizeitUndErholungsflaeche" active="true">
+							<constraints>
+								<constraint formular="OBJART=&quot;41008&quot;"/>
+								<constraint formular="OBJART_1=&quot;41008&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{63653059-269F-4B64-BE21-D584431CEFD6}" id="{D915FF41-F77F-4493-9667-BBD73351D48E}" name="sie02_f_bw_Friedhof" active="true">
+							<constraints>
+								<constraint formular="OBJART=&quot;41009&quot;"/>
+								<constraint formular="OBJART_1=&quot;41009&quot;"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{D5BF2270-BB35-433B-847F-AD08A4B141E8}" id="{7218A13D-4DFB-4764-ADE7-107A123CAC54}" name="Bundesautobahn - vorhanden (Strassennetz_polyline)" active="true">
+							<constraints>
+								<constraint formular="STRASSENAR=A"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BD520F9B-1069-4E60-901B-68E7A24DE99C}" id="{827DEADA-22DD-4CA9-B405-F254E2BDA471}" name="Bundeststraße - vorhanden (Strassennetz_polyline)" active="true">
+							<constraints>
+								<constraint formular="STRASSENAR=B"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{50906E3B-C40F-431D-BF95-BDF01862E984}" id="{A5CCA4D6-E285-4CC6-9971-F0D8A046541C}" name="Landes-/Staatsstraße- vorhanden (Strassennetz_polyline)" active="true">
+							<constraints>
+								<constraint formular="STRASSENAR=L"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{B472D344-422B-418B-80B4-AB66AAAA9F26}" id="{D8FFCACE-4C0D-49B2-9D3A-15095FD35028}" name="Kreisstraße - vorhanden (Strassennetz_polyline)" active="true">
+							<constraints>
+								<constraint formular="STRASSENAR=K"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{1FBDD2AF-5BEB-4C24-8D95-24F9F8AEA939}" id="{CB85D82B-FB61-4F1B-A1DC-00A181987595}" name="Wasserschutzzonen I/II (wsg_zone)" active="true">
+							<constraints>
+								<constraint formular="ZONE_KEY=100"/>
+								<constraint formular="ZONE_KEY=200"/>
+							</constraints>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{CED37F75-CF24-4735-95A0-E632969F947A}" id="{A2188863-BCB1-48D2-9DF0-30C945673E6A}" name="Wasserschutzzone III (wsg_zone)" active="true">
+							<constraints>
+								<constraint formular="ZONE_KEY=300"/>
+								<constraint formular="ZONE_KEY=310"/>
+								<constraint formular="ZONE_KEY=320"/>
+							</constraints>
+						</rule>
+					</rule>
+					<rule type="TrsPMEnvironmentRuleGroup" id="{A93FDA0B-5A72-4CDC-9586-9AFE26EC868A}" name="HE" active="false">
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BE730505-22A9-45D4-8A6F-C2E064B7C993}" id="{005E158D-B50B-4520-A15D-917EE335D465}" name="Catch-All FFH" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{58B2F3A2-1911-4217-B1B9-73E8FF7322DA}" id="{068592BB-1C6A-4BAA-A19D-F2A77DF2781C}" name="Catch-All VSG" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{09356BB2-CB7C-4B5D-8718-6B8B1A4AD197}" id="{A704ECD8-BEF1-4658-A77C-6E78A6E65386}" name="Catch-All NSG" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{3D42DF89-F9AF-41AF-8A95-D7A956DB38B8}" id="{B25A07B9-5AAC-4498-85D0-183CE92EDD1C}" name="Catch-All LSG" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{690E15B4-A1DF-44C0-A6DF-808687454646}" id="{A4929162-D011-4029-8E88-27E80655025C}" name="Catch-All Faunaerhebungsgebiete" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{62F6C787-C7CE-42C3-B20D-11F9A8E8B85F}" id="{5975094E-01B9-4230-BB49-2FB1727C159C}" name="Catch-All HQ10" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{B2B99E6D-3146-4974-BF8F-47887F47E1EA}" id="{B2FB6D38-4D76-4D48-AB89-310C57DCEC36}" name="Catch-All HQ100" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{354DFB12-5B08-4F84-B479-3F1360FB1CB6}" id="{C2783EB8-6BA2-4237-BCEC-3BCECD4BC388}" name="Catch-All HQ1000" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{BFBD0BB8-9C26-4640-A6F8-9D85069B611A}" id="{CE735D13-C12D-46FC-B2DB-1F4D7E5EFF06}" name="Catch-All Ueberschwemmungsgebiet" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{A14F44B4-B62E-4292-AA50-12D9B1B1CF35}" id="{3E289DC5-ACC4-4A3A-A8EB-08BFC80F4C51}" name="Catch-All Trinkwasserschutzgebiet" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{13232C24-4459-4383-8542-2B132A181174}" id="{47B6B419-F30D-4EC4-BC60-AF1C01D3B228}" name="Catch-All Trinkwassergewinnungsgebiet" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{A2150C8F-1EBD-4E31-801F-1D5AF480B4A6}" id="{9D471B09-50C7-4F69-9A0D-F72CB906AC8F}" name="Catch-All Wasserschutzgebiet" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{582B7FFC-A134-43C8-9DA5-8502F6FE5A73}" id="{DCA9B981-00F7-4F46-AB2E-9490B73E6724}" name="Catch-All geschBiotope" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{ABBAF63D-8233-4BEE-95F7-E7C0F6E78CEC}" id="{7CE3991A-0D0C-47F4-B215-D1E5B1A3FDAC}" name="Catch-All geschBiotopKomplex" active="false">
+							<constraints/>
+						</rule>
+						<rule type="TrsPMEnvironmentRule" groupproperties="{73518171-3376-4CB8-B523-F0B668A85492}" id="{B7EDDAED-C4CE-404A-8EC8-E90962C68286}" name="Catch-All GLB" active="false">
+							<constraints/>
+						</rule>
+					</rule>
+				</rule>
+				<rule type="TrsPMEnvironmentRuleGroup" id="{C66AFBC4-6EB0-4E64-8DBD-82F0094432F8}" name="Digitales Landschaftsmodell Shape" active="false">
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1C98D5B7-B777-4DA3-93EF-83AADFEBAFB4}" id="{BD0D8774-53CE-4869-A658-B0FCC2212131}" name="AX_Gebietsgrenze" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;75009&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{815BF045-7FD0-4BF3-8463-D6F9827028F4}" id="{ABFE3C59-0875-4D9D-9BE2-C2B2DC06B709}" name="AX_NaturUmweltUndBodenschutz Naturschutzgebiet" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;71006&quot;) AND (ADF=&quot;1621&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{346CEDF8-D382-433E-98D7-68D18F44ABDF}" id="{445BCA67-FE8A-418B-B893-807997940807}" name="AX_Gewaessermerkmal " active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;55001&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{63159531-9BAC-449D-ADAE-1552503F8F74}" id="{4154DCBD-9B43-44BB-914C-4814513D7380}" name="AX_Wald Laub" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43002&quot;) AND (VEG=&quot;1100&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{63159531-9BAC-449D-ADAE-1552503F8F74}" id="{2EA734B0-1C47-4068-8F7B-0B2485414272}" name="AX_Wald Nadel" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43002&quot;) AND (VEG=&quot;1200&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{63159531-9BAC-449D-ADAE-1552503F8F74}" id="{CB0F4BF7-E7FC-4C04-86F6-084783FBEA2D}" name="AX_Wald Misch" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43002&quot;) AND (VEG=&quot;1300&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{73D7643F-B689-4986-9636-EDA5F7CB11B9}" id="{113E9D1C-004A-4DDB-B89D-483A06E3A344}" name="AX_Landwirtschaft Ackerland" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43001&quot;) AND (VEG=&quot;1010&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{EDA9232C-16F2-4DCB-A9A2-6CBBB2D94E82}" id="{9A0C1C7A-C12C-402C-8C0F-1E700F17375A}" name="AX_Landwirtschaft Gruenland" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43001&quot;) AND (VEG=&quot;1020&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{2A5D1DD7-CDD3-44FC-981C-D23D11BB76EE}" id="{8B76054E-3E3F-4148-B337-4BD4E1DBFD55}" name="AX_Landwirtschaft Baumschule" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43001&quot;) AND (VEG=&quot;1031&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{5AE72C2F-4461-4001-978A-8F0C5943F856}" id="{8A3EB835-74DD-4B32-B295-7671EBA3E592}" name="AX_Gehoelz" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43003&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1985DF89-659C-4EFF-81A3-1ED3CFD3D96C}" id="{C1076F6B-8B05-4B16-A8AC-8BF0BB15D100}" name="AX_Heide" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43004&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{D5188BDD-331A-4AFA-AD9A-5E51F23551D1}" id="{3560DD64-B6E3-4E15-8542-43241B5FAEB4}" name="AX_Moor" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43005&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1B381300-310D-4D31-9874-79106FB747C9}" id="{316C6CB8-3D0E-4396-9C03-71E23BFA6036}" name="AX_Sumpf" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43006&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{8226E4A7-04A9-4912-9029-2561B6E91709}" id="{3F3D8F4D-7AB5-4730-96EB-459CBEFD8BD4}" name="AX_UnlandVegetationsloseFläche" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43007&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{3195EA2D-CDB1-4C3A-B1EF-A447C50C4798}" id="{D540D663-54EC-4A4E-9633-1221AAB84F63}" name="AX_FlaecheZurZeitUnbestimmbar" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;43008&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{73CA22A5-03A5-4412-B5A7-B825F6929A81}" id="{E2472B7F-53DF-41EB-9D65-49CE0B3102A1}" name="AX_Vegetationsmerkmal Wald, Gehölz, Busch" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;54001&quot;) AND (BWS=&quot;1021&quot;)"/>
+							<constraint formular="(OBJART=&quot;54001&quot;) AND (BWS=&quot;1022&quot;)"/>
+							<constraint formular="(OBJART=&quot;54001&quot;) AND (BWS=&quot;1023&quot;)"/>
+							<constraint formular="(OBJART=&quot;54001&quot;) AND (BWS=&quot;1250&quot;)"/>
+							<constraint formular="(OBJART=&quot;54001&quot;) AND (BWS=&quot;1260&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{ABB3244A-2D05-4516-AE32-28D3EBE1F5D5}" id="{D1066B13-EE98-44DD-BE02-A7644F3A0C47}" name="AX_Vegetationsmerkmal Gras" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;54001&quot;) AND (BWS=&quot;1500&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{8782845C-5011-43FD-8940-332449CABDEE}" id="{8BF145FC-7D8E-4C64-976F-1D6B52FC7F37}" name="AX_IndustrieUndGewerbeflaeche" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;41002&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{A56E73B5-0FB1-437E-974D-748937786E00}" id="{566645E8-3B58-4774-8AFC-9278EF901CC2}" name="AX_Halde" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;41003&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{3F4056A0-DF85-4D71-B905-6C8B60F34287}" id="{74309BB4-B3AF-4859-AAF4-CC8D2DDCA7C8}" name="AX_TagebauGrubeSteinbruch" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;41005&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{DE494E18-675C-46D3-A550-E9A665C00C0B}" id="{7F0C4C3B-4641-4995-82DD-49A1146CF32D}" name="AX_Ortslage" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;52001&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1AD96519-5D48-476D-892E-7803D8722591}" id="{5CC5C258-B6BE-4E02-8706-5BDBE5AA3C4C}" name="AX_Wohnbauflaeche" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;41001&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{7FF69C07-A675-4B8E-8F8F-9B5D28741BDB}" id="{586D08EA-BF3F-40B6-B235-A98A7F4CC468}" name="AX_FlaecheGemischterNutzung" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;41006&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{4DD9EF25-CAA6-4C6F-92FB-1A489CB4A764}" id="{F691FB12-4395-419A-927B-FF19CAF81CF2}" name="AX_FlaecheBesondererFunktionalerPraegung" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;41001&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{13AE48C1-5E77-4EC0-B6C1-E4878292B2FD}" id="{E50FC58D-96F2-4D83-97EC-A561F443CF2A}" name="AX_SportFreizeitUndErholungsflaeche" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;41008&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1D4B7268-D73C-4F2F-A133-845C52F21950}" id="{D825E3C1-DFBC-4F29-AF88-DB06A801C22A}" name="AX_Friedhof" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;41009&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{42BBBA1D-9871-4330-89AB-B4365A35C697}" id="{923659BA-A36C-4CEE-A71E-8970324078E0}" name="AX_BauwerkUndAnlageFuerIndustrieUndGewerbe Klaerbecken" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51002&quot;) AND (BWF=&quot;1210&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{3FED6351-645C-48F8-8154-1F5F4811A245}" id="{12606C3C-1C8D-4404-8A9B-69DA5369049C}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Spielfeld" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51006&quot;) AND (BWF=&quot;1410&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{9925E84B-5A86-47DF-80E4-90B5BA1635BB}" id="{B06F200B-D41E-4C76-B285-23EB68983605}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Stadion" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51006&quot;) AND (BWF=&quot;1440&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{D7F842F0-EC60-4154-83BB-E1FFFC064F2B}" id="{06276AD9-DE4F-4650-8571-10AF4FE9E595}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Schiessanlage" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51006&quot;) AND (BWF=&quot;1480&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{D8F83EEB-5BE2-4653-8C96-483000757E69}" id="{718BDE79-B435-490E-B40A-D963891655EC}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Zuschauertribuene" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51006&quot;) AND (BWF=&quot;1430&quot;)"/>
+							<constraint formular="(OBJART=&quot;51006&quot;) AND (BWF=&quot;1431&quot;) "/>
+							<constraint formular="(OBJART=&quot;51006&quot;) AND (BWF=&quot;1432&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{599C0CE8-A0B8-4BAD-B954-268D05D183E5}" id="{13DD5E82-ECA7-4E0C-9F19-6BCAF8BEEFEC}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Schwimmbecken" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51006&quot;) AND (BWF=&quot;1450&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{078DE0AE-3FA9-4417-9698-56AC60F3DE8F}" id="{C0CDCA34-214B-46AB-BDC3-99FD7DA56569}" name="AX_BauwerkOderAnlageFuerSportUndFreizeit Rennbahn" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51006&quot;) AND (BWF=&quot;1420&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{B926002C-5894-4B6E-9490-560D242FA297}" id="{92CAB9DB-4F83-4C3B-9C8F-32BE3E8CFE15}" name="AX_HistorischesBauwerkOderHistorischeEinrichtung Befestigung, Burg, Schanze" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51007&quot;) AND (ATP=&quot;1200&quot;)"/>
+							<constraint formular="(OBJART=&quot;51007&quot;) AND (ATP=&quot;1400&quot;)"/>
+							<constraint formular="(OBJART=&quot;51007&quot;) AND (ATP=&quot;1410&quot;)"/>
+							<constraint formular="(OBJART=&quot;51007&quot;) AND (ATP=&quot;1420&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{317755A0-7A96-436B-902C-7AB5591719F8}" id="{16CCA98F-6168-4FAB-B177-CDBE99621B9A}" name="AX_HistorischesBauwerkOderHistorischeEinrichtung Lager" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51007&quot;) AND (ATP=&quot;1430&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{F96D8DA8-6D65-44A5-8A53-D51D7461EE5F}" id="{0538C0D6-8E7C-4EA2-BAD2-1056A5B090D1}" name="AX_SonstigesBauwerkOderSonstigeEinrichtung Mauer" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51009&quot;) AND (BWF=&quot;1700&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{E5666AB2-7EF4-4643-9554-207F0F0B4437}" id="{F4536DF1-ACDB-4B40-B3A1-1E2643BD90A8}" name="AX_SonstigesBauwerkOderSonstigeEinrichtung Zaun" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51009&quot;) AND (BWF=&quot;1740&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{E085946D-A4B3-4BA4-AB21-AD5AB3B9271B}" id="{3195ED81-FBEF-497B-B836-76A5F6A9F806}" name="AX_Leitung" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;51005&quot;) "/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{914F1B5C-AEAF-41D6-A2B2-6D10F3EE85E8}" id="{F89579C3-39DA-4DF0-9F82-3297EFA8C69B}" name="AX_Strassenachse Autobahn" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42003&quot;) AND (WDM=&quot;1301&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{6E7D3429-8183-44C1-B6CB-97B67E0A507D}" id="{E3370B51-5F9C-47DE-BB42-6E455FECCC64}" name="AX_Strassenachse Bundesstrasse" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42003&quot;) AND (WDM=&quot;1303&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{949E1407-98E6-4018-994A-033454FB03D9}" id="{B89502CB-F291-4C1D-9AC9-8DE390C637D1}" name="AX_Strassenachse Landesstrasse" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42003&quot;) AND (WDM=&quot;1305&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{4968A66D-FDA8-47A5-8E8F-C97EED30DCB7}" id="{C442F683-AEB8-44CA-B9B6-AA4B1A7719BA}" name="AX_Strassenachse Kreisstrasse, Gemeindestrasse" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42003&quot;) AND (WDM=&quot;1306&quot;)"/>
+							<constraint formular="(OBJART=&quot;42003&quot;) AND (WDM=&quot;1307&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{22DC7AE4-4E83-4E71-A48B-16FB2F999D50}" id="{531B970C-5E6B-4867-B9A2-6A07589D54E8}" name="AX_Fahrwegachse Hauptwirtschaftsweg" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42008&quot;) AND (FKT=&quot;5211&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{B40F1C11-A24B-4D70-8B71-52D90392137A}" id="{99C004C0-853A-41FF-BF73-2E18EF374019}" name="AX_Fahrwegachse Wirtschaftsweg" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42008&quot;) AND (FKT=&quot;5212&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{E380A607-6303-495A-A3D1-5FFD838293FC}" id="{CF048713-5A18-4BFD-95F6-7D11C2EA2A1F}" name="AX_Gewaesserachse" active="true">
+						<constraints>
+							<constraint formular="OBJART=&quot;44004&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{B600945D-112E-4F8E-B9D2-91067F7B9A3A}" id="{5CFAA52D-2E67-492B-BA83-6AA936482428}" name="AX_Hafenbecken" active="true">
+						<constraints>
+							<constraint formular="OBJART=&quot;44005&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{B862AB49-74A5-46B9-AC95-4239A5AA2605}" id="{1CCB69A9-497C-4087-9B48-9E21FEC66A01}" name="AX_StehendesGewaesser" active="true">
+						<constraints>
+							<constraint formular="OBJART=&quot;44006&quot; "/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{08874C3B-E393-42D1-A617-8B286720ADE9}" id="{3B04DD46-7438-45C0-97BC-C8F29D89CFF3}" name="AX_Fliessgewaesser" active="true">
+						<constraints>
+							<constraint formular="OBJART=&quot;44001&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1226D511-BC12-42A2-A144-86485F39C0E0}" id="{6FEC57B5-6289-4D7E-B17F-0E289174D85D}" name="AX_Strassenverkehr Strasse" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42001&quot;) AND (FKT=&quot;&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{04FA59C3-FFCA-4368-A264-0C3FC916BB2C}" id="{8446FBA2-A7C3-4ED2-A912-912BB3D46294}" name="AX_Strassenverkehr Verkehrsbegleitflaeche" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42001&quot; ) AND (FKT=&quot;2312&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{95171E03-1F19-48FA-B537-8A36B47B730F}" id="{592783AC-316A-45FF-8392-03150B5A4ED5}" name="AX_Platz Platz" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42009&quot; ) AND (FKT=&quot;&quot;)"/>
+							<constraint formular="(OBJART=&quot;42009&quot; ) AND (FKT=&quot;5350&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{D50F37E2-612D-49D3-A97A-5A466FF1D2CA}" id="{6F4BFECE-EB02-4239-941A-EF141D39AB90}" name="AX_Platz Parkplatz" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42009&quot; ) AND (FKT=&quot;5310&quot;)"/>
+							<constraint formular="(OBJART=&quot;42009&quot; ) AND (FKT=&quot;5320&quot;)"/>
+							<constraint formular="(OBJART=&quot;42009&quot; ) AND (FKT=&quot;5330&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{9C464D54-1B7C-49BF-9D81-F0B5B15BAB05}" id="{FD3E7AC4-DA58-40AD-9E45-36AB4A414770}" name="AX_Platz Fussgaengerzone" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;42009&quot; ) AND (FKT=&quot;5130&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{D19180F4-EA9E-4743-848D-86E414151CEA}" id="{59C5ED09-AC0B-4872-BF99-4C30E776737A}" name="AX_Bahnverkehr" active="true">
+						<constraints>
+							<constraint formular="OBJART=&quot;42010&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{38DF194B-46E7-486D-9E0E-C92BB3A7C540}" id="{E398A393-0231-41D4-92B6-6E5357E662DB}" name="AX_Bahnstrecke" active="true">
+						<constraints>
+							<constraint formular="OBJART=&quot;42014&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{193A0CC0-73E1-4667-B469-8AEB44885175}" id="{C3CAC535-1BB1-4D08-B721-785303A1EC60}" name="AX_Gleis" active="true">
+						<constraints>
+							<constraint formular="OBJART=&quot;53006&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{189BA3D1-3C24-4FAD-BF95-5A58A1D93EB7}" id="{3617BE79-2F52-4D82-8381-980078746F79}" name="AX_Schiffsverkehr" active="true">
+						<constraints>
+							<constraint formular="OBJART=&quot;42016&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{C7E61DAC-3EFF-452C-8EF4-13A6DB7735ED}" id="{58E7B5CE-A64B-444D-BAFF-F5F43EEA0004}" name="AX_Bahnverkehrsanlage" active="true">
+						<constraints>
+							<constraint formular="OBJART=&quot;53004&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{85B0C452-9807-490D-B9F5-6C217CE94DCD}" id="{B0E170EA-91AD-4B73-AF15-9E51CD49FE59}" name="AX_Flugverkehrsanlage" active="true">
+						<constraints>
+							<constraint formular="OBJART=&quot;53007&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{13C612D0-5B1D-4A85-99F6-16555BE7A697}" id="{6F6C0860-DC1C-48A5-9A70-E9E4C16A697F}" name="AX_BauwerkImVerkehrsbereich Brueckenflaeche" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;53001&quot;) AND (BWF=&quot;1800&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{09311722-2462-4876-91F5-4FC55529749D}" id="{DD181E2D-7748-4B43-A06C-AC6C3D195CDF}" name="AX_BauwerkImVerkehrsbereich Unterfuehrung" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;53001&quot;) AND (BWF=&quot;1870&quot;)"/>
+							<constraint formular="(OBJART=&quot;53001&quot;) AND (BWF=&quot;1880&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{16D502A4-626C-477F-8B04-E0CF126131E9}" id="{D4E43330-329B-409E-8A5C-ADAD640DCC07}" name="AX_BauwerkImVerkehrsbereich Schleusenkammer" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;53001&quot;) AND (BWF=&quot;1890&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{D88D3C7B-A415-4512-B677-5C0B05751A52}" id="{F933CDE3-9856-4AAE-A2BE-008A8C781249}" name="AX_BauwerkImVerkehrsbereich Steg" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;53001&quot;) AND (BWF=&quot;1820&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{2BAA5928-EE1F-4045-80DE-565DCF416A80}" id="{A69B3A21-4546-453F-B2FB-AC73A87BEE8A}" name="AX_BauwerkImGewaesserbereich Wehr" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;53009&quot;) AND (BWF=&quot;2050&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{A2491BCF-E2EF-4BEA-93E7-4976B4E9CCE9}" id="{EAA17D2F-C74D-439A-9679-6C3263F5EFCE}" name="AX_BauwerkImGewaesserbereich Uferbefestigung" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;53009&quot;) AND (BWF=&quot;2130&quot;)"/>
+							<constraint formular="(OBJART=&quot;53009&quot;) AND (BWF=&quot;2136&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{E277E423-3734-40DD-BDC0-A555F4C17F3E}" id="{0BAD0DDD-583F-4A15-9B7A-152023C0C96D}" name="AX_BauwerkImGewaesserbereich Wellenbrecher" active="true">
+						<constraints>
+							<constraint formular="(OBJART=&quot;53009&quot;) AND (BWF=&quot;2131&quot;)"/>
+							<constraint formular="(OBJART=&quot;53009&quot;) AND (BWF=&quot;2132&quot;)"/>
+						</constraints>
+					</rule>
+				</rule>
+				<rule type="TrsPMEnvironmentRuleGroup" id="{092BC0F0-E982-4C6E-BC70-2C0BF42D7FAF}" name="Digitales Landschaftsmodell NAS" active="false">
+					<rule type="TrsPMEnvironmentRule" groupproperties="{63159531-9BAC-449D-ADAE-1552503F8F74}" id="{418871B8-8B28-49F5-88F6-F3D923685188}" name="AX_Wald Laub" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Wald&quot;) AND (&quot;vegetationsmerkmal&quot;=&quot;1100&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{059CC361-FCE4-45FC-B727-58F18B44D562}" id="{9DBBCB1E-9DD6-456B-8E7D-F6474CDC425C}" name="AX_Wald Nadel" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Wald&quot;) AND (&quot;vegetationsmerkmal&quot;=&quot;1200&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{7FA64BCE-640F-4965-81DA-A1C06A7476AF}" id="{F85A16E1-E0E6-438C-AE99-029747016A1D}" name="AX_Wald Misch" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Wald&quot;) AND (&quot;vegetationsmerkmal&quot;=&quot;1300&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{73D7643F-B689-4986-9636-EDA5F7CB11B9}" id="{CF122D44-863E-4EDE-A7A7-8DEABC51198D}" name="AX_Landwirtschaft Ackerland" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Landwirtschaft&quot;) AND (&quot;vegetationsmerkmal&quot;=&quot;1010&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{EDA9232C-16F2-4DCB-A9A2-6CBBB2D94E82}" id="{50559885-EF83-4E9C-8674-BA0D852EAB59}" name="AX_Landwirtschaft Gruenland" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Landwirtschaft&quot;) AND (&quot;vegetationsmerkmal&quot;=&quot;1020&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{2A5D1DD7-CDD3-44FC-981C-D23D11BB76EE}" id="{58A15E7E-E25E-4E41-BC42-3D4D4DD94AC7}" name="AX_Landwirtschaft Baumschule" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Landwirtschaft&quot;) AND (&quot;vegetationsmerkmal&quot;=&quot;1031&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{5AE72C2F-4461-4001-978A-8F0C5943F856}" id="{870AC074-D315-459D-A677-37A78209B675}" name="AX_Gehoelz" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Gehoelz&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1985DF89-659C-4EFF-81A3-1ED3CFD3D96C}" id="{AD35EFDF-AEE2-4040-B11F-079832621A19}" name="AX_Heide" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Heide&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{D5188BDD-331A-4AFA-AD9A-5E51F23551D1}" id="{F3958864-B75F-40C4-8E09-F1070900C421}" name="AX_Moor" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Moor&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1B381300-310D-4D31-9874-79106FB747C9}" id="{48429B92-1E2B-4EF8-B5B3-8BC80159CFAA}" name="AX_Sumpf" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Sumpf&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{8226E4A7-04A9-4912-9029-2561B6E91709}" id="{F57723F2-FF52-47F5-A090-05D740CFD7E1}" name="AX_UnlandVegetationsloseFlaeche" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_UnlandVegetationsloseFlaeche&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{73CA22A5-03A5-4412-B5A7-B825F6929A81}" id="{6117142B-0CF8-494B-8ED6-B0055CBA9484}" name="AX_Vegetationsmerkmal Wald, Gehölz, Busch" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Vegetationsmerkmal&quot;) AND (&quot;bewuchs&quot;=&quot;&quot;)"/>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Vegetationsmerkmal&quot;) AND (&quot;bewuchs&quot;=&quot;1022&quot;)"/>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Vegetationsmerkmal&quot;) AND (&quot;bewuchs&quot;=&quot;1023&quot;)"/>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Vegetationsmerkmal&quot;) AND (&quot;bewuchs&quot;=&quot;1250&quot;)"/>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Vegetationsmerkmal&quot;) AND (&quot;bewuchs&quot;=&quot;1260&quot;)"/>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Vegetationsmerkmal&quot;) AND (&quot;bewuchs&quot;=&quot;1021&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{73CA22A5-03A5-4412-B5A7-B825F6929A81}" id="{7606941B-0C62-4A71-BFE4-836FBAD48443}" name="AX_Vegetationsmerkmal Baumreihen" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Vegetationsmerkmal&quot;) AND (&quot;bewuchs&quot;=&quot;1210&quot;)"/>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Vegetationsmerkmal&quot;) AND (&quot;bewuchs&quot;=&quot;1220&quot;)"/>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Vegetationsmerkmal&quot;) AND (&quot;bewuchs&quot;=&quot;1230&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{ABB3244A-2D05-4516-AE32-28D3EBE1F5D5}" id="{2448CEDB-ACFC-47E4-9B2E-841F3AF43706}" name="AX_Vegetationsmerkmal Gras" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Vegetationsmerkmal&quot;) AND (&quot;bewuchs&quot;=&quot;1500&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1AD96519-5D48-476D-892E-7803D8722591}" id="{8E904F02-665F-4F56-970B-31EB9B965393}" name="AX_Wohnbauflaeche" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Wohnbauflaeche&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{8782845C-5011-43FD-8940-332449CABDEE}" id="{C4950C90-0732-41B6-9042-7D0CC54513AF}" name="AX_IndustrieUndGewerbeflaeche" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_IndustrieUndGewerbeflaeche&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{A56E73B5-0FB1-437E-974D-748937786E00}" id="{9BDCD3C0-8460-4E48-9DA8-35DC2CDCA4A0}" name="AX_Halde" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Halde&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{3F4056A0-DF85-4D71-B905-6C8B60F34287}" id="{7C277901-0C00-4B8A-8619-22F25FE0C0E7}" name="AX_TagebauGrubeSteinbruch" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_TagebauGrubeSteinbruch&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{7FF69C07-A675-4B8E-8F8F-9B5D28741BDB}" id="{F57AF264-6A73-4BA4-9BCD-130BCD2CEA05}" name="AX_FlaecheGemischterNutzung" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_FlaecheGemischterNutzung&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{4DD9EF25-CAA6-4C6F-92FB-1A489CB4A764}" id="{EE5D9267-F7DF-488D-9052-1BEF4A2EA155}" name="AX_FlaecheBesondererFunktionalerPraegung" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_FlaecheBesondererFunktionalerPraegung&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{13AE48C1-5E77-4EC0-B6C1-E4878292B2FD}" id="{7A973FEC-6AC9-4E3E-830F-A3E74759EEBB}" name="AX_SportFreizeitUndErholungsflaeche" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_SportFreizeitUndErholungsflaeche&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1D4B7268-D73C-4F2F-A133-845C52F21950}" id="{06F15034-B1E4-4B3A-AF59-C37046609D50}" name="AX_Friedhof" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Friedhof&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{6E7D3429-8183-44C1-B6CB-97B67E0A507D}" id="{EDE4C066-33B1-48AA-A1EC-7EFD1F163A0B}" name="AX_Strassenachse" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Strassenachse&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{E380A607-6303-495A-A3D1-5FFD838293FC}" id="{F4993CA7-701F-4199-803A-F5E8D1D29768}" name="AX_Gewaesserachse" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Gewaesserachse&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{B600945D-112E-4F8E-B9D2-91067F7B9A3A}" id="{6E9ED98B-0BE7-4826-9B52-220BC26EF08B}" name="AX_Hafenbecken" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Hafenbecken&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{B862AB49-74A5-46B9-AC95-4239A5AA2605}" id="{934E1B30-ED6E-4826-AB84-75442707DA2E}" name="AX_StehendesGewaesser" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_StehendesGewaesser&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{08874C3B-E393-42D1-A617-8B286720ADE9}" id="{E7DB3EDB-EA53-4DBF-AA9F-307E4E41FBAC}" name="AX_Fliessgewaesser" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Fliessgewaesser&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{1226D511-BC12-42A2-A144-86485F39C0E0}" id="{77A81615-08E9-4512-8FD5-51C8D1AB89D6}" name="AX_Strassenverkehr Strasse" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Strassenverkehr&quot;) AND (&quot;funktion&quot;=&quot;&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{04FA59C3-FFCA-4368-A264-0C3FC916BB2C}" id="{EB388DAC-4903-4D5C-9EBD-EED75D44AB12}" name="AX_Strassenverkehr Verkehrsbegleitflaeche" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Strassenverkehr&quot;) AND (&quot;funktion&quot;=&quot;2312&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{95171E03-1F19-48FA-B537-8A36B47B730F}" id="{18DB0402-EC2C-4E29-9D49-AE2298474857}" name="AX_Platz Platz" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Platz&quot;) AND (&quot;funktion&quot;=&quot;&quot;)"/>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Platz&quot;) AND (&quot;funktion&quot;=&quot;5350&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{D50F37E2-612D-49D3-A97A-5A466FF1D2CA}" id="{D96D39F0-549C-4FF2-A5E2-AE45184437B2}" name="AX_Platz Parkplatz" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Platz&quot;) AND (&quot;funktion&quot;=&quot;5310&quot;)"/>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Platz&quot;) AND (&quot;funktion&quot;=&quot;5320&quot;)"/>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Platz&quot;) AND (&quot;funktion&quot;=&quot;5330&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{9C464D54-1B7C-49BF-9D81-F0B5B15BAB05}" id="{803253DB-E47F-4795-84A3-8B91C9A3DD43}" name="AX_Platz Fussgaengerzone" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Platz&quot;) AND (&quot;funktion&quot;=&quot;5130&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{D19180F4-EA9E-4743-848D-86E414151CEA}" id="{9989E90B-8D7E-41F2-A0FB-CA00679FD079}" name="AX_Bahnverkehr" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Bahnverkehr&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{38DF194B-46E7-486D-9E0E-C92BB3A7C540}" id="{0ED5FED2-DB73-4ADC-852A-6D89BF492F52}" name="AX_Bahnstrecke" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Bahnstrecke&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{193A0CC0-73E1-4667-B469-8AEB44885175}" id="{1A67DECF-F4E0-4084-823D-7AEC88DE6C91}" name="AX_Gleis" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Gleis&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{189BA3D1-3C24-4FAD-BF95-5A58A1D93EB7}" id="{5E8821C4-64F3-4857-98E3-3577353B3933}" name="AX_Schiffsverkehr" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Schiffsverkehr&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{C7E61DAC-3EFF-452C-8EF4-13A6DB7735ED}" id="{D590C664-BE4C-4668-A6B0-A4F298882613}" name="AX_Bahnverkehrsanlage" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Bahnverkehrsanlage&quot;)"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{85B0C452-9807-490D-B9F5-6C217CE94DCD}" id="{B81FFA7A-7030-47C0-9659-D32E6175BEC5}" name="AX_Flugverkehrsanlage" active="true">
+						<constraints>
+							<constraint formular="(&quot;ADV Objektart&quot;=&quot;AX_Flugverkehrsanlage&quot;)"/>
+						</constraints>
+					</rule>
+				</rule>
+				<rule type="TrsPMEnvironmentRuleGroup" id="{A3A007D9-2BEF-4532-9E2D-F5C04CEEC247}" name="ALKIS" active="false">
+					<rule type="TrsPMEnvironmentRule" groupproperties="{0178FE01-1E89-435C-8CC0-7BDDAEF1A69B}" id="{31198E55-DF52-48FC-99A7-1E8A3D34EB63}" name="AX_Wald Laub" active="true">
+						<constraints>
+							<constraint formular="vegetation=&quot;1100&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{0178FE01-1E89-435C-8CC0-7BDDAEF1A69B}" id="{C61A0ADF-0A0D-4D62-9901-A7AC245110AA}" name="AX_Wald Nadel" active="true">
+						<constraints>
+							<constraint formular="vegetation=&quot;1200&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{0178FE01-1E89-435C-8CC0-7BDDAEF1A69B}" id="{D677F22D-6259-4511-B3F9-FBF2FF799C79}" name="AX_Wald Misch" active="true">
+						<constraints>
+							<constraint formular="vegetation=&quot;1300&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{236F5EFB-4DD7-42A6-84ED-6D36B4BC0852}" id="{D5F9B488-7CCC-44A3-A480-7E4BB111EA56}" name="AX_Landwirtschaft Ackerland" active="true">
+						<constraints>
+							<constraint formular="adv=&quot;AX_Wald&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{D144174F-7341-4672-8DF9-8A997D13C37A}" id="{04CE20D6-5234-4536-B7D0-8337E74FC0CE}" name="AX_Landwirtschaft Gruenland" active="true">
+						<constraints>
+							<constraint formular="vegetation=&quot;1020&quot;"/>
+						</constraints>
+					</rule>
+					<rule type="TrsPMEnvironmentRule" groupproperties="{0CA2E414-1F1E-4B20-B2FB-B70B6579E055}" id="{2B7E145B-6602-43DF-A3BF-9F0B2E519337}" name="AX_StehendesWasser" active="true">
+						<constraints>
+							<constraint formular="funktion=&quot;8620&quot;"/>
+							<constraint formular="funktion=&quot;8500&quot;"/>
+							<constraint formular="funktion=&quot;8400&quot;"/>
+							<constraint formular="funktion=&quot;8200&quot;"/>
+						</constraints>
+					</rule>
+				</rule>
+				<rule type="TrsPMEnvironmentRule" groupproperties="{DB10C203-2BC5-4001-9F8E-0C5147849CC0}" id="{B3BDD335-C23A-4844-8BB7-E83237574639}" name="Catch-All nicht zugeordnet" active="true">
+					<constraints/>
+				</rule>
+			</rootrule>
+			<tree type="rules">
+				<folder id="{3447B7FF-E40D-40DD-B0E9-AF0B2559F35F}">
+					<folder id="{BA975A20-BA1C-418F-9DB5-034412D96FCA}">
+						<folder id="{3F23148F-D267-4A9A-9237-DFD4488A244E}"/>
+					</folder>
+					<folder id="{937892F9-1A08-4E60-8E07-96D3D84C1861}"/>
+					<folder id="{4B06323E-B7F1-48B1-A990-BA7D1ED39D77}">
+						<folder id="{16496F57-78A8-48D2-B628-1179BEEDAC59}"/>
+						<folder id="{E061313F-DC84-43D0-BFC9-EAE0781F42C7}"/>
+					</folder>
+					<folder id="{FAEC3928-7312-4267-8E5F-F287D1961A61}"/>
+					<folder id="{AFD82494-18D6-407C-A7BB-3E16048F338C}"/>
+					<folder id="{A93FDA0B-5A72-4CDC-9586-9AFE26EC868A}"/>
+				</folder>
+				<folder id="{C66AFBC4-6EB0-4E64-8DBD-82F0094432F8}"/>
+				<folder id="{092BC0F0-E982-4C6E-BC70-2C0BF42D7FAF}"/>
+				<folder id="{A3A007D9-2BEF-4532-9E2D-F5C04CEEC247}"/>
+			</tree>
+		</container>
+	</project>
+</asdatafile>

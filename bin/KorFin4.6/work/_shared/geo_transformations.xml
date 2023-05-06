@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--****************************************************************************
+    geodetic transformations
+    (C) 2017 A+S Consult GmbH FuE
+*****************************************************************************-->
+<asdatafile>
+    <!--*********************************************************************-->
+    <!-- Ellipsoids -->
+    <Ellipsoids>
+        <Ellipsoid name="WGS84" equatorAxis="6378137.0" poleAxis="6356752.31425" description="World Geodetic System 1984" />
+        <Ellipsoid name="GRS80" equatorAxis="6378137.0" poleAxis="6356752.31414" description="Geodetic Reference System 1980" />
+        <Ellipsoid name="Bessel" equatorAxis="6377397.15508" poleAxis="6356078.96290" description="Bessel 1841"/>
+        <Ellipsoid name="Krassowski" equatorAxis="6378245.0" poleAxis="6356863.019" description="Krassowski 1940" />
+    </Ellipsoids>
+    
+    <!--*********************************************************************-->
+    <!-- Datums -->
+    <Datums>
+        <Datum name="DB_REF" ellipsoid="Bessel" description="Deutsche Bahn Reference System" />
+        <Datum name="ETRF89" ellipsoid="GRS80" description="European Terrestrial Reference System 1989" />
+        <Datum name="WGS84" ellipsoid="WGS84" description="World Geodetic System 1984" />
+        <Datum name="DHDN" ellipsoid="Bessel" description="Deutsches Hauptdreiecksnetz" />
+        <Datum name="RD/83" ellipsoid="Bessel" description="Rauenberg Datum/83" />
+        <Datum name="PD/83" ellipsoid="Bessel" description="Potsdam Datum/83" />
+        <Datum name="S42" ellipsoid="Krassowski" description="Pulkovo 1942" />
+    </Datums>
+    
+    <!--*********************************************************************-->
+    <!-- Transformations between Datums -->
+    <DatumTransformations>
+        <!-- grid shifts -->
+        <GridShift2DTransform name="BeTA2007"
+            sourceDatum="DHDN" targetDatum="ETRF89"
+            file="BeTA2007.gsb"
+            description="Bundeseinheitliche Transformation für ATKIS (BeTA2007), 20cm Genauigkeit" />
+        <GridShift2DTransform name="ETRF89_DBREF_1mm"
+            sourceDatum="ETRF89" targetDatum="DB_REF"
+            file="ETRF89_DBREF_1mm.gsb"
+            description="ETRF89 zu DBRef mit 1mm Toleranz zu GNTrans" />
+
+        <!-- helmert, rotations in seconds -->
+        <!-- CoordinateFrame, Rotation negativ -->
+        <HelmertTransform name="DHDN_to_ETRF89"
+            sourceDatum="DHDN" targetDatum="ETRF89"
+            dx="582" dy="105" dz="414" ex="1.04" ey="0.35" ez="-3.08" scale="8.3"
+            description="allgemein Deutschland, Genauigkeit 5m" />
+        <HelmertTransform name="WGS84_to_ETRF89"
+            sourceDatum="WGS84" targetDatum="ETRF89"
+            dx="0" dy="0" dz="0" ex="0" ey="0" ez="0" scale="1" />
+        <!-- CoordinateFrame, Rotation negativ -->
+        <HelmertTransform name="S42_83_to_ETRF89_Brandenburg"
+            sourceDatum="S42" targetDatum="ETRF89"
+            dx="26.93176" dy="-123.92726" dz="-92.97472" ex="0.02153" ey="-0.28960" ez="-0.04948" scale="0.74789" />
+        <!-- PositionVector, Rotation positiv -->
+        <HelmertTransform name="RD83_to_ETRF89_Sachsen"
+            sourceDatum="RD/83" targetDatum="ETRF89"
+            dx="612.4" dy="77.0" dz="440.2" ex="-0.054" ey="0.057" ez="-2.797" scale="2.55" />
+        <!-- PositionVector, Rotation positiv -->
+        <HelmertTransform name="RD83_to_ETRF89_Ostsachsen"
+            sourceDatum="RD/83" targetDatum="ETRF89"
+            dx="610.75192" dy="71.26765" dz="436.68946" ex="-0.04226" ey="0.06232" ez="-2.50665" scale="3.12900" />
+
+        <!-- TODO: include valid area and verification, add user dialogs to select correct transformation -->
+        <GridShift2DTransform name="NRW_DBREF_1cm"
+            sourceDatum="DHDN" targetDatum="DB_REF"
+            file="NRW_DBREF_1cm.gsb"
+            description="Landessystem NRW zu DBRef mit 1cm Toleranz zu GNTrans" />
+        <GridShift2DTransform name="Hessen_DBRef_1cm"
+            sourceDatum="DHDN" targetDatum="DB_REF"
+            file="hessen_dbref_1cm.gsb"
+            description="Landessystem Hessen zu DBRef mit 1cm Toleranz zu GNTrans" />
+        <GridShift2DTransform name="NRW_ETRF89_1cm"
+            sourceDatum="DHDN" targetDatum="ETRF89"
+            file="NRW_ETRF89_1cm.gsb"
+            description="Landessystem NRW zu ETRF89 mit 1cm Toleranz zu GNTrans" />
+
+        <!-- transformation chains -->
+        <DatumTransformationChain name="DHDN_to_DB_REF"
+            sourceDatum="DHDN" targetDatum="DB_REF"
+            steps="BeTA2007,ETRF89_DBREF_1mm" />
+        <DatumTransformationChain name="WGS84_to_DB_REF"
+            sourceDatum="WGS84" targetDatum="DB_REF"
+            steps="ETRF89_DBREF_1mm" />
+        <DatumTransformationChain name="DHDN_to_WGS84"
+            sourceDatum="DHDN" targetDatum="WGS84"
+            steps="BeTA2007" />
+        <DatumTransformationChain name="S42_Brandenburg_to_DB_REF"
+            sourceDatum="S42" targetDatum="DB_REF"
+            steps="S42_83_to_ETRF89_Brandenburg,ETRF89_DBREF_1mm" />
+        <DatumTransformationChain name="RD83_Sachsen_to_DB_REF"
+            sourceDatum="RD/83" targetDatum="DB_REF"
+            steps="RD83_to_ETRF89_Sachsen,ETRF89_DBREF_1mm" />
+        <DatumTransformationChain name="RD83_Ostsachsen_to_DB_REF"
+            sourceDatum="RD/83" targetDatum="DB_REF"
+            steps="RD83_to_ETRF89_Ostsachsen,ETRF89_DBREF_1mm" />
+            
+        <!-- gridshift for sachsen -->
+        <!--<GridShift2DTransform name="NTv2_SN"
+            sourceDatum="RD/83" targetDatum="ETRF89"
+            file="NTv2_SN.gsb"
+            description="Landessystem Sachsen zu ETRF89 mit 3cm Toleranz" />
+        <DatumTransformationChain name="RD83_Sachsen_to_DB_REF"
+            sourceDatum="RD/83" targetDatum="DB_REF"
+            steps="NTv2_SN,ETRF89_DBREF_1mm" /> -->
+    </DatumTransformations>
+    
+    <!--*********************************************************************-->
+    <!-- Projections -->
+    <Projections>
+        <!-- Mercartor projections
+             parameters and default values
+                - ellipsoid
+                - deltaX, deltaY = 0.0   Additionskonstanten für Rechtswert/Hochwert
+                - scale          = 1.0   Maßstabverzerrung
+                - meridian       = 0.0   Meridian (in °)
+                - leadingZone    = false Rechtswert enthält führende Kennzahl
+        -->
+        <!-- GK: meridian=3*zone, deltaX=500000.0 (+ zone * 1e6, bei führender Kennzahl) -->
+        <MercatorProjection name="GK_2" ellipsoid="Bessel" deltaX="2500000.0" meridian="6" leadingZone="true" />
+        <MercatorProjection name="GK_3" ellipsoid="Bessel" deltaX="3500000.0" meridian="9" leadingZone="true" />
+        <MercatorProjection name="GK_4" ellipsoid="Bessel" deltaX="4500000.0" meridian="12" leadingZone="true" />
+        <MercatorProjection name="GK_5" ellipsoid="Bessel" deltaX="5500000.0" meridian="15" leadingZone="true" />
+        <!-- S42 -->
+        <MercatorProjection name="S42_GK_4" ellipsoid="Krassowski" deltaX="4500000.0" meridian="12" leadingZone="true" />
+        <MercatorProjection name="S42_GK_5" ellipsoid="Krassowski" deltaX="5500000.0" meridian="15" leadingZone="true" />
+        <!-- RD83 -->
+        <MercatorProjection name="RD83_GK_4" ellipsoid="Bessel" deltaX="4500000.0" meridian="12" leadingZone="true" />
+        <MercatorProjection name="RD83_GK_5" ellipsoid="Bessel" deltaX="5500000.0" meridian="15" leadingZone="true" />
+        <!-- UTM: meridian=6*zone - 183, deltaX=500000.0 (+ zone * 1e6, bei führender Kennzahl), scale=0.996 -->
+        <MercatorProjection name="UTM_32N" ellipsoid="GRS80" deltaX="500000.0" meridian="9" scale="0.9996" />
+        <MercatorProjection name="UTM_33N" ellipsoid="GRS80" deltaX="500000.0" meridian="15" scale="0.9996" />
+        <MercatorProjection name="UTM_34N" ellipsoid="GRS80" deltaX="500000.0" meridian="21" scale="0.9996" />
+        <MercatorProjection name="UTM_35N" ellipsoid="GRS80" deltaX="500000.0" meridian="27" scale="0.9996" />
+        <MercatorProjection name="UTM_36N" ellipsoid="GRS80" deltaX="500000.0" meridian="33" scale="0.9996" />
+        <MercatorProjection name="UTM_37N" ellipsoid="GRS80" deltaX="500000.0" meridian="39" scale="0.9996" />
+        <MercatorProjection name="UTM_38N" ellipsoid="GRS80" deltaX="500000.0" meridian="45" scale="0.9996" />
+        <MercatorProjection name="UTM_32N_ZONE" ellipsoid="GRS80" deltaX="32500000.0" meridian="9" scale="0.9996" leadingZone="true" />
+        <MercatorProjection name="UTM_33N_ZONE" ellipsoid="GRS80" deltaX="33500000.0" meridian="15" scale="0.9996" leadingZone="true" />
+        <WebMercatorProjection name="WebMercator" ellipsoid="WGS84" />
+    </Projections>
+    
+    <!-- Coordinate Reference Systems -->
+    <CoordinateReferenceSystems>
+        <!-- ellipsoid reference systems -->
+        <EllipsoidCRS name="DB_REF" epsg="5681" datum="DB_REF" description="Deutsche Bahn Reference System" unit="Degree" />
+        <EllipsoidCRS name="ETRF89" epsg="4258" datum="ETRF89" description="European Terrestrial Reference System 1989" unit="Degree" />
+        <EllipsoidCRS name="WGS84" epsg="4326" datum="WGS84" description="World Geodetic System 1984" unit="Degree" />
+        <EllipsoidCRS name="DHDN" epsg="6314" datum="DHDN" description="Deutsches Hauptdreiecksnetz" unit="Degree" />
+        <EllipsoidCRS name="RD/83" epsg="6745" datum="RD/83" description="Rauenberg Datum/83" unit="Degree" />
+        <EllipsoidCRS name="PD/83" epsg="6746" datum="PD/83" description="Potsdam Datum/83" unit="Degree" />
+        <!-- Brandenburg -->
+        <ProjectedCRS name="S42_GK_4" epsg="2398" datum="S42" projection="S42_GK_4" description="System 42/83, Gauß-Krüger Zone 4" />
+        <ProjectedCRS name="S42_GK_5" epsg="2399" datum="S42" projection="S42_GK_5" description="System 42/83, Gauß-Krüger Zone 5" />
+        <!-- Sachsen -->
+        <ProjectedCRS name="RD83_GK_4" epsg="3398" datum="RD/83" projection="RD83_GK_4" description="RD83, Gauß-Krüger Zone 4" />
+        <ProjectedCRS name="RD83_GK_5" epsg="3399" datum="RD/83" projection="RD83_GK_5" description="RD83, Gauß-Krüger Zone 5" />
+        <!-- UTM mit Zonenangabe -->
+        <ProjectedCRS name="UTM_32N_ZONE" epsg="4647" datum="ETRF89" projection="UTM_32N_ZONE" description="Variant of ETRS89 / UTM zone 32N (CRS code 25832) in which easting has zone prefix."/>
+        <ProjectedCRS name="UTM_33N_ZONE" epsg="5650" datum="ETRF89" projection="UTM_33N_ZONE" description="Variant of ETRS89 / UTM zone 33N (CRS code 25833) in which easting has zone prefix."/>
+        <!-- GK DBRef -->
+        <ProjectedCRS name="DB_REF_GK_2" epsg="5682" datum="DB_REF" projection="GK_2" description="DB_REF / 3GK zone 2 E-N"/>
+        <ProjectedCRS name="DB_REF_GK_3" epsg="5683" datum="DB_REF" projection="GK_3" description="DB_REF / 3GK zone 3 E-N"/>
+        <ProjectedCRS name="DB_REF_GK_4" epsg="5684" datum="DB_REF" projection="GK_4" description="DB_REF / 3GK zone 4 E-N"/>
+        <ProjectedCRS name="DB_REF_GK_5" epsg="5685" datum="DB_REF" projection="GK_5" description="DB_REF / 3GK zone 5 E-N"/>
+        <!-- UTM ohne Zonenangabe -->
+        <ProjectedCRS name="UTM_32N" epsg="25832" datum="ETRF89" projection="UTM_32N" description="ETRF89 / UTM zone 32N"/>
+        <ProjectedCRS name="UTM_33N" epsg="25833" datum="ETRF89" projection="UTM_33N" description="ETRF89 / UTM zone 33N"/>
+        <ProjectedCRS name="UTM_38N" epsg="32638" datum="ETRF89" projection="UTM_38N" description="ETRF89 / UTM zone 38N"/>
+        <!-- GK mit Zonenangabe -->
+        <ProjectedCRS name="DHDN_GK_2" epsg="31466" datum="DHDN" projection="GK_2" description="DHDN / 3-degree Gauss-Kruger zone 2"/>
+        <ProjectedCRS name="DHDN_GK_3" epsg="31467" datum="DHDN" projection="GK_3" description="DHDN / 3-degree Gauss-Kruger zone 3"/>
+        <ProjectedCRS name="DHDN_GK_4" epsg="31468" datum="DHDN" projection="GK_4" description="DHDN / 3-degree Gauss-Kruger zone 4"/>
+        <ProjectedCRS name="DHDN_GK_5" epsg="31469" datum="DHDN" projection="GK_5" description="DHDN / 3-degree Gauss-Kruger zone 5"/>
+        <!-- pseudo mercator -->
+        <ProjectedCRS name="WebMercator" epsg="3857" datum="WGS84" projection="WebMercator" description="WGS 84 / Pseudo-Mercator"/>
+    </CoordinateReferenceSystems>
+</asdatafile>

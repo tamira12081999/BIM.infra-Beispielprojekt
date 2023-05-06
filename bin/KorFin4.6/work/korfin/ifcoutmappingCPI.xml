@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asdatafile>
+	<ifcoutmapping>
+		<outset name="CPI">
+			<outproperty type="float" name="cpBBoxDX" inproperty="BIM_PROPERTY_BBOX_DX"/>
+			<outproperty type="float" name="cpBBoxDY" inproperty="BIM_PROPERTY_BBOX_DY"/>
+			<outproperty type="float" name="cpBBoxDZ" inproperty="BIM_PROPERTY_BBOX_DZ"/>
+			<outproperty type="float" name="cpBBoXMaxX" inproperty="BIM_PROPERTY_BBOX_MAXX"/>
+			<outproperty type="float" name="cpBBoXMaxY" inproperty="BIM_PROPERTY_BBOX_MAXY"/>
+			<outproperty type="float" name="cpBBoXMaxZ" inproperty="BIM_PROPERTY_BBOX_MAXZ"/>
+			<outproperty type="float" name="cpBBoXMinX" inproperty="BIM_PROPERTY_BBOX_MINX"/>
+			<outproperty type="float" name="cpBBoXMinY" inproperty="BIM_PROPERTY_BBOX_MINY"/>
+			<outproperty type="float" name="cpBBoXMinZ" inproperty="BIM_PROPERTY_BBOX_MINZ"/>
+			<outproperty type="bool" name="cpHasOOBB" value="false" />
+			<outproperty type="bool" name="cpHasOOBBxy" value="false" />
+			<outproperty type="float" name="cpBaseArea" inproperty1="Maß.MM Flächenwert 1" inproperty2="BIM_PROPERTY_AREAFUSION"/> 
+			<outproperty type="bool" name="cpHasCurvedSurfacePart" value="true"/>
+			<outproperty type="float" name="cpCircumference" inproperty1="Maß.MM Umfang" inproperty2="BIM_PROPERTY_AREAFUSION"/> 
+			<outproperty type="int" name="cpCount" inproperty1="Maß.MM Anzahlwert" inproperty2="BIM_PROPERTY_COUNT"/> 
+			<outproperty type="string" name="cpMaterialAmbient" inproperty="BIM_PROPERTY_COLOR"/>
+			<outproperty type="float" name="cpVolume" inproperty1="Maß.MM Volumenwert 1" inproperty2="BIM_PROPERTY_VOLUME"/>
+			<outproperty type="float" name="cpVolumeUnchecked" inproperty1="Maß.MM Volumenwert 1" inproperty2="BIM_PROPERTY_VOLUME"/>			
+		</outset>
+	</ifcoutmapping>
+</asdatafile>

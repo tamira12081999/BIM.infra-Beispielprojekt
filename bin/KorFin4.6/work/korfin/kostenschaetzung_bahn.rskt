@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asdatafile>
+	<description>
+		<creator name="KlausTilger" date="2016.04.19"/>
+		<content type="application" name="korfin" version="4.2.0"/>
+	</description>
+	<table title="Kostenschätzung Bahn">
+		<definitions>
+			<classes>
+				<parameterclass type="TrsCostsParametersClass" id="{661B623C-413B-4066-9EBB-B08FE35AA1F4}" name="Allgemein" backgroundcolor="14145495"/>
+				<parameterclass type="TrsCostsParametersClass" id="{314CC879-1508-49F6-A65F-43D485C585B9}" name="Erdbauwerke und Tunnel" backgroundcolor="13434620"/>
+				<parameterclass type="TrsCostsParametersClass" id="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="Oberbau" backgroundcolor="12577008"/>
+				<parameterclass type="TrsCostsParametersClass" id="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="Ingenieurbauwerke" backgroundcolor="11260140"/>
+				<parameterclass type="TrsCostsParametersClass" id="{44C09E51-586D-4215-9027-3543AD557183}" name="Ausstattung" backgroundcolor="13290735"/>
+				<parameterclass type="TrsCostsParametersClass" id="{814493FB-2A1E-490B-923F-9FB48F6F9398}" name="Bahnstrom" backgroundcolor="15721180"/>
+				<parameterclass type="TrsCostsParametersClass" id="{B8D7665C-4A69-4650-AFDE-88177D9A7347}" name="Aussenanlagen" backgroundcolor="16645339"/>
+				<parameterclass type="TrsCostsParametersClass" id="{E456E333-4A0F-43A6-B2EE-55261E0C3F09}" name="Baustelleneinrichtung" backgroundcolor="13369050"/>
+				<parameterclass type="TrsCostsParametersClass" id="{3605D140-D95E-4788-97DF-737C0C77F520}" name="Planungskosten" backgroundcolor="10288857"/>
+				<parameterclass type="TrsCostsParametersClass" id="{70D7B911-8DF1-44D0-8A6F-B480C0A224C0}" name="Parameter"/>
+			</classes>
+			<parameters>
+				<parameter type="TrsCostsParameterText" class="{661B623C-413B-4066-9EBB-B08FE35AA1F4}" name="$WAEHRUNG$" value="€" info="Währung"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311200_KOST$" value="13" info="Herstellung Einschnitt (€/m³)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311200_PRAEG_A$" value="1" info="Herstellung Einschnitt - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311200_MENG_A$" value="100" info="Herstellung Einschnitt - Mengenanteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311200_PRAEG_B$" value="3.3" info="Herstellung Einschnitt - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311200_MENG_B$" value="0" info="Herstellung Einschnitt - Mengenanteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311100_KOST$" value="13" info="Herstellung Damm (€/m³)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311100_PRAEG_A$" value="1" info="Herstellung Damm - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311100_MENG_A$" value="100" info="Herstellung Damm - Mengenanteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311100_PRAEG_B$" value="1.75" info="Herstellung Damm - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311100_MENG_B$" value="0" info="Herstellung Damm - Mengenanteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311500_KOST$" value="17" info="Frostschutzschicht (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311500_PRAEG_A$" value="1" info="Frostschutzschicht - Ausprägungsfaktor A (v&lt;200km/h)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311500_PRAEG_B$" value="1.7" info="Frostschutzschicht - Ausprägungsfaktor B (v&gt;=200km/h)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311300_KOST$" value="19" info="Bodenaustausch (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311300_MENG$" value="0" info="Bodenaustausch (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311800_KOST$" value="50" info="Planumsschutzschicht (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311600_KOST$" value="160" info="Tiefenentwässerung (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311600_PRAEG_A$" value="1" info="Tiefenentwässerung - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311600_STRECK_A$" value="100" info="Tiefenentwässerung - Streckenanteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311600_PRAEG_B$" value="1.5" info="Tiefenentwässerung - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311600_STRECK_B$" value="0" info="Tiefenentwässerung - Streckenanteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311700_KOST$" value="18" info="Oberflächenentwässerung (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311700_PRAEG_A$" value="1" info="Oberflächenentwässerung - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311700_STRECK_A$" value="100" info="Oberflächenentwässerung - Streckenanteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311700_PRAEG_B$" value="3.5" info="Oberflächenentwässerung - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$311700_STRECK_B$" value="0" info="Oberflächenentwässerung - Streckenanteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$TN_OB_KOST$" value="20000" info="Tunnel, offenen Bauweise (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$TN_GB_KOST$" value="28000" info="Tunnel, geschlossene Bauweise (€/m)"/>
+				<parameter type="TrsCostsParameterTextConstraint" name="$RLBWTNTYPNAME$" formular="IF{$$RLTN_TYP$$;=;1};{Geschlossene Bauweise};{IF{$$RLTN_TYP$$;=;2};{Offene Bausweise mit Böschung};{IF{$$RLTN_TYP$$;=;3};{Offene Bauweise mit Verbau};{IF{$$RLTN_TYP$$;=;4};{Gallerietunnel};{Undefinierte Tunnelbauweise}}}}"/>
+				<parameter type="TrsCostsParameterFloatConstraint" name="$RLKBWTN$" formular="IF{$$RLTN_TYP$$;=;1};{$TN_GB_KOST$};{IF{$$RLTN_TYP$$;=;2};{$TN_OB_KOST$};{IF{$$RLTN_TYP$$;=;3};{$TN_OB_KOST$};{IF{$$RLTN_TYP$$;=;4};{$TN_OB_KOST$};{0}}}}"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$336800_KOST$" value="6300" info="Durchlass (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$336800_LAENGE$" value="0" info="Durchlass (m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$319600_KOST$" value="13" info="Recycling, Zwischendeponie und Entsorgung (€/m³)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$319600_VOLUMEN$" value="0" info="Recycling, Zwischendeponie und Entsorgung (m³)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$319600_PRAEG_A$" value="1" info="Recycling, Zwischendeponie und Entsorgung - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$319600_MENG_A$" value="100" info="Recycling, Zwischendeponie und Entsorgung - Mengenanteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$319600_PRAEG_B$" value="2" info="Recycling, Zwischendeponie und Entsorgung - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$319600_MENG_B$" value="0" info="Recycling, Zwischendeponie und Entsorgung - Mengenanteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$319600_PRAEG_C$" value="12" info="Recycling, Zwischendeponie und Entsorgung - Ausprägungsfaktor C"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$319600_MENG_C$" value="0" info="Recycling, Zwischendeponie und Entsorgung - Mengenanteil C (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$319600_PRAEG_D$" value="52" info="Recycling, Zwischendeponie und Entsorgung - Ausprägungsfaktor D"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$319600_MENG_D$" value="0" info="Recycling, Zwischendeponie und Entsorgung - Mengenanteil D (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$502810_KOST$" value="19" info="Straßen, Wege, Plätze (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$502810_FLAECHE$" value="0" info="Straßen, Wege, Plätze (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$502810_PRAEG_A$" value="1" info="Straßen, Wege, Plätze - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$502810_MENG_A$" value="100" info="Straßen, Wege, Plätze - Mengenanteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$502810_PRAEG_B$" value="3" info="Straßen, Wege, Plätze - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$502810_MENG_B$" value="0" info="Straßen, Wege, Plätze - Mengenanteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$501400_KOST$" value="32" info="Landschaftspflege (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{314CC879-1508-49F6-A65F-43D485C585B9}" name="$501400_FLAECHE$" value="0" info="Landschaftspflege (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$321100_KOST$" value="450" info="Schotterbett (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$321100_PRAEG_A$" value="1" info="Schotterbett - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$321100_STRECK_A$" value="100" info="Schotterbett - Streckenanteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$321100_PRAEG_B$" value="1.5" info="Schotterbett - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$321100_STRECK_B$" value="0" info="Schotterbett - Streckenanteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$321200_KOST$" value="930" info="Feste Fahrbahn (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$321200_PRAEG_A$" value="1" info="Feste Fahrbahn - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$321200_STRECK_A$" value="100" info="Feste Fahrbahn - Streckenanteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$321200_PRAEG_B$" value="1.5" info="Feste Fahrbahn - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$321200_STRECK_B$" value="0" info="Feste Fahrbahn - Streckenanteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$328300_KOST$" value="410" info="Erschütterungsschutz (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$328300_LAENGE_A$" value="0" info="Erschütterungsschutz - Strecke Bahnkörper (m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$328300_PRAEG_A$" value="1" info="Erschütterungsschutz - Ausprägungsfaktor A (BK und Brücken)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$328300_PRAEG_B$" value="1.5" info="Erschütterungsschutz - Ausprägungsfaktor B (USM Tunnel)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$328300_STRECK_B$" value="100" info="Erschütterungsschutz - Streckenanteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$328300_PRAEG_C$" value="5.5" info="Erschütterungsschutz - Ausprägungsfaktor C (MFS Tunnel)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$328300_STRECK_C$" value="0" info="Erschütterungsschutz - Streckenanteil C (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322111_KOST$" value="91000" info="Weiche EW 190 (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322111_STK$" value="0" info="Anzahl Weichen EW 190 (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322112_KOST$" value="102000" info="Weiche EW 300 (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322112_STK$" value="0" info="Anzahl Weichen EW 300 (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322113_KOST$" value="132000" info="Weiche EW 500 (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322113_STK$" value="0" info="Anzahl Weichen EW 500 (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322114_KOST$" value="154000" info="Weiche EW 760 (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322114_STK$" value="0" info="Anzahl Weichen EW 760 (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322115_KOST$" value="174000" info="Weiche EW 1200 (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322115_STK$" value="0" info="Anzahl Weichen EW 1200 (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322116_KOST$" value="379000" info="Weiche EW 2500 (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322116_STK$" value="0" info="Anzahl Weichen EW 2500 (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322213_KOST$" value="330000" info="Klothoidenweiche R 100000 (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$322213_STK$" value="0" info="Anzahl Weichen R 100000 (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$329410_KOST$" value="30" info="Rückbau Gleise (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$329410_LAENGE$" value="0" info="Rückbau Gleise (m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$329420_KOST$" value="4100" info="Rückbau Weichen/Kreuzungen (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$329420_STK$" value="0" info="Rückbau Weichen/Kreuzungen (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$EINAUS_KOST$" value="8000" info="Ein- und Ausgleisbereiche (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{13C9D0A0-B997-433C-A875-F9C9B6F15FDA}" name="$EINAUS_FLAECH$" value="0" info="Ein- und Ausgleisbereiche (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333120_KOST$" value="1350" info="Lärmschutzwand (bis 2m Höhe) (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333120_PRAEG_A$" value="1" info="Lärmschutzwand (bis 2m Höhe) - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333120_STRECK_A$" value="100" info="Lärmschutzwand (bis 2m Höhe) - Anteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333120_PRAEG_B$" value="1.5" info="Lärmschutzwand (bis 2m Höhe) - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333120_STRECK_B$" value="0" info="Lärmschutzwand (bis 2m Höhe) - Anteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333120_PRAEG_C$" value="1.6" info="Lärmschutzwand (bis 2m Höhe) - Ausprägungsfaktor C"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333120_STRECK_C$" value="0" info="Lärmschutzwand (bis 2m Höhe) - Anteil C (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333140_KOST$" value="1975" info="Lärmschutzwand (2 bis 4m Höhe) (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333140_PRAEG_A$" value="1" info="Lärmschutzwand (2 bis 4m Höhe) - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333140_STRECK_A$" value="100" info="Lärmschutzwand (2 bis 4m Höhe) - Anteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333140_PRAEG_B$" value="1.5" info="Lärmschutzwand (2 bis 4m Höhe) - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333140_STRECK_B$" value="0" info="Lärmschutzwand (2 bis 4m Höhe) - Anteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333140_PRAEG_C$" value="1.6" info="Lärmschutzwand (2 bis 4m Höhe) - Ausprägungsfaktor C"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333140_STRECK_C$" value="0" info="Lärmschutzwand (2 bis 4m Höhe) - Anteil C (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333160_KOST$" value="2900" info="Lärmschutzwand (4 bis 6m Höhe) (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333160_PRAEG_A$" value="1" info="Lärmschutzwand (4 bis 6m Höhe) - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333160_STRECK_A$" value="100" info="Lärmschutzwand (4 bis 6m Höhe) - Anteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333160_PRAEG_B$" value="1.5" info="Lärmschutzwand (4 bis 6m Höhe) - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333160_STRECK_B$" value="0" info="Lärmschutzwand (4 bis 6m Höhe) - Anteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333160_PRAEG_C$" value="1.6" info="Lärmschutzwand (4 bis 6m Höhe) - Ausprägungsfaktor C"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$333160_STRECK_C$" value="0" info="Lärmschutzwand (4 bis 6m Höhe) - Anteil C (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334100_KOST$" value="1500" info="Winkelstützwand (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334100_FLAECHE$" value="0" info="Winkelstützwand (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334100_PRAEG_A$" value="1" info="Winkelstützwand - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334100_FLAECH_A$" value="100" info="Winkelstützwand - Anteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334100_PRAEG_B$" value="1.7" info="Winkelstützwand - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334100_FLAECH_B$" value="0" info="Winkelstützwand - Anteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334200_KOST$" value="180" info="Spundwand (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334200_FLAECHE$" value="0" info="Spundwand (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334200_PRAEG_A$" value="1" info="Spundwand - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334200_FLAECH_A$" value="100" info="Spundwand - Anteil A (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334200_PRAEG_B$" value="1.5" info="Spundwand - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$334200_FLAECH_B$" value="0" info="Spundwand - Anteil B (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$RUECK_BW_KOST$" value="4000" info="Rückbau Brückenbauwerke (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$RUECK_BW_FLAECH$" value="0" info="Rückbau Brückenbauwerke (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$WL_BW_KOST$" value="2500" info="Herstellung Widerlager denkmalgeschützte Brücken (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$WL_BW_FLAECH$" value="0" info="Herstellung Widerlager denkmalgeschützte Brücken (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336300_01_KOST$" value="2850" info="Straßenüberführung (&lt;10m Lichte Weite) (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336300_01_FLAECHE$" value="0" info="Straßenüberführung (&lt;10m Lichte Weite) (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336300_02_KOST$" value="2450" info="Straßenüberführung (10 - 20m Lichte Weite) (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336300_02_FLAECHE$" value="0" info="Straßenüberführung (10 - 20m Lichte Weite) (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336300_03_KOST$" value="2100" info="Straßenüberführung (20 - 30m Lichte Weite) (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336300_03_FLAECHE$" value="0" info="Straßenüberführung (20 - 30m Lichte Weite) (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336300_04_KOST$" value="1825" info="Straßenüberführung (&gt;30m Lichte Weite) (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336300_04_FLAECHE$" value="0" info="Straßenüberführung (&gt;30m Lichte Weite) (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336200_00_KOST$" value="0" info="Eisenbahnüberführung, Undefinierte Brückenbauweise (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336200_01_KOST$" value="6147.26" info="Eisenbahnüberführung, Bauart WIB (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336200_02_KOST$" value="7962.33" info="Eisenbahnüberführung, Bauart Stahltrog (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336200_03_KOST$" value="4500" info="Eisenbahnüberführung, Talbrücke (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{A6325A01-72DE-482B-9744-CF28A34F5F4D}" name="$336200_04_KOST$" value="5600" info="Eisenbahnüberführung, Strombrücke (€/m²)"/>
+				<parameter type="TrsCostsParameterTextConstraint" name="$RLBWBRTYPNAME$" formular="IF{$$RLBR_TYP$$;=;1};{Strombrücke};{IF{$$RLBR_TYP$$;=;2};{Talbrücke};{IF{$$RLBR_TYP$$;=;3};{Bauart WIB};{IF{$$RLBR_TYP$$;=;4};{Bauart Stahltrog};{Undefinierte Brückenbauweise}}}}"/>
+				<parameter type="TrsCostsParameterFloatConstraint" name="$RLKBWBR$" formular="IF{$$RLBR_TYP$$;=;1};{$336200_04_KOST$};{IF{$$RLBR_TYP$$;=;2};{$336200_03_KOST$};{IF{$$RLBR_TYP$$;=;3};{$336200_01_KOST$};{IF{$$RLBR_TYP$$;=;4};{$336200_02_KOST$};{$336200_00_KOST$}}}}"/>
+				<parameter type="TrsCostsParameterTextConstraint" name="$RL_PREIS_EIN$" formular="IF{$$RLBR_TYP$$;=;1};{$WAEHRUNG$/m²};{IF{$$RLBR_TYP$$;=;2};{$WAEHRUNG$/m²};{$WAEHRUNG$/m}}"/>
+				<parameter type="TrsCostsParameterFloatConstraint" name="$RL_MENGE$" formular="IF{$$RLBR_TYP$$;=;1};{$$RLBR_LPA$$};{IF{$$RLBR_TYP$$;=;2};{$$RLBR_LPA$$};{$$RLBR_LPL$$}}"/>
+				<parameter type="TrsCostsParameterTextConstraint" name="$RL_MENGE_EIN$" formular="IF{$$RLBR_TYP$$;=;1};{m²};{IF{$$RLBR_TYP$$;=;2};{m²};{m}}"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$BAHNSTG_RUECK_KOST$" value="35" info="Rückbau Bahnsteiganlagen (€/m³)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$BAHNSTG_RUECK_VOL$" value="0" info="Rückbau Bahnsteiganlagen (m³)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308210_KOST$" value="300" info="Bahnsteig (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308210_FLAECHE$" value="0" info="Bahnsteig (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308250_KOST$" value="1650" info="Bahnsteigrampen (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308250_FLAECHE$" value="0" info="Bahnsteigrampen (m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308251_KOST$" value="51000" info="Bahnsteigausstattung (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308251_PRAEG_A$" value="1" info="Bahnsteigausstattung - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308251_STK_A$" value="0" info="Bahnsteigausstattung A (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308251_PRAEG_B$" value="1.5" info="Bahnsteigausstattung - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308251_STK_B$" value="0" info="Bahnsteigausstattung B (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308251_PRAEG_C$" value="3" info="Bahnsteigausstattung - Ausprägungsfaktor C"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308251_STK_C$" value="0" info="Bahnsteigausstattung C (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308260_KOST$" value="180000" info="Bahnsteigtreppen (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$308260_STK$" value="0" info="Bahnsteigtreppen (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$406100_KOST$" value="205000" info="Aufzug (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$406100_PRAEG_A$" value="1" info="Aufzug - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$406100_STK_A$" value="0" info="Aufzug A (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$406100_PRAEG_B$" value="1.3" info="Aufzug - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$406100_STK_B$" value="0" info="Aufzug B (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$406200_KOST$" value="380000" info="Fahrtreppe (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$406200_STK$" value="0" info="Fahrtreppe (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412110_KOST$" value="14000" info="Hauptsignal Innenanlage (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412110_STK$" value="0" info="Hauptsignal Innenanlage (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412120_KOST$" value="21000" info="Hauptsignal Aussenanlage (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412120_PRAEG_A$" value="1" info="Hauptsignal Aussenanlage - Ausprägungsfaktor A"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412120_STK_A$" value="0" info="Hauptsignal Aussenanlage A (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412120_PRAEG_B$" value="1.5" info="Hauptsignal Aussenanlage - Ausprägungsfaktor B"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412120_STK_B$" value="0" info="Hauptsignal Aussenanlage B (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412120_PRAEG_C$" value="3.5" info="Hauptsignal Aussenanlage - Ausprägungsfaktor C"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412120_STK_C$" value="0" info="Hauptsignal Aussenanlage C (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412200_KOST$" value="102000" info="Signalausleger (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$412200_STK$" value="0" info="Signalausleger (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$410000_KOST$" value="270000" info="ESTW (€/ASE)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$410000_ASE$" value="0" info="ESTW (ASE)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$415300_KOST$" value="150000" info="ECTS Level 2 (€/km)"/>
+				<parameter type="TrsCostsParameterFloat" class="{44C09E51-586D-4215-9027-3543AD557183}" name="$415200_KOST$" value="353000" info="Linienzugbeeinflussung (€/km)"/>
+				<parameter type="TrsCostsParameterFloat" class="{814493FB-2A1E-490B-923F-9FB48F6F9398}" name="$421811_KOST$" value="300000" info="Oberleitungsanlage Re 160/200 (€/km)"/>
+				<parameter type="TrsCostsParameterFloat" class="{814493FB-2A1E-490B-923F-9FB48F6F9398}" name="$421812_KOST$" value="450000" info="Oberleitungsanlage Re 250/330 (€/km)"/>
+				<parameter type="TrsCostsParameterFloat" class="{814493FB-2A1E-490B-923F-9FB48F6F9398}" name="$424100_KOST$" value="2000000" info="Schaltposten (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{814493FB-2A1E-490B-923F-9FB48F6F9398}" name="$424100_STK$" value="0" info="Schaltposten (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{814493FB-2A1E-490B-923F-9FB48F6F9398}" name="$424101_KOST$" value="12000000" info="Unterwerk (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{814493FB-2A1E-490B-923F-9FB48F6F9398}" name="$424101_STK$" value="0" info="Unterwerk (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{B8D7665C-4A69-4650-AFDE-88177D9A7347}" name="$504651_KOST$" value="70000" info="Weichenheizung (€/Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{B8D7665C-4A69-4650-AFDE-88177D9A7347}" name="$504651_STK$" value="0" info="Weichenheizung (Stk.)"/>
+				<parameter type="TrsCostsParameterFloat" class="{B8D7665C-4A69-4650-AFDE-88177D9A7347}" name="$501710_KOST$" value="60" info="Kabeltrasse (€/m)"/>
+				<parameter type="TrsCostsParameterFloat" class="{B8D7665C-4A69-4650-AFDE-88177D9A7347}" name="$501710_PRAEG$" value="1" info="Kabeltrasse - Ausprägungsfaktor"/>
+				<parameter type="TrsCostsParameterFloat" class="{E456E333-4A0F-43A6-B2EE-55261E0C3F09}" name="$BAUSTELL_KOST$" value="10" info="Baustelleneinrichtung (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{3605D140-D95E-4788-97DF-737C0C77F520}" name="$PLANUNG_KOST$" value="16" info="Planungskosten (%)"/>
+			</parameters>
+		</definitions>
+		<cellstyles>
+			<style id="1" name="normal"/>
+			<style id="2" name="normal, right, 2:T" justify="right" formatstyle="2:T"/>
+			<style id="3" name="normal, underline" fontstyle="underline"/>
+			<style id="4" name="normal, center" justify="center" formatstyle="0"/>
+			<style id="5" name="bold" fontstyle="bold"/>
+			<style id="6" name="bold, right, 2:T" fontstyle="bold" justify="right" formatstyle="2:T"/>
+			<style id="7" name="bold, center" fontstyle="bold" justify="center" formatstyle="0"/>
+			<style id="8" name="kursiv" fontstyle="italics"/>
+			<style id="9" name="kursiv, right, 2:T" fontstyle="italics" justify="right" formatstyle="2:T"/>
+			<style id="10" name="kursiv, center" fontstyle="italics" justify="center" formatstyle="0"/>
+		</cellstyles>
+		<columns>
+			<column id="1" name="KKK - Nr." size="6" style="1"/>
+			<column id="2" name="Hauptgruppe" size="10" style="2"/>
+			<column id="3" name="Position" size="30" style="2"/>
+			<column id="4" name="Kosten-#ansatz" size="8" style="3"/>
+			<column id="5" name="Kosten-#ansatz#Einheit" size="4" style="2"/>
+			<column id="6" name="gemittl.#Ausprägungs-#faktor" size="4" style="3"/>
+			<column id="7" name="Menge" size="12" style="3"/>
+			<column id="8" name="Menge#Einheit" size="6" style="2"/>
+			<column id="9" name="Kosten" size="15" style="4"/>
+			<column id="10" name="Kosten#Einheit" size="5" style="5"/>
+		</columns>
+		<rows>
+			<row id="1" linebefore="3" linebehind="2" backgroundcolor="10354427"/>
+			<row id="135" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2817" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2821" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2822" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2823" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2824" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2825" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2870" active="false" visible="false" content="2" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2828" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2829" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2831" linebehind="1" backgroundcolor="13434620"/>
+			<row id="2832" linebehind="1" backgroundcolor="13434620"/>
+			<row id="10" linebefore="1" linebehind="1" backgroundcolor="13434620"/>
+			<row id="11" linebefore="2" linebehind="2" backgroundcolor="7196909"/>
+			<row id="12" linebehind="1" backgroundcolor="12642544"/>
+			<row id="13" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2833" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2834" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2835" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2836" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2837" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2838" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2839" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2840" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2841" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2842" linebehind="1" backgroundcolor="12642544"/>
+			<row id="2921" linebehind="1" backgroundcolor="12642544"/>
+			<row id="15" linebefore="1" linebehind="1" backgroundcolor="12642544"/>
+			<row id="16" linebefore="2" linebehind="2" backgroundcolor="6987747"/>
+			<row id="17" linebehind="1" backgroundcolor="11260140"/>
+			<row id="2887" linebehind="1" backgroundcolor="11260140"/>
+			<row id="2918" linebehind="1" backgroundcolor="11260140"/>
+			<row id="741" linebehind="1" backgroundcolor="11260140"/>
+			<row id="2843" linebehind="1" backgroundcolor="11260140"/>
+			<row id="2924" linebehind="1" backgroundcolor="11260140"/>
+			<row id="3033" linebehind="1" backgroundcolor="11260140"/>
+			<row id="2844" linebehind="1" backgroundcolor="11260140"/>
+			<row id="2845" linebehind="1" backgroundcolor="11260140"/>
+			<row id="2846" linebehind="1" backgroundcolor="11260140"/>
+			<row id="2847" linebehind="1" backgroundcolor="11260140"/>
+			<row id="2848" active="false" visible="false" content="1" linebehind="1" backgroundcolor="11260140"/>
+			<row id="18" linebefore="1" linebehind="1" backgroundcolor="11260140"/>
+			<row id="19" linebefore="2" linebehind="2" backgroundcolor="9924572"/>
+			<row id="2984" linebehind="1" backgroundcolor="13290735"/>
+			<row id="20" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2818" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2849" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2850" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2851" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2852" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2853" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2854" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2855" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2856" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2857" linebehind="1" backgroundcolor="13290735"/>
+			<row id="2858" linebehind="1" backgroundcolor="13290735"/>
+			<row id="30" linebefore="1" linebehind="1" backgroundcolor="13290735"/>
+			<row id="37" linebefore="2" linebehind="1" backgroundcolor="13872542"/>
+			<row id="41" linebehind="1" backgroundcolor="15721180"/>
+			<row id="2819" linebehind="1" backgroundcolor="15721180"/>
+			<row id="2859" linebehind="1" backgroundcolor="15721180"/>
+			<row id="2860" linebehind="1" backgroundcolor="15721180"/>
+			<row id="58" linebefore="1" linebehind="1" backgroundcolor="15721180"/>
+			<row id="59" linebefore="2" linebehind="2" backgroundcolor="16644520"/>
+			<row id="60" linebehind="1" backgroundcolor="16645339"/>
+			<row id="2820" linebehind="1" backgroundcolor="16645339"/>
+			<row id="62" linebefore="1" linebehind="1" backgroundcolor="16645339"/>
+			<row id="63" linebefore="2" linebehind="2" backgroundcolor="10223013"/>
+			<row id="64" linebehind="1" backgroundcolor="13369050"/>
+			<row id="70" linebefore="1" linebehind="1" backgroundcolor="13369050"/>
+			<row id="71" linebefore="2" linebehind="2" backgroundcolor="4914874"/>
+			<row id="72" linebehind="1" backgroundcolor="10288857"/>
+			<row id="75" linebefore="1" linebehind="1" backgroundcolor="10288857"/>
+			<row id="76" linebefore="2" linebehind="2" backgroundcolor="10855845"/>
+			<row id="77" linebehind="1" backgroundcolor="14145495"/>
+			<row id="78" linebehind="1" backgroundcolor="14145495"/>
+			<row id="79" linebehind="1" backgroundcolor="14145495"/>
+			<row id="80" linebehind="1" backgroundcolor="14145495"/>
+			<row id="81" linebehind="1" backgroundcolor="14145495"/>
+			<row id="82" linebehind="1" backgroundcolor="14145495"/>
+			<row id="83" linebehind="1" backgroundcolor="14145495"/>
+			<row id="84" linebehind="1" backgroundcolor="14145495"/>
+			<row id="89" linebefore="1" linebehind="3" backgroundcolor="14145495"/>
+		</rows>
+		<cells>
+			<cell type="TrsCostsCellSimple" col="2" row="1" style="5" text="Erdbauwerke und Tunnel"/>
+			<cell type="TrsCostsCellSimple" col="3" row="10" style="5" text="Zwischensumme Erdbauwerke und Tunnel"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="10" style="6" name="$ZWISU_ERDBAU$" format="float" text="$ZWISU_311200$+$ZWISU_311100$+$ZWISU_311500$+$ZWISU_311300$+$ZWISU_311800$+$ZWISU_311600$+$ZWISU_311700$+$SUM[$TNK$]$+$ZWISU_336800$+$ZWISU_319600$+$ZWISU_502810$+$ZWISU_501400$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="10" style="5" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="11" style="5" text="Oberbau"/>
+			<cell type="TrsCostsCellSimple" col="1" row="12" style="4" text="321100"/>
+			<cell type="TrsCostsCellSimple" col="3" row="12" style="1" text="Schotterbett; Neustoffe: Schienen, Befestigung,#Schwellen, Bettung"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="12" style="2" text="$321100_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="12" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="12" style="2" text="($321100_PRAEG_A$*($321100_STRECK_A$/100))+($321100_PRAEG_B$*($321100_STRECK_B$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="12" style="2" text="$$RL_LPL_BALLAST$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="12" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="12" style="2" name="$ZWISU_321100$" format="float" text="(($$RL_LPL_BALLAST$$*($321100_STRECK_A$/100))*($321100_KOST$*$321100_PRAEG_A$))+(($$RL_L_BALLAST$$*($321100_STRECK_B$/100))*($321100_KOST$*$321100_PRAEG_B$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="12" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="13" style="4" text="321200"/>
+			<cell type="TrsCostsCellSimple" col="3" row="13" style="1" text="Feste Fahrbahn; inkl. Erdbau u. Mitten-#entwässerung"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="13" style="2" text="$321200_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="13" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="13" style="2" text="($321200_PRAEG_A$*($321200_STRECK_A$/100))+($321200_PRAEG_B$*($321200_STRECK_B$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="13" style="2" text="$$RL_L_FF$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="13" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="13" style="2" name="$ZWISU_321200$" format="float" text="(($$RL_L_FF$$*($321200_STRECK_A$/100))*($321200_KOST$*$321200_PRAEG_A$))+(($$RL_L_FF$$*($321200_STRECK_B$/100))*($321200_KOST$*$321200_PRAEG_B$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="13" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="15" style="5" text="Zwischensumme Oberbau"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="15" style="6" name="$ZWISU_OBERBAU$" format="float" text="$ZWISU_321100$+$ZWISU_321200$+$ZWISU_328300$+$ZWISU_322111$+$ZWISU_322112$+$ZWISU_322113$+$ZWISU_322114$+$ZWISU_322115$+$ZWISU_322116$+$ZWISU_322213$+$ZWISU_329410$+$ZWISU_329420$+$ZWISU_EINAUS$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="15" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="16" style="5" text="Ingenieurbauwerke"/>
+			<cell type="TrsCostsCellSimple" col="1" row="17" style="4" text="333120"/>
+			<cell type="TrsCostsCellSimple" col="3" row="17" style="1" text="LSW bis 2m Höhe"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="17" style="2" text="$333120_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="17" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="17" style="2" text="($333120_PRAEG_A$*($333120_STRECK_A$/100))+($333120_PRAEG_B$*($333120_STRECK_B$/100))+($333120_PRAEG_C$*($333120_STRECK_C$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="17" style="2" text="$$RL_LSW_L1$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="17" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="17" style="2" name="$ZWISU_333120$" format="float" text="(($$RL_LSW_L1$$*($333120_STRECK_A$/100))*($333120_KOST$*$333120_PRAEG_A$))+(($$RL_LSW_L1$$*($333120_STRECK_B$/100))*($333120_KOST$*$333120_PRAEG_B$))+(($$RL_LSW_L1$$*($333120_STRECK_C$/100))*($333120_KOST$*$333120_PRAEG_C$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="17" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="18" style="5" text="Zwischensumme Ingenieurbauwerke"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="18" style="6" name="$ZWISU_INGBAUWERKE$" format="float" text="$ZWISU_333120$+$ZWISU_333140$+$ZWISU_333160$+$ZWISU_334100$+$ZWISU_334200$+$ZWISU_RUECK_BW$+$ZWISU_WL_BW$+$ZWISU_336300_01$+$ZWISU_336300_02$+$ZWISU_336300_03$+$ZWISU_336300_04$+$SUM[$BRK$]$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="18" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="19" style="5" text="Ausstattung"/>
+			<cell type="TrsCostsCellSimple" col="1" row="20" style="10" text="308210"/>
+			<cell type="TrsCostsCellSimple" col="3" row="20" style="8" text="Bahnsteig; inkl. Unterbau, Bahnsteigkanten, -belag#und Blindenleitsystem"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="20" style="9" text="$308210_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="20" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="20" style="9" text="$308210_FLAECHE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="20" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="20" style="9" name="$ZWISU_308210$" format="float" text="$308210_KOST$*$308210_FLAECHE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="20" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="30" style="5" text="Zwischensumme Ausstattung"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="30" style="6" name="$ZWISU_AUSSTATT$" format="float" text="$ZWISU_BAHNSTG_RUECK$+$ZWISU_308210$+$ZWISU_308250$+$ZWISU_308251$+$ZWISU_308260$+$ZWISU_406100$+$ZWISU_406200$+$ZWISU_412110$+$ZWISU_412120$+$ZWISU_412200$+$ZWISU_410000$+$ZWISU_415300$+$ZWISU_415200$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="30" style="5" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="37" style="5" text="Bahnstrom"/>
+			<cell type="TrsCostsCellSimple" col="1" row="41" style="4" text="421811"/>
+			<cell type="TrsCostsCellSimple" col="3" row="41" style="1" text="Oberleitungsanlage Re 160/200; inkl. Speiseleitung,#Trennschaltung, etc."/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="41" style="2" text="$421811_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="41" style="1" text="$WAEHRUNG$/km"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="41" style="2" text="$$RL_LPL_V1$$/1000"/>
+			<cell type="TrsCostsCellSimple" col="8" row="41" style="1" text="km"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="41" style="2" name="$ZWISU_421811$" format="float" text="$421811_KOST$*$$RL_LPL_V1$$/1000"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="41" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="58" style="5" text="Zwischensumme Bahnstrom"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="58" style="6" name="$ZWISU_BAHNSTROM$" format="float" text="$ZWISU_421811$+$ZWISU_421812$+$ZWISU_424100$+$ZWISU_424101$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="58" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="59" style="5" text="Aussenanlagen"/>
+			<cell type="TrsCostsCellSimple" col="1" row="60" style="10" text="504651"/>
+			<cell type="TrsCostsCellSimple" col="3" row="60" style="8" text="Weichenheizung; inkl. Energie- und Steuereinrichtungen"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="60" style="9" text="$504651_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="60" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="60" style="9" text="$504651_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="60" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="60" style="9" name="$ZWISU_504651$" format="float" text="$504651_KOST$*$504651_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="60" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="62" style="5" text="Zwischensumme Aussenanlagen"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="62" style="6" name="$ZWISU_AUSSENANLAGEN$" format="float" text="$ZWISU_504651$+$ZWISU_501710$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="62" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="63" style="5" text="Baustelleneinrichtung"/>
+			<cell type="TrsCostsCellSimple" col="3" row="64" style="1" text="Baustelleneinrichtung, prozentualler Anteil#an Gesamtbaukosten"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="64" style="2" text="$BAUSTELL_KOST$"/>
+			<cell type="TrsCostsCellSimple" col="5" row="64" style="1" text="% von"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="64" style="2" name="$TEILKOST$" format="float" text="$ZWISU_ERDBAU$+$ZWISU_OBERBAU$+$ZWISU_INGBAUWERKE$+$ZWISU_AUSSTATT$+$ZWISU_BAHNSTROM$+$ZWISU_AUSSENANLAGEN$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="64" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="64" style="2" name="$ZWISU_BAUSTELL$" format="float" text="$TEILKOST$*($BAUSTELL_KOST$/100)"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="64" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="70" style="5" text="Zwischensumme Baustelleneinrichtung"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="70" style="6" name="$ZWISU_BAUSTELLEINRICHT$" format="float" text="$ZWISU_BAUSTELL$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="70" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="71" style="5" text="Planungskosten"/>
+			<cell type="TrsCostsCellSimple" col="3" row="72" style="1" text="Planungskosten, prozentualler Anteil#an Gesamtbaukosten"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="72" style="2" text="$PLANUNG_KOST$"/>
+			<cell type="TrsCostsCellSimple" col="5" row="72" style="1" text="% von"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="72" style="2" text="$TEILKOST$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="72" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="72" style="2" name="$ZWISU_PLANUNG$" format="float" text="$TEILKOST$*($PLANUNG_KOST$/100)"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="72" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="75" style="5" text="Zwischensumme Planungskosten"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="75" style="6" name="$ZWISU_PLANUNGSLEIST$" format="float" text="$ZWISU_PLANUNG$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="75" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="76" style="5" text="Zusammenfassung"/>
+			<cell type="TrsCostsCellSimple" col="3" row="77" style="1" text="Zwischensumme#Erdbauwerke und Tunnel"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="77" style="2" text="$ZWISU_ERDBAU$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="77" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="78" style="1" text="Zwischensumme#Oberbau"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="78" style="2" text="$ZWISU_OBERBAU$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="78" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="79" style="1" text="Zwischensumme#Ingenieurbauwerke"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="79" style="2" text="$ZWISU_INGBAUWERKE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="79" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="80" style="1" text="Zwischensumme#Ausstattung"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="80" style="2" text="$ZWISU_AUSSTATT$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="80" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="81" style="1" text="Zwischensumme#Bahnstrom"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="81" style="2" text="$ZWISU_BAHNSTROM$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="81" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="82" style="1" text="Zwischensumme#Aussenanlagen"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="82" style="2" text="$ZWISU_AUSSENANLAGEN$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="82" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="83" style="1" text="Zwischensumme#Baustelleneinrichtung"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="83" style="2" text="$ZWISU_BAUSTELLEINRICHT$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="83" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="84" style="1" text="Zwischensumme#Planungskostem"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="84" style="2" text="$ZWISU_PLANUNGSLEIST$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="84" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="89" style="5" text="GESAMTSUMME (Netto)"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="89" style="6" name="$_GESAMT_$" format="float" text="$ZWISU_ERDBAU$+$ZWISU_OBERBAU$+$ZWISU_INGBAUWERKE$+$ZWISU_AUSSTATT$+$ZWISU_BAHNSTROM$+$ZWISU_AUSSENANLAGEN$+$ZWISU_BAUSTELLEINRICHT$+$ZWISU_PLANUNGSLEIST$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="89" style="5" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="135" style="4" text="311200"/>
+			<cell type="TrsCostsCellSimple" col="3" row="135" style="1" text="Herstellung Einschnitt (Bodenklasse 3 - 5);#inkl. Randweg, Oberboden und#Böschungssicherung (Geotextil)"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="135" style="2" text="$311200_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="135" style="1" text="$WAEHRUNG$/m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="135" style="2" text="($311200_PRAEG_A$*($311200_MENG_A$/100))+($311200_PRAEG_B$*($311200_MENG_B$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="135" style="2" name="$ABTRAG$" format="float" text="$$RLNB_VABTRAG$$+$$RLTN_VABTRAG$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="135" style="1" text="m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="135" style="2" name="$ZWISU_311200$" format="float" text="((($311200_MENG_A$/100)*($$RLNB_VABTRAG$$+$$RLTN_VABTRAG$$))*($311200_KOST$*$311200_PRAEG_A$))+((($311200_MENG_B$/100)*($$RLNB_VABTRAG$$+$$RLTN_VABTRAG$$))*($311200_KOST$*$311200_PRAEG_B$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="135" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="741" style="10" text="334100"/>
+			<cell type="TrsCostsCellSimple" col="3" row="741" style="8" text="Winkelstützwand (bis 2m Höhe, Stahlbeton)"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="741" style="9" text="$334100_KOST$"/>
+			<cell type="TrsCostsCellSimple" col="5" row="741" style="8" text="€/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="741" style="9" text="($334100_PRAEG_A$*($334100_FLAECH_A$/100))+($334100_PRAEG_B$*($334100_FLAECH_B$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="741" style="9" text="$334100_FLAECHE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="741" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="741" style="9" name="$ZWISU_334100$" format="float" text="$334100_KOST$*(($334100_PRAEG_A$*(($334100_FLAECH_A$/100)*$334100_FLAECHE$))+($334100_PRAEG_B$*(($334100_FLAECH_B$/100)*$334100_FLAECHE$)))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="741" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2817" style="4" text="311100"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2817" style="1" text="Auftrag Damm (freie Lage);#inkl. Randweg, Oberboden und#Böschungssicherung (Geotextil)"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2817" style="2" text="$311100_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2817" style="1" text="$WAEHRUNG$/m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2817" style="2" text="($311100_PRAEG_A$*($311100_MENG_A$/100))+($311100_PRAEG_B$*($311100_MENG_B$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2817" style="2" name="$AUFTRAG$" format="float" text="$$RLNB_VAUFTRAG$$+$$RLTN_VAUFTRAG$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2817" style="1" text="m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2817" style="2" name="$ZWISU_311100$" format="float" text="((($311100_MENG_A$/100)*($$RLNB_VAUFTRAG$$+$$RLTN_VAUFTRAG$$))*($311100_KOST$*$311100_PRAEG_A$))+((($311100_MENG_B$/100)*($$RLNB_VAUFTRAG$$+$$RLTN_VAUFTRAG$$))*($311100_KOST$*$311100_PRAEG_B$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2817" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2818" style="10" text="308250"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2818" style="8" text="Bahnsteigrampen; inkl. Beleuchtung, Boden- und#Wandbelag"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2818" style="9" text="$308250_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2818" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2818" style="9" text="$308250_FLAECHE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2818" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2818" style="9" name="$ZWISU_308250$" format="float" text="$308250_KOST$*$308250_FLAECHE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2818" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2819" style="4" text="421812"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2819" style="1" text="Oberleitungsanlage Re 250/330; inkl. Speiseleitung,#Trennschaltung, etc."/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2819" style="2" text="$421812_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2819" style="1" text="$WAEHRUNG$/km"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2819" style="2" text="$$RL_LPL_V2$$/1000"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2819" style="1" text="km"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2819" style="2" name="$ZWISU_421812$" format="float" text="$421812_KOST$*$$RL_LPL_V2$$/1000"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2819" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2820" style="4" text="501710"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2820" style="1" text="Kabeltrasse"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2820" style="2" text="$501710_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2820" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2820" style="2" text="$501710_PRAEG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2820" style="2" text="$$RL_LPL$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2820" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2820" style="2" name="$ZWISU_501710$" format="float" text="$501710_KOST$*$$RL_LPL$$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2820" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2821" style="4" text="311500"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2821" style="1" text="Frostschutzschicht; RCL-Material"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2821" style="2" text="$311500_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2821" style="1" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2821" style="2" text="($311500_PRAEG_A$+$311500_PRAEG_B$)/2"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2821" style="2" text="$$RL_LPA_FROST_V1$$+$$RL_LPA_FROST_V2$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2821" style="1" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2821" style="2" name="$ZWISU_311500$" format="float" text="($$RL_LPA_FROST_V1$$*($311500_KOST$*$311500_PRAEG_A$))+($$RL_LPA_FROST_V2$$*($311500_KOST$*$311500_PRAEG_B$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2821" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2822" style="10" text="311300"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2822" style="8" text="Bodenaustausch; Aus- und Einbau RCL-Material"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2822" style="9" text="$311300_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2822" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2822" style="9" text="$311300_MENG$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2822" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2822" style="9" name="$ZWISU_311300$" format="float" text="$311300_KOST$*$311300_MENG$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2822" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2823" style="4" text="311800"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2823" style="1" text="Planumsschutzschicht"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2823" style="2" text="$311800_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2823" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2823" style="2" text="$$RL_LPL_GROUND_V1$$+$$RL_LPL_GROUND_V2$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2823" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2823" style="2" name="$ZWISU_311800$" format="float" text="($$RL_LPL_GROUND_V1$$+$$RL_LPL_GROUND_V2$$)*$311800_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2823" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2824" style="4" text="311600"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2824" style="1" text="Tiefenentwässerung; inkl. Schächte (50m Abstand)#und Leitungen"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2824" style="2" text="$311600_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2824" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2824" style="2" text="($311600_PRAEG_A$*($311600_STRECK_A$/100))+($311600_PRAEG_B$*($311600_STRECK_B$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2824" style="2" text="$$RLNB_LPL$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2824" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2824" style="2" name="$ZWISU_311600$" format="float" text="(($$RLNB_LPL$$*($311600_STRECK_A$/100))*($311600_KOST$*$311600_PRAEG_A$))+(($$RLNB_LPL$$*($311600_STRECK_B$/100))*($311600_KOST$*$311600_PRAEG_B$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2824" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2825" style="4" text="311700"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2825" style="1" text="Oberflächenentwässerung; Graben/Mulden inkl. Schächte#und sonstigen Einrichtungen"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2825" style="2" text="$311700_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2825" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2825" style="2" text="($311700_PRAEG_A$*($311700_STRECK_A$/100))+($311700_PRAEG_B$*($311700_STRECK_B$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2825" style="2" text="$$RLNB_LPL$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2825" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2825" style="2" name="$ZWISU_311700$" format="float" text="(($$RLNB_LPL$$*($311700_STRECK_A$/100))*($311700_KOST$*$311700_PRAEG_A$))+(($$RLNB_LPL$$*($311700_STRECK_B$/100))*($311700_KOST$*$311700_PRAEG_B$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2825" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2828" style="10" text="336800"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2828" style="8" text="Durchlass"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2828" style="9" text="$336800_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2828" style="8" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2828" style="9" text="$336800_LAENGE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2828" style="8" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2828" style="9" name="$ZWISU_336800$" format="float" text="$336800_KOST$*$336800_LAENGE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2828" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2829" style="4" text="319600"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2829" style="1" text="Recycling, Zwischendeponie und Entsorgung"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2829" style="2" text="$319600_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2829" style="1" text="$WAEHRUNG$/m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2829" style="2" text="($319600_PRAEG_A$*($319600_MENG_A$/100))+($319600_PRAEG_B$*($319600_MENG_B$/100))+($319600_PRAEG_C$*($319600_MENG_C$/100))+($319600_PRAEG_D$*($319600_MENG_D$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2829" style="2" name="$319600_ZWI_MENG$" format="float" text="$319600_VOLUMEN$+|$ABTRAG$-$AUFTRAG$|"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2829" style="1" text="m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2829" style="2" name="$ZWISU_319600$" format="float" text="$319600_ZWI_MENG$*$319600_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2829" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2831" style="10" text="502810"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2831" style="8" text="Straßen, Wege, Plätze"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2831" style="9" text="$502810_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2831" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2831" style="9" text="($502810_PRAEG_A$*($502810_MENG_A$/100))+($502810_PRAEG_B$*($502810_MENG_B$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2831" style="9" text="$502810_FLAECHE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2831" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2831" style="9" name="$ZWISU_502810$" format="float" text="$502810_KOST$*$502810_FLAECHE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2831" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2832" style="10" text="501400"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2832" style="8" text="Landschaftspflege"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2832" style="9" text="$501400_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2832" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2832" style="9" text="$501400_FLAECHE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2832" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2832" style="9" name="$ZWISU_501400$" format="float" text="$501400_KOST$*$501400_FLAECHE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2832" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2833" style="4" text="328300"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2833" style="1" text="Erschütterungsschutz; Unterschottermatten auf#Bahnkörper, Brücken und Tunnel"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2833" style="2" text="$328300_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2833" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2833" style="2" text="$328300_PRAEG_A$+($328300_PRAEG_B$*($328300_STRECK_B$/100))+($328300_PRAEG_C$*($328300_STRECK_C$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2833" style="2" text="$$RLBR_LPL$$+$$RLTN_LPL$$+$328300_LAENGE_A$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2833" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2833" style="2" name="$ZWISU_328300$" format="float" text="(($$RLBR_LPL$$+$328300_LAENGE_A$)*($328300_KOST$*$328300_PRAEG_A$))+(($$RLTN_LPL$$*($328300_STRECK_B$/100))*($328300_KOST$*$328300_PRAEG_B$))+(($$RLTN_LPL$$*($328300_STRECK_C$/100))*($328300_KOST$*$328300_PRAEG_C$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2833" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2834" style="10" text="322111"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2834" style="8" text="Weiche EW 190 (Neubau)#Holzschwellen, festes Herzstück inkl. Material und Einbau,#3 x 15m Anschlusslänge"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2834" style="9" text="$322111_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2834" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2834" style="9" text="$322111_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2834" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2834" style="9" name="$ZWISU_322111$" format="float" text="$322111_KOST$*$322111_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2834" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2835" style="10" text="322112"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2835" style="8" text="Weiche EW 300 (Neubau)#Betonschwelle, festes Herzstück inkl. Material und Einbau,#3 x 15m Anschlusslänge"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2835" style="9" text="$322112_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2835" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2835" style="9" text="$322112_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2835" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2835" style="9" name="$ZWISU_322112$" format="float" text="$322112_KOST$*$322112_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2835" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2836" style="10" text="322113"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2836" style="8" text="Weiche EW 500 (Neubau)#Betonschwelle, festes Herzstück inkl. Material und Einbau,#3 x 15m Anschlusslänge"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2836" style="9" text="$322113_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2836" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2836" style="9" text="$322113_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2836" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2836" style="9" name="$ZWISU_322113$" format="float" text="$322113_KOST$*$322113_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2836" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2837" style="10" text="322114"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2837" style="8" text="Weiche EW 760 (Neubau)#Betonschwelle, inkl. Material und Einbau,#3 x 15m Anschlusslänge"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2837" style="9" text="$322114_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2837" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2837" style="9" text="$322114_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2837" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2837" style="9" name="$ZWISU_322114$" format="float" text="$322114_KOST$*$322114_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2837" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2838" style="10" text="322115"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2838" style="8" text="Weiche EW 1200 (Neubau)#Betonschwelle, inkl. Material und Einbau,#3 x 15m Anschlusslänge"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2838" style="9" text="$322115_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2838" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2838" style="9" text="$322115_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2838" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2838" style="9" name="$ZWISU_322115$" format="float" text="$322115_KOST$*$322115_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2838" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2839" style="10" text="322116"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2839" style="8" text="Weiche EW 2500 (Neubau)#Betonschwelle, bewegliches Herzstück, inkl. Material#und Einbau, 3 x 15m Anschlusslänge"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2839" style="9" text="$322116_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2839" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2839" style="9" text="$322116_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2839" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2839" style="9" name="$ZWISU_322116$" format="float" text="$322116_KOST$*$322116_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2839" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2840" style="10" text="322213"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2840" style="8" text="Klothoidenweiche R 100000 (Neubau)#Betonschwelle, bewegliches Herzstück, inkl. Material#und Einbau, 3 x 15m Anschlusslänge"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2840" style="9" text="$322213_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2840" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2840" style="9" text="$322213_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2840" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2840" style="9" name="$ZWISU_322213$" format="float" text="$322213_KOST$*$322213_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2840" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2841" style="10" text="329410"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2841" style="8" text="Rückbau Gleise"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2841" style="9" text="$329410_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2841" style="8" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2841" style="9" text="$329410_LAENGE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2841" style="8" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2841" style="9" name="$ZWISU_329410$" format="float" text="$329410_KOST$*$329410_LAENGE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2841" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2842" style="10" text="329420"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2842" style="8" text="Rückbau Weichen/Kreuzungen"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2842" style="9" text="$329420_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2842" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2842" style="9" text="$329420_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2842" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2842" style="9" name="$ZWISU_329420$" format="float" text="$329420_KOST$*$329420_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2842" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2843" style="10" text="334200"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2843" style="8" text="Spundwand inkl. Kopfbalken, ohne Verankerung#(bis 2m Höhe)"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2843" style="9" text="$334200_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2843" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2843" style="9" text="($334200_PRAEG_A$*($334200_FLAECH_A$/100))+($334200_PRAEG_B$*($334200_FLAECH_B$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2843" style="9" text="$334200_FLAECHE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2843" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2843" style="9" name="$ZWISU_334200$" format="float" text="$334200_KOST$*(($334200_PRAEG_A$*(($334200_FLAECH_A$/100)*$334200_FLAECHE$))+($334200_PRAEG_B$*(($334200_FLAECH_B$/100)*$334200_FLAECHE$)))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2843" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2844" style="10" text="336300 - 01"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2844" style="8" text="Straßenüberführung (&lt;10m Lichte Weite)"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2844" style="9" text="$336300_01_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2844" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2844" style="9" text="$336300_01_FLAECHE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2844" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2844" style="9" name="$ZWISU_336300_01$" format="float" text="$336300_01_KOST$*$336300_01_FLAECHE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2844" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2845" style="10" text="336300 - 02"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2845" style="8" text="Straßenüberführung (10 - 20m Lichte Weite)"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2845" style="9" text="$336300_02_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2845" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2845" style="9" text="$336300_02_FLAECHE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2845" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2845" style="9" name="$ZWISU_336300_02$" format="float" text="$336300_02_KOST$*$336300_02_FLAECHE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2845" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2846" style="10" text="336300 - 03"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2846" style="8" text="Straßenüberführung (20 - 30m Lichte Weite)"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2846" style="9" text="$336300_03_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2846" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2846" style="9" text="$336300_03_FLAECHE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2846" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2846" style="9" name="$ZWISU_336300_03$" format="float" text="$336300_03_KOST$*$336300_03_FLAECHE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2846" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2847" style="10" text="336300 - 04"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2847" style="8" text="Straßenüberführung (&gt;30m Lichte Weite)"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2847" style="9" text="$336300_04_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2847" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2847" style="9" text="$336300_04_FLAECHE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2847" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2847" style="9" name="$ZWISU_336300_04$" format="float" text="$336300_04_KOST$*$336300_04_FLAECHE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2847" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalText" col="3" row="2848" style="1" text="$$RLBR_LINE$$#Brücke $$RLBR_NR$$ $$RLBR_NAME$$#Typ: $RLBWBRTYPNAME$#Station $$RLBR_STATION$$ - LW $$RLBR_LPL$$:2m"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2848" style="2" text="$RLKBWBR$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2848" style="1" text="$RL_PREIS_EIN$"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2848" style="2" text="$RL_MENGE$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="2848" style="1" text="$RL_MENGE_EIN$"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2848" style="2" name="$BRK$" scope="-1" format="float" autoreset="true" text="$RLKBWBR$*$RL_MENGE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2848" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2849" style="8" text="Bahnsteigausstattung; Hochbautechnische Ausstattung#und Wegeleitsystem"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2849" style="9" text="$308251_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2849" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2849" style="9" text="($308251_PRAEG_A$+$308251_PRAEG_B$+$308251_PRAEG_C$)/3"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2849" style="9" text="$308251_STK_A$+$308251_STK_B$+$308251_STK_C$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2849" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2849" style="9" name="$ZWISU_308251$" format="float" text="$308251_KOST$*(($308251_STK_A$*$308251_PRAEG_A$)+($308251_STK_B$*$308251_PRAEG_B$)+($308251_STK_C$*$308251_PRAEG_C$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2849" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2850" style="10" text="308260"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2850" style="8" text="Bahnsteigtreppen, inkl. Einhausung"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2850" style="9" text="$308260_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2850" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2850" style="9" text="$308260_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2850" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2850" style="9" name="$ZWISU_308260$" format="float" text="$308260_KOST$*$308260_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2850" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2851" style="10" text="406100"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2851" style="8" text="Aufzug inkl. Rohbau"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2851" style="9" text="$406100_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2851" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2851" style="9" text="($406100_PRAEG_A$+$406100_PRAEG_B$)/2"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2851" style="9" text="$406100_STK_A$+$406100_STK_B$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2851" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2851" style="9" name="$ZWISU_406100$" format="float" text="$406100_KOST$*(($406100_PRAEG_A$*$406100_STK_A$)+($406100_PRAEG_B$*$406100_STK_B$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2851" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2852" style="10" text="406200"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2852" style="8" text="Fahrtreppe inkl. Rohbau"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2852" style="9" text="$406200_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2852" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2852" style="9" text="$406200_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2852" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2852" style="9" name="$ZWISU_406200$" format="float" text="$406200_KOST$*$406200_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2852" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2853" style="10" text="412110"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2853" style="8" text="Hauptsignal Innenlage"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2853" style="9" text="$412110_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2853" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2853" style="9" text="$412110_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2853" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2853" style="9" name="$ZWISU_412110$" format="float" text="$412110_KOST$*$412110_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2853" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2854" style="10" text="412120"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2854" style="8" text="Hauptsignal Außenlage"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2854" style="9" text="$412120_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2854" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2854" style="9" text="($412120_PRAEG_A$+$412120_PRAEG_B$+$412120_PRAEG_C$)/3"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2854" style="9" text="$412120_STK_A$+$412120_STK_B$+$412120_STK_C$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2854" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2854" style="9" name="$ZWISU_412120$" format="float" text="$412120_KOST$*(($412120_PRAEG_A$*$412120_STK_A$)+($412120_PRAEG_B$*$412120_STK_B$)+($412120_PRAEG_C$*$412120_STK_C$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2854" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2855" style="10" text="412200"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2855" style="8" text="Signalausleger; ohne Signale"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2855" style="9" text="$412200_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2855" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2855" style="9" text="$412200_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2855" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2855" style="9" name="$ZWISU_412200$" format="float" text="$412200_KOST$*$412200_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2855" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2856" style="10" text="410000"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2856" style="8" text="ESTW; normale Ausstattung, ca. 15km Bedienbereich"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2856" style="9" text="$410000_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2856" style="8" text="$WAEHRUNG$/ASE"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2856" style="9" text="$410000_ASE$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2856" style="8" text="ASE"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2856" style="9" name="$ZWISU_410000$" format="float" text="$410000_KOST$*$410000_ASE$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2856" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2857" style="4" text="415300"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2857" style="1" text="ECTS Level 2; mit Balisen (ca. 6 Stk.)#ohne GSM-R-Ausrüstung"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2857" style="2" text="$415300_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2857" style="1" text="$WAEHRUNG$/km"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2857" style="2" text="$$RL_LPL$$/1000"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2857" style="1" text="km"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2857" style="2" name="$ZWISU_415300$" format="float" text="$415300_KOST$*$$RL_LPL$$/1000"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2857" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2858" style="4" text="415200"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2858" style="1" text="Linienzugbeeinflussung (v &gt;= 200km/h)"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2858" style="2" text="$415200_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2858" style="1" text="$WAEHRUNG$/km"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2858" style="2" text="$$RL_LPL_V2$$/1000"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2858" style="1" text="km"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2858" style="2" name="$ZWISU_415200$" format="float" text="$415200_KOST$*$$RL_LPL_V2$$/1000"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2858" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2859" style="10" text="424100"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2859" style="8" text="Schaltposten, kein UW"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2859" style="9" text="$424100_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2859" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2859" style="9" text="$424100_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2859" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2859" style="9" name="$ZWISU_424100$" format="float" text="$424100_KOST$*$424100_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2859" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2860" style="8" text="Unterwerk"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2860" style="9" text="$424101_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2860" style="8" text="$WAEHRUNG$/Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2860" style="9" text="$424101_STK$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2860" style="8" text="Stk."/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2860" style="9" name="$ZWISU_424101$" format="float" text="$424101_KOST$*$424101_STK$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2860" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalText" col="3" row="2870" style="1" text="$$RLTN_LINE$$#Tunnel $$RLTN_NR$$ $$RLTN_NAME$$#Typ: $RLBWTNTYPNAME$#Station $$RLTN_STATION$$ - LW $$RLTN_LPL$$:2m"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2870" style="2" name="$KOST_TN$" scope="-1" format="float" autoreset="true" text="$RLKBWTN$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2870" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2870" style="2" name="$MENGE_TN$" scope="-1" format="float" autoreset="true" text="$$RLTN_LPL$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2870" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2870" style="2" name="$TNK$" scope="-1" format="float" autoreset="true" text="$KOST_TN$*$MENGE_TN$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2870" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2887" style="4" text="333140"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2887" style="1" text="LSW 2 bis 4m Höhe"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2887" style="2" text="$333140_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2887" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2887" style="2" text="($333140_PRAEG_A$*($333140_STRECK_A$/100))+($333140_PRAEG_B$*($333140_STRECK_B$/100))+($333140_PRAEG_C$*($333140_STRECK_C$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2887" style="2" text="$$RL_LSW_L2$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2887" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2887" style="2" name="$ZWISU_333140$" format="float" text="(($$RL_LSW_L2$$*($333140_STRECK_A$/100))*($333140_KOST$*$333140_PRAEG_A$))+(($$RL_LSW_L2$$*($333140_STRECK_B$/100))*($333140_KOST$*$333140_PRAEG_B$))+(($$RL_LSW_L2$$*($333140_STRECK_C$/100))*($333140_KOST$*$333140_PRAEG_C$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2887" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="1" row="2918" style="4" text="333160"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2918" style="1" text="LSW 4 bis 6m Höhe"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2918" style="2" text="$333160_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2918" style="1" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="6" row="2918" style="2" text="($333160_PRAEG_A$*($333160_STRECK_A$/100))+($333160_PRAEG_B$*($333160_STRECK_B$/100))+($333160_PRAEG_C$*($333160_STRECK_C$/100))"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2918" style="2" text="$$RL_LSW_L3$$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2918" style="1" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2918" style="2" name="$ZWISU_333160$" format="float" text="(($$RL_LSW_L3$$*($333160_STRECK_A$/100))*($333160_KOST$*$333160_PRAEG_A$))+(($$RL_LSW_L3$$*($333160_STRECK_B$/100))*($333160_KOST$*$333160_PRAEG_B$))+(($$RL_LSW_L3$$*($333160_STRECK_C$/100))*($333160_KOST$*$333160_PRAEG_C$))"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2918" style="1" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2921" style="8" text="Ein- und Ausgleisbereiche"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2921" style="9" text="$EINAUS_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2921" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2921" style="9" text="$EINAUS_FLAECH$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2921" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2921" style="9" name="$ZWISU_EINAUS$" format="float" text="$EINAUS_KOST$*$EINAUS_FLAECH$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2921" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2924" style="8" text="Rückbau Brückenbauwerke"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2924" style="9" text="$RUECK_BW_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2924" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2924" style="9" text="$RUECK_BW_FLAECH$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2924" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2924" style="9" name="$ZWISU_RUECK_BW$" format="float" text="$RUECK_BW_KOST$*$RUECK_BW_FLAECH$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2924" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="2984" style="8" text="Rückbau Bahnsteiganlagen"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="2984" style="9" text="$BAHNSTG_RUECK_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="2984" style="8" text="$WAEHRUNG$/m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2984" style="9" text="$BAHNSTG_RUECK_VOL$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="2984" style="8" text="m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="2984" style="9" name="$ZWISU_BAHNSTG_RUECK$" format="float" text="$BAHNSTG_RUECK_KOST$*$BAHNSTG_RUECK_VOL$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="2984" style="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="3" row="3033" style="8" text="Herstellung neuer Widerlager#für denkmalgeschütze Brücken"/>
+			<cell type="TrsCostsCellEvalFloat" col="4" row="3033" style="9" text="$WL_BW_KOST$"/>
+			<cell type="TrsCostsCellEvalText" col="5" row="3033" style="8" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="3033" style="9" text="$WL_BW_FLAECH$"/>
+			<cell type="TrsCostsCellSimple" col="8" row="3033" style="8" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="9" row="3033" style="9" name="$ZWISU_WL_BW$" format="float" text="$WL_BW_KOST$*$WL_BW_FLAECH$"/>
+			<cell type="TrsCostsCellEvalText" col="10" row="3033" style="8" text="$WAEHRUNG$"/>
+		</cells>
+	</table>
+</asdatafile>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asdatafile>
+	<description>
+		<creator name="KlausTilger" date="2012.07.11"/>
+		<content type="application" name="korridorfinder" version="3.5.0"/>
+	</description>
+	<table title="Kostenschätzung Transrapid">
+		<definitions>
+			<classes>
+				<parameterclass type="TrsCostsParametersClass" id="{071343A0-BD8C-48C6-9976-125EF71056E7}" name="Allgemein"/>
+				<parameterclass type="TrsCostsParametersClass" id="{E1972D30-7111-44E1-A5F9-F5AFD5EC6445}" name="Position 01"/>
+				<parameterclass type="TrsCostsParametersClass" id="{51B4A9C5-ADFC-4A1D-A829-4093B1476CF9}" name="Position 02"/>
+				<parameterclass type="TrsCostsParametersClass" id="{36813AD1-A09C-44AE-A02F-FB0BD2D49D07}" name="Position 04"/>
+			</classes>
+			<parameters>
+				<parameter type="TrsCostsParameterText" class="{071343A0-BD8C-48C6-9976-125EF71056E7}" name="$WAEHRUNG$" value="€" info="Währung"/>
+				<parameter type="TrsCostsParameterFloat" class="{071343A0-BD8C-48C6-9976-125EF71056E7}" name="$MWST$" value="16" info="Mehrwertsteuer (%)"/>
+				<parameter type="TrsCostsParameterFloat" class="{E1972D30-7111-44E1-A5F9-F5AFD5EC6445}" name="$KTRGRUNDERWERB$" value="2.5" info="Kosten Grunderwerb (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{E1972D30-7111-44E1-A5F9-F5AFD5EC6445}" name="$KTRGRUNDERWERB_ZS$" value="0" info="Kosten Grunderwerb Zusatz (pauschal)"/>
+				<parameter type="TrsCostsParameterFloat" class="{51B4A9C5-ADFC-4A1D-A829-4093B1476CF9}" name="$KTRLPLAENGE$" value="75" info="Kosten Fahrweg allg. (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{51B4A9C5-ADFC-4A1D-A829-4093B1476CF9}" name="$KTRLPLAENGE_NB$" value="75" info="Kosten Fahrweg bei Böschung (€/m²)"/>
+				<parameter type="TrsCostsParameterFloat" class="{36813AD1-A09C-44AE-A02F-FB0BD2D49D07}" name="$KTRABTRAG$" value="7.5" info="Kosten Abtrag (€/m³)"/>
+				<parameter type="TrsCostsParameterFloat" class="{36813AD1-A09C-44AE-A02F-FB0BD2D49D07}" name="$KTRAUFTRAG$" value="5" info="Kosten Auftrag (€/m³)"/>
+				<parameter type="TrsCostsParameterFloat" class="{36813AD1-A09C-44AE-A02F-FB0BD2D49D07}" name="$KTRBILANZ$" value="10" info="Kosten Bilanz (€/m³)"/>
+				<parameter type="TrsCostsParameterFloat" class="{36813AD1-A09C-44AE-A02F-FB0BD2D49D07}" name="$KTRABRISSGEBAEUDE$" value="10" info="Abrisskosten (pauschal)"/>
+			</parameters>
+		</definitions>
+		<cellstyles>
+			<style id="1" formatstyle="0"/>
+			<style id="2"/>
+			<style id="3" justify="right" formatstyle="2:T"/>
+			<style id="4" fontstyle="bold" justify="right" formatstyle="2:T"/>
+			<style id="5" fontstyle="bold"/>
+			<style id="6" fontstyle="underline"/>
+		</cellstyles>
+		<columns>
+			<column id="1" name="Posnr." size="4" style="1"/>
+			<column id="2" name="Position" size="34" style="2"/>
+			<column id="3" name="Kostenansatz" size="12" style="3"/>
+			<column id="4" name="Kostenansatz#Einheit" size="6" style="2"/>
+			<column id="5" name="Menge" size="15" style="3"/>
+			<column id="6" name="Menge#Einheit" size="8" style="2"/>
+			<column id="7" name="Kosten" size="15" style="4"/>
+			<column id="8" name="Kosten#Einheit" size="6" style="5"/>
+		</columns>
+		<rows>
+			<row id="1" linebefore="2" linebehind="1" backgroundcolor="13498358"/>
+			<row id="2" spacebehind="0.5" backgroundcolor="14940151"/>
+			<row id="3" spacebehind="0.5" backgroundcolor="14940151"/>
+			<row id="4" linebefore="1" backgroundcolor="14940151"/>
+			<row id="5" linebefore="2" linebehind="1" backgroundcolor="13034484"/>
+			<row id="6" spacebehind="0.5" backgroundcolor="13887989"/>
+			<row id="7" spacebehind="0.5" backgroundcolor="13887989"/>
+			<row id="8" linebefore="1" backgroundcolor="13887989"/>
+			<row id="9" linebefore="2" linebehind="1" backgroundcolor="14079988"/>
+			<row id="10" spacebehind="0.5" backgroundcolor="14671856"/>
+			<row id="11" spacebehind="0.5" backgroundcolor="14671856"/>
+			<row id="12" linebefore="1" backgroundcolor="14671856"/>
+			<row id="13" linebefore="2" linebehind="1" backgroundcolor="15588083"/>
+			<row id="14" spacebehind="0.5" backgroundcolor="15984631"/>
+			<row id="15" spacebehind="0.5" backgroundcolor="15984631"/>
+			<row id="16" backgroundcolor="15984631"/>
+			<row id="17" linebefore="1" backgroundcolor="15984631"/>
+			<row id="18" linebefore="2" linebehind="1" backgroundcolor="14350055"/>
+			<row id="19" backgroundcolor="15267310"/>
+			<row id="20" linebefore="1" backgroundcolor="15267310"/>
+			<row id="21" linebefore="3" linebehind="1" backgroundcolor="16777215"/>
+			<row id="22" linebefore="3" linebehind="1" backgroundcolor="16777215"/>
+			<row id="23" linebehind="1" backgroundcolor="16777215"/>
+			<row id="24" linebehind="3" backgroundcolor="16777215"/>
+		</rows>
+		<cells>
+			<cell type="TrsCostsCellEvalFloat" col="1" row="1" name="$POSITION$" format="float" text="1"/>
+			<cell type="TrsCostsCellSimple" col="2" row="1" style="5" text="Grunderwerb"/>
+			<cell type="TrsCostsCellSimple" col="2" row="2" text="Grunderwerbsfläche ohne Brücken und Tunnel"/>
+			<cell type="TrsCostsCellEvalFloat" col="3" row="2" text="$KTRGRUNDERWERB$"/>
+			<cell type="TrsCostsCellEvalText" col="4" row="2" text="$WAEHRUNG$/m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="5" row="2" text="$$TRNB_LPA$$"/>
+			<cell type="TrsCostsCellSimple" col="6" row="2" text="m²"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="2" name="$_GRUNDERWERB_SUM_$" format="float" text="$KTRGRUNDERWERB$*$$TRNB_LPA$$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="2" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="3" text="Grunderwerbsfläche Zusatz (pauschal)"/>
+			<cell type="TrsCostsCellEvalFloat" col="3" row="3" text="$KTRGRUNDERWERB_ZS$"/>
+			<cell type="TrsCostsCellEvalText" col="4" row="3" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="6" row="3" text="pauschal"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="3" name="$_GRUNDERWERB_ZS_$" format="float" text="$KTRGRUNDERWERB_ZS$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="3" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="4" style="5" text="Zwischensumme"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="4" name="$_SUM_POS1_$" format="float" text="$_GRUNDERWERB_SUM_$+$_GRUNDERWERB_ZS_$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="4" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="1" row="5" name="$POSITION$" format="float" text="$POSITION$+1"/>
+			<cell type="TrsCostsCellSimple" col="2" row="5" style="5" text="Transrapidweg (gesamt)"/>
+			<cell type="TrsCostsCellSimple" col="2" row="6" text="(gesamte räumliche Länge)"/>
+			<cell type="TrsCostsCellEvalFloat" col="5" row="6" text="$$TRLAENGE$$"/>
+			<cell type="TrsCostsCellSimple" col="6" row="6" text="m"/>
+			<cell type="TrsCostsCellSimple" col="2" row="7" text="Gesamte Länge im Lageplan"/>
+			<cell type="TrsCostsCellEvalFloat" col="5" row="7" text="$$TRLPLAENGE$$"/>
+			<cell type="TrsCostsCellSimple" col="6" row="7" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="7" name="$_TRLPLAENGE_$" format="float" text="$$TRLPLAENGE$$*$KTRLPLAENGE$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="7" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="8" style="5" text="Zwischensumme"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="8" name="$_SUM_POS2_$" format="float" text="$_TRLPLAENGE_$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="8" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="1" row="9" name="$POSITION$" format="float" text="$POSITION$+1"/>
+			<cell type="TrsCostsCellSimple" col="2" row="9" style="5" text="Bereiche mit Böschungen"/>
+			<cell type="TrsCostsCellSimple" col="2" row="10" text="(gesamte räumliche Länge)"/>
+			<cell type="TrsCostsCellEvalFloat" col="5" row="10" text="$$TRNB_L$$"/>
+			<cell type="TrsCostsCellSimple" col="6" row="10" text="m"/>
+			<cell type="TrsCostsCellSimple" col="2" row="11" text="Gesamte Länge im Lageplan"/>
+			<cell type="TrsCostsCellEvalFloat" col="3" row="11" text="$KTRLPLAENGE_NB$"/>
+			<cell type="TrsCostsCellEvalText" col="4" row="11" text="$WAEHRUNG$/m"/>
+			<cell type="TrsCostsCellEvalFloat" col="5" row="11" text="$$TRNB_LPL$$"/>
+			<cell type="TrsCostsCellSimple" col="6" row="11" text="m"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="11" name="$_TRLPLAENGE_NB_$" format="float" text="$KTRLPLAENGE_NB$*$$TRNB_LPL$$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="11" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="12" style="5" text="Zwischensumme"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="12" name="$_SUM_POS3_$" format="float" text="_TRLPLAENGE_NB_"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="12" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="1" row="13" name="$POSITION$" format="float" text="$POSITION$+1"/>
+			<cell type="TrsCostsCellSimple" col="2" row="13" style="5" text="Erdbau"/>
+			<cell type="TrsCostsCellSimple" col="2" row="14" text="Volumen Abtrag"/>
+			<cell type="TrsCostsCellEvalFloat" col="3" row="14" text="$KTRABTRAG$"/>
+			<cell type="TrsCostsCellEvalText" col="4" row="14" text="$WAEHRUNG$/m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="5" row="14" text="$$TRNB_VABTRAG$$"/>
+			<cell type="TrsCostsCellSimple" col="6" row="14" text="m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="14" name="$_ABTRAG_$" format="float" text="$KTRABTRAG$*$$TRNB_VABTRAG$$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="14" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="15" text="Volumen Auftrag"/>
+			<cell type="TrsCostsCellEvalFloat" col="3" row="15" text="$KTRAUFTRAG$"/>
+			<cell type="TrsCostsCellEvalText" col="4" row="15" text="$WAEHRUNG$/m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="5" row="15" text="$$TRNB_VAUFTRAG$$"/>
+			<cell type="TrsCostsCellSimple" col="6" row="15" text="m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="15" name="$_AUFTRAG_$" format="float" text="$KTRAUFTRAG$*$$TRNB_VAUFTRAG$$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="15" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="16" style="6" text="Volumen Bilanz"/>
+			<cell type="TrsCostsCellEvalFloat" col="3" row="16" text="$KTRBILANZ$"/>
+			<cell type="TrsCostsCellEvalText" col="4" row="16" text="$WAEHRUNG$/m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="5" row="16" name="$_AB_AUF_$" format="float" text="$$TRNB_VABTRAG$$-$$TRNB_VAUFTRAG$$"/>
+			<cell type="TrsCostsCellSimple" col="6" row="16" text="m³"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="16" name="$_BILANZ_$" format="float" text="|$_AB_AUF_$*$KTRBILANZ$|"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="16" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="17" style="5" text="Zwischensumme"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="17" name="$_SUM_POS4_$" format="float" text="$_ABTRAG_$+$_AUFTRAG_$+$_BILANZ_$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="17" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="1" row="18" name="$POSITION$" format="float" text="$POSITION$+1"/>
+			<cell type="TrsCostsCellSimple" col="2" row="18" style="5" text="Rückbau/Abriss"/>
+			<cell type="TrsCostsCellSimple" col="2" row="19" text="Gebäudeabriss"/>
+			<cell type="TrsCostsCellEvalFloat" col="3" row="19" text="$KTRABRISSGEBAEUDE$"/>
+			<cell type="TrsCostsCellEvalText" col="4" row="19" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="6" row="19" text="pauschal"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="19" name="$_ABRISS_$" format="float" text="$KTRABRISSGEBAEUDE$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="19" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellSimple" col="2" row="20" style="5" text="Zwischensumme"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="20" name="$_SUM_POS5_$" format="float" text="$_ABRISS_$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="20" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="1" row="21" name="$POSITION$" format="float" text="$POSITION$+1"/>
+			<cell type="TrsCostsCellSimple" col="2" row="21" style="5" text="Nettokosten Pos. 1 - 5"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="21" name="$_SUM15_$" format="float" text="$_SUM_POS1_$+$_SUM_POS2_$+$_SUM_POS3_$+$_SUM_POS4_$+$_SUM_POS5_$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="21" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="1" row="22" name="$POSITION$" format="float" text="$POSITION$+1"/>
+			<cell type="TrsCostsCellSimple" col="2" row="22" style="5" text="Nettokosten Pos. 2 - 5"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="22" name="$_SUM25_$" format="float" text="$_SUM_POS2_$+$_SUM_POS3_$+$_SUM_POS4_$+$_SUM_POS5_$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="22" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="1" row="23" name="$POSITION$" format="float" text="$POSITION$+1"/>
+			<cell type="TrsCostsCellSimple" col="2" row="23" style="5" text="Mehrwertsteuer von Pos. 1 - 5"/>
+			<cell type="TrsCostsCellEvalFloat" col="3" row="23" text="$MWST$"/>
+			<cell type="TrsCostsCellSimple" col="4" row="23" text="%"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="23" name="$_MWST15_$" format="float" text="($_SUM15_$*$MWST$)/100"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="23" text="$WAEHRUNG$"/>
+			<cell type="TrsCostsCellEvalFloat" col="1" row="24" name="$POSITION$" format="float" text="$POSITION$+1"/>
+			<cell type="TrsCostsCellSimple" col="2" row="24" style="5" text="Bruttogesamtkosten Pos. 1 - 5"/>
+			<cell type="TrsCostsCellEvalFloat" col="7" row="24" name="$_GESAMTKOSTEN_$" format="float" text="$_MWST15_$+$_SUM15_$"/>
+			<cell type="TrsCostsCellEvalText" col="8" row="24" text="$WAEHRUNG$"/>
+		</cells>
+	</table>
+</asdatafile>

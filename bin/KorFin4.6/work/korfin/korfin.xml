@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asdatafile>
+	<description>
+		<content type="application" name="korridorfinder"/>
+	</description>
+	<system>
+		<calculation segmentsize="50" discretemode="1" discreteerrlp="0.1" discreteerrhp="0.05"/>
+		<defmod>
+			<res id="RS_DEFMOD_STRRES"/>
+			<res id="RS_DEFMOD_RASQ1995"/>
+			<res id="RS_DEFMOD_RAL2007"/>
+			<res id="RS_DEFMOD_RAA2008"/>
+			<res id="RS_DEFMOD_RASK"/>
+			<res id="RS_DEFMOD_RALK"/>
+			<res id="RS_DEFMOD_BARES"/>
+			<res id="RS_DEFMOD_BA"/>
+			<res id="RS_DEFMOD_BAFF"/>
+			<res id="RS_DEFMOD_TR"/>
+			<res id="RS_DEFMOD_POWERPOLE"/>
+			<res id="RS_DEFMOD_CABLERES"/>
+			<res id="RS_DEFMOD_CABLE"/>
+		</defmod>
+		<view>
+			<engine texsize="512" fsrendermode="1"/>
+			<fog fog="0.00000" r="0.8000000119" g="0.8000000119" b="0.8999999762" a="0"/>
+			<show cross="true" northarrow="true" elementselector="false" radii="true"/>
+			<properties radii_classic="true"/>
+		</view>
+	</system>
+	<forms>
+		<form name="rsApplicationForm" course="1">
+			<datatree hide="504, 505, 554, 555, 101, 107, 108, 110, 111, 112"/>
+			<gbox hide="22"/>
+		</form>
+	</forms>
+	<crosssection>
+		<lines>
+			<line id="100" data="true" color="255" style="0" fillcolor="255" fillstyle="0" visible="true" pointsize="1" fill="0"/>
+			<line id="110" visible="true" data="false" color="8816262" style="0" fillcolor="8816262" fillstyle="1"/>
+			<line id="111" visible="true" data="false" color="8816262" style="0" fillcolor="8816262" fillstyle="1"/>
+			<line id="130" visible="false" data="false" color="12566463" style="0" fillcolor="12566463" fillstyle="1"/>
+			<line id="131" visible="false" data="false" color="12566463" style="0" fillcolor="12566463" fillstyle="1"/>
+			<line id="140" visible="true" data="false" color="39372" style="0" fillcolor="39372" fillstyle="1"/>
+			<line id="141" visible="true" data="false" color="39372" style="0" fillcolor="39372" fillstyle="1"/>
+			<line id="150" visible="true" data="true" color="0" style="0" fillcolor="0" fillstyle="1"/>
+			<line id="160" visible="true" data="true" color="8908" style="0" fillcolor="32768" fillstyle="1"/>
+			<line id="170" visible="true" data="false" color="1096658" style="0" fillcolor="1096658" fillstyle="1"/>
+			<line id="180" visible="true" data="true" color="39270" style="0" fillcolor="39270" fillstyle="1"/>
+			<line id="181" visible="true" data="false" color="39270" style="1" fillcolor="16777215" fillstyle="1"/>
+			<line id="182" visible="true" data="false" color="47104" style="2" fillcolor="47104" fillstyle="1"/>
+			<line id="183" visible="true" data="false" color="47104" style="2" fillcolor="47104" fillstyle="1"/>
+			<line id="184" visible="true" data="false" color="8453888" style="2" fillcolor="8453888" fillstyle="1"/>
+			<line id="200" data="true" color="21930" style="0" fillcolor="0" fillstyle="0" visible="true" pointsize="1" fill="0"/>
+			<line id="300" data="true" style="0" fillcolor="0" fillstyle="0" visible="true" color="0" pointsize="1" fill="0"/>
+			<line id="400" data="true" color="8908" style="0" fillcolor="32768" fillstyle="0" visible="true" pointsize="1" fill="0"/>
+			<line id="500" data="true" color="13378048" style="0" fillcolor="16711680" fillstyle="0" visible="true" pointsize="1" fill="0"/>
+			<line id="600" color="9474192" style="2" fillcolor="0" fillstyle="0" visible="true" data="false" pointsize="1" fill="0"/>
+			<line id="700" color="45056" style="2" fillcolor="0" fillstyle="0" visible="true" data="false" pointsize="1" fill="0"/>
+			<line id="800" color="45056" style="2" fillcolor="0" fillstyle="0" visible="true" data="false" pointsize="1" fill="0"/>
+			<line id="900" visible="false" data="false" color="11534336" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="901" visible="false" data="false" color="15728640" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="902" visible="false" data="true" color="9437184" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="903" visible="false" data="true" color="13631488" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="904" visible="false" data="true" color="9437184" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="905" visible="false" data="true" color="13631488" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="906" visible="false" data="true" color="9437184" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="907" visible="false" data="true" color="13631488" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="908" visible="false" data="true" color="9437184" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="909" visible="false" data="true" color="13631488" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="910" visible="false" data="true" color="9437184" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="911" visible="false" data="true" color="13631488" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="912" visible="false" data="true" color="9437184" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="913" visible="false" data="true" color="13631488" style="0" fillcolor="0" fillstyle="0" pointsize="1" fill="0"/>
+			<line id="950" visible="true" data="false" color="28490" style="1" fillcolor="49026" fillstyle="5"/>
+			<line id="951" visible="true" data="false" color="48896" style="2" fillcolor="1959850" fillstyle="2"/>
+			<line id="952" visible="true" data="false" color="48896" style="1" fillcolor="1959850" fillstyle="2"/>
+			<line id="953" visible="true" data="false" color="8453888" style="1" fillcolor="8453888" fillstyle="1"/>
+			<line id="954" visible="true" data="false" color="823924" style="1" fillcolor="11985624" fillstyle="6"/>
+			<line id="955" visible="true" data="false" color="823924" style="1" fillcolor="11985624" fillstyle="6"/>
+			<line id="956" visible="true" data="false" color="9289442" style="0" fillcolor="11860478" fillstyle="4"/>
+			<line id="957" visible="true" data="false" color="9289442" style="0" fillcolor="11860478" fillstyle="5"/>
+			<line id="958" visible="true" data="false" color="891052" style="0" fillcolor="1096658" fillstyle="7"/>
+			<line id="960" visible="true" data="false" color="10066329" style="0" fillcolor="10921638" fillstyle="0"/>
+			<line id="961" visible="true" data="false" color="10066329" style="0" fillcolor="10921638" fillstyle="0"/>
+			<line id="970" visible="true" data="false" color="8421504" style="0" fillcolor="8421504" fillstyle="0"/>
+			<line id="971" visible="true" data="false" color="8421504" style="0" fillcolor="8421504" fillstyle="0"/>
+			<line id="980" visible="true" data="false" color="9276813" style="0" fillcolor="12566463" fillstyle="7"/>
+			<line id="981" visible="true" data="false" color="9276813" style="0" fillcolor="12566463" fillstyle="7"/>
+			<line id="990" visible="true" data="false" color="24445" style="0" fillcolor="39372" fillstyle="3"/>
+			<line id="991" visible="true" data="false" color="24445" style="0" fillcolor="39372" fillstyle="3"/>
+			<line id="1000" color="10027008" style="0" fill="1" fillcolor="10027008" fillstyle="7" visible="true" data="false" pointsize="1"/>
+			<line id="1001" color="10066176" style="0" fill="1" fillcolor="10066176" fillstyle="7" visible="true" data="false" pointsize="1"/>
+			<line id="1002" color="153" style="0" fill="1" fillcolor="153" fillstyle="7" visible="true" data="false" pointsize="1"/>
+			<line id="1003" color="39321" style="0" fill="1" fillcolor="39321" fillstyle="7" visible="true" data="false" pointsize="1"/>
+		</lines>
+	</crosssection>
+</asdatafile>
